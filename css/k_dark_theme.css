@@ -1,0 +1,29 @@
+
+/*************** Dark Theme Button ***************/
+.dark-theme-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  left: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: rgba(0, 0, 255, 0.5);
+  color: #222;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  transition: all 0.3s ease-out;
+}
+
+.dark-theme-btn:hover{
+  background-color: rgba(0, 0, 255, 0.9);
+  color: #aaa;
+}
+
+.dark-mode{
+  background-color: #222;;
+  color: #aaa;
+}
