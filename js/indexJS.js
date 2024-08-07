@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
             "N = (b^2 - a^2)^2 - 4a^2 b^2 \\left[ \\ln\\left(\\frac{b}{a}\\right) \\right]^2",
             "true"
         );
-        
+
         renderizar_formulas_con_katex("ebx_3", "\\mathrm{E}_{b}^{x}", "false");
 
         // Ecuación para E_x^b
@@ -222,6 +222,52 @@ document.addEventListener("DOMContentLoaded", (e) => {
             "\\varepsilon = \\frac{l - l_0}{l_0} = \\frac{l_0 - 2l^* - l_0}{l_0} = \\frac{-2l^*}{l_0}",
             "false"
         );
+
+        // Reemplazar imágenes de baja calidad con media calidad
+        const images = document.querySelectorAll("img.lazy");
+        console.log(images);
+        let imagesLoaded = 0;
+        const totalImages = images.length;
+        console.log(images.length);
+
+        images.forEach((img) => {
+            const lowResSrc = img.getAttribute("src");
+            const mediumResSrc = img.getAttribute("data-src-medium");
+            console.log(lowResSrc);
+            console.log(mediumResSrc);
+            if (mediumResSrc) {
+                const newImg = new Image();
+                newImg.src = mediumResSrc;
+                newImg.onload = () => {
+                    img.src = mediumResSrc;
+                    imagesLoaded++;
+                    if (imagesLoaded === totalImages) {
+                        loadHighResImages(images);
+                    }
+                };
+            }
+        });
+
+        function loadHighResImages(images) {
+            imagesLoaded = 0;
+            images.forEach((img) => {
+                const highResSrc = img.getAttribute("data-src-high");
+                console.log(highResSrc);
+                if (highResSrc) {
+                    const newImg = new Image();
+                    newImg.src = highResSrc;
+                    newImg.onload = () => {
+                        img.src = highResSrc;
+                        imagesLoaded++;
+                        if (imagesLoaded === totalImages) {
+                            console.log(
+                                "Todas las imágenes de alta calidad han sido cargadas."
+                            );
+                        }
+                    };
+                }
+            });
+        }
     });
 
     const elementos = document.querySelectorAll(".elemento-arrastrable");
@@ -266,13 +312,3 @@ Para que funcione la carga de informacion en el localStorage debe existir el mé
 esta funcion debe estar aparte
 */
 darkThemeConLocalStorage(".dark-theme-btn", "dark-mode", "[data-dark]");
-/*const formulas = [
-    "ebx_1",
-    "raj2_1",
-    "Ee_1_1",
-    "NU12_1",
-    "E2_1",
-    "Gg12_1",
-    // Agrega aquí más identificadores si tienes más fórmulas
-];
-renderizar_formulas_con_katex(formulas);*/
