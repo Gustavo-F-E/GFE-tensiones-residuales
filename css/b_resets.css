@@ -32,3 +32,11 @@ a {
 ul {
   list-style: none;
 }
+
+header, main{
+  cursor:grab;
+  position: relative;
+  &:active{
+    cursor:grabbing;
+  }
+}

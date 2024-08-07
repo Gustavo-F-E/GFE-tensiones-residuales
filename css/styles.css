@@ -10,11 +10,6 @@
 @import url(j_external_CSS.css);
 @import url(k_dark_theme.css);
 @import url(l_scroll_to_top_button.css);
-
-
-
-
-
-
-
-
+@import url(../katex/katex.css);
+@import url(m_katex.css);
+@import url(n_tablas.css);

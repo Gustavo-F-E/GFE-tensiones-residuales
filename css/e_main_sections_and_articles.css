@@ -1,22 +1,22 @@
-main{
+main {
   /*position: sticky;*/
   top: 0;
   background-color: #aaa;
   color: #222;
   display: flex;
   flex-direction: column;
-  justify-content:stretch;
+  justify-content: stretch;
   align-items: center;
   width: 100%;
 }
 
-main section{
+main section {
   padding: 4rem;
   width: 60%;
   background-color: #fff;
 }
 
-.section{
+.section {
   padding: 2rem;
   padding-top: 4rem;
   margin-left: auto;
@@ -26,54 +26,67 @@ main section{
   text-align: center;
 }
 
-.section h2{
+.section h2 {
   padding: 1rem 0rem;
 }
 
-.section article{
+.section article {
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img{
+    width: 70%;
+    height: auto;
+  }
 }
 
-.section article h3{
+.section article h3, .section article h4 {
   padding: 0.5rem 0rem;
+  text-align: left;
+  width: 100%;
 }
 
-.section p{
+
+
+.section p {
   text-align: justify;
   padding: 0.5rem 1.5rem;
   text-indent: 2rem;
+  width: 100%;
 }
 
-.section p span{
+.section p span {
   font-weight: 800;
 }
 
-#indice ul li{
+#indice ul li {
   text-align: justify;
   font-size: 1rem;
 
 }
 
-#indice h2{
+#indice h2 {
   text-align: center;
 }
 
-.sublista{
+.sublista {
   text-align: justify;
   font-size: 1rem;
 }
 
-.sublista li{
+.sublista li {
   padding: 0rem !important;
 }
 
-.lista-indice{
+.lista-indice {
   padding: 1rem 0rem;
 }
 
-.cap{
+.cap {
   padding-bottom: 0;
 }
+
 /*
 @media (min-width: 600px) {
   main section{
@@ -84,6 +97,177 @@ main section{
   }
 }*/
 
-.lista-indice-tablas, .lista-indice-figuras{
+.lista-indice-tablas,
+.lista-indice-figuras {
   text-align: left;
+}
+
+#listado_referencias {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  li {
+    padding: 0.5rem 0rem;
+    width: 80%;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 1) !important;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:visited {
+        color: rgba(0, 0, 255, 1);
+      }
+
+      &:active {
+        color: rgba(255, 0, 0, 1);
+      }
+    }
+  }
+}
+
+.ul{
+  list-style: circle;
+  list-style: disc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li {
+    width: 80%;
+    text-align: justify;
+    padding: 0.3rem 0rem;
+  }
+}
+
+.enlaces_referencias{
+  text-decoration: none;
+  color: rgba(0, 0, 255, 1);
+
+  &:hover {
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:visited {
+    color: purple;
+  }
+
+  &:active {
+    color: rgba(255, 0, 0, 1);
+}
+}
+
+.enlaces_capitulo{
+  text-decoration: underline;
+  font-weight: 900;
+  color: rgba(0, 0, 255, 1);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:visited {
+    color: purple;
+  }
+
+  &:active {
+    color: rgba(255, 0, 0, 1);
+}
+}
+
+
+.alfabetos{
+  padding: 0.5rem 0rem 1rem 0rem;
+  text-decoration: underline;
+}
+
+.ol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li {
+    width: 80%;
+    text-align: justify;
+    padding: 0.3rem 0rem;
+  }
+}
+
+.llamadas{
+  font-weight:normal !important;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.1);
+  &:hover{
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.enlaces_tablas, .enlaces_figuras{
+  font-weight: 900;
+  color: rgba(0, 0, 255, 1);
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: purple;
+  }
+
+  &:active {
+    color: rgba(255, 0, 0, 1);
+}
+}
+
+.descripcion_figura{
+  text-align: center!important;
+  font-weight: 800;
+  width: 100% !important;
+}
+
+.subtitulos-figuras{
+  text-align: center!important;
+  font-style: italic;
+  font-weight: 300;
+  width: 100% !important;
+  padding-bottom: 2rem !important;
+}
+
+.enlace_ecuaciones{
+  font-weight: 900;
+  color:darkred;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: purple;
+  }
+
+  &:active {
+    color:mediumpurple;
+}
+}
+
+.abreviatura{
+  background-color: rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  &:hover {
+    font-weight: bold;
+    text-decoration: underline;
+  }
 }

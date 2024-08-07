@@ -1,0 +1,22 @@
+.katex-display {
+  text-align: center;  /* Centrar fórmulas */
+  margin:0
+}
+
+.katex {
+  text-align: right;   /* Alinear a la derecha */
+}
+.katex-symbol{
+  font-weight: 800; 
+  text-align: right !important; 
+  display: flex; 
+  justify-content: end;
+}
+#ebx_1{
+  font-weight: 800 !important;
+}
+#ebx_2{
+
+  width:2rem;
+  height: auto;
+}
