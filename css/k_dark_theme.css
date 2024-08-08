@@ -2,13 +2,7 @@
 /*************** Dark Theme Button ***************/
 .dark-theme-btn {
   position: fixed;
-  z-index: 999;
-  bottom: 1vh;
-  left: 1vw;
-  width: 4rem;
-  height: 4rem;
   border-radius: 50%;
-  font-size: 2rem;
   font-weight: bold;
   background-color: rgba(0, 0, 255, 0.5);
   color: #222;
@@ -25,5 +19,40 @@
 
 .dark-mode{
   background-color: #222;;
-  color: #aaa;
+  color: #aaa !important;
+
+  a:-webkit-any-link {
+    color: inherit !important;
+    text-decoration: none !important;
+    &:hover{
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+  .abreviatura{
+    background-color: #444;
+    &:hover{
+      text-decoration: underline;
+      color: #fff;
+    }
+  }
+  .borde-top-tabla{
+    border-top: 0.1rem solid #aaa;
+  }
+  
+  .borde-bottom-tabla{
+    border-bottom: 0.1rem solid #aaa;
+  }
+  #listado_referencias {
+      &:hover {
+        background-color: #444;
+      }
+  
+      a {
+        color: #aaa !important;
+        &:hover{
+          text-decoration: underline;
+        }
+    }
+  }
 }

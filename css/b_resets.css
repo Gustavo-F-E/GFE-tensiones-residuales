@@ -18,6 +18,10 @@ html {
 body {
   width: 100vw;
   /*overflow: hidden;*/
+  scrollbar-width:auto;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  overflow: scroll;
 }
 
 img{

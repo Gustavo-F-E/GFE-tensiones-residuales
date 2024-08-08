@@ -34,17 +34,37 @@
 }
 
 .hamburger-box {
-  width: 40px;
+  width: 40px; /* Puedes ajustar esto según el tamaño deseado */
   height: 24px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  /*overflow: hidden;*/
 }
 
 .hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  right:0;
+  transform: scale(0.5); 
 }
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .hamburger-inner {
+    transform: scale(0.8); 
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .hamburger-inner {
+    transform: scale(1); 
+  }
+}
+
 .hamburger-inner,
 .hamburger-inner::before,
 .hamburger-inner::after {
@@ -56,6 +76,8 @@
   transition-property: transform;
   transition-duration: 0.15s;
   transition-timing-function: ease;
+  left: 0;
+  bottom: -10px;
 }
 .hamburger-inner::before,
 .hamburger-inner::after {

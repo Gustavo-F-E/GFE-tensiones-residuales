@@ -221,20 +221,47 @@ document.addEventListener("DOMContentLoaded", (e) => {
             "epsilon",
             "\\varepsilon = \\frac{l - l_0}{l_0} = \\frac{l_0 - 2l^* - l_0}{l_0} = \\frac{-2l^*}{l_0}",
             "false"
-        );
+      );
+      
+      // Ecuación para ε_y^0
+      renderizar_formulas_con_katex(
+        "epsilon_y0_1",
+        "\\varepsilon_y^0",
+        "false"
+      );
+      
+      // Ecuación para Φ_{22}
+      renderizar_formulas_con_katex(
+        "Phi22_2",
+        "\\Phi_{22}^{k}",
+        "false"
+    );
+
+    // Ecuación para Φ_{12}
+    renderizar_formulas_con_katex(
+        "Phi12_2",
+        "\\Phi_{12}^{k}",
+        "false"
+      );
+      // Ecuación para Φ_{26}
+      renderizar_formulas_con_katex(
+        "Phi26_2",
+        "\\Phi_{26}^{k}",
+        "false"
+    );
 
         // Reemplazar imágenes de baja calidad con media calidad
         const images = document.querySelectorAll("img.lazy");
-        console.log(images);
+        //console.log(images);
         let imagesLoaded = 0;
         const totalImages = images.length;
-        console.log(images.length);
+        //console.log(images.length);
 
         images.forEach((img) => {
             const lowResSrc = img.getAttribute("src");
             const mediumResSrc = img.getAttribute("data-src-medium");
-            console.log(lowResSrc);
-            console.log(mediumResSrc);
+            //console.log(lowResSrc);
+            //console.log(mediumResSrc);
             if (mediumResSrc) {
                 const newImg = new Image();
                 newImg.src = mediumResSrc;
@@ -248,11 +275,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
             }
         });
 
+
         function loadHighResImages(images) {
             imagesLoaded = 0;
             images.forEach((img) => {
                 const highResSrc = img.getAttribute("data-src-high");
-                console.log(highResSrc);
+                //console.log(highResSrc);
                 if (highResSrc) {
                     const newImg = new Image();
                     newImg.src = highResSrc;

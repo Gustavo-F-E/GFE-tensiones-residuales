@@ -11,17 +11,13 @@ main {
 }
 
 main section {
-  padding: 4rem;
-  width: 60%;
   background-color: #fff;
 }
 
 .section {
-  padding: 2rem;
   padding-top: 4rem;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
   min-height: 100vh;
   text-align: center;
 }
@@ -51,8 +47,6 @@ main section {
 
 .section p {
   text-align: justify;
-  padding: 0.5rem 1.5rem;
-  text-indent: 2rem;
   width: 100%;
 }
 
@@ -62,8 +56,6 @@ main section {
 
 #indice ul li {
   text-align: justify;
-  font-size: 1rem;
-
 }
 
 #indice h2 {
@@ -71,7 +63,6 @@ main section {
 }
 
 .sublista {
-  text-align: justify;
   font-size: 1rem;
 }
 
@@ -86,16 +77,6 @@ main section {
 .cap {
   padding-bottom: 0;
 }
-
-/*
-@media (min-width: 600px) {
-  main section{
-    width: 60%;
-  }
-  .section{
-    width: 90%;
-  }
-}*/
 
 .lista-indice-tablas,
 .lista-indice-figuras {
@@ -265,7 +246,7 @@ main section {
 .abreviatura{
   background-color: rgba(0, 0, 0, 0.1);
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.9);
+  /*color: rgba(0, 0, 0, 0.9);*/
   &:hover {
     font-weight: bold;
     text-decoration: underline;

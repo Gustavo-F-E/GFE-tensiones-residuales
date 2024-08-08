@@ -1,13 +1,7 @@
 /*************** ScrollTopButton ***************/
 .scroll-top-btn {
   position: fixed;
-  z-index: 999;
-  bottom: 7rem;
-  right: 0.5rem;
-  width: 5rem;
-  height: 5rem;
   border-radius: 50%;
-  font-size: 2rem;
   font-weight: bold;
   background-color: rgba(0, 0, 255, 0.5);
   color: var(--second-color);

@@ -3,11 +3,9 @@
   td {
     border: none;
     padding: 0.3rem 0.8rem;
-    font-size: 1.2rem;
     &:first-child{
       font-weight: 700;
       text-align: right;
-      width: 10rem;
     }
     &:last-child{
       text-align: left;
@@ -18,10 +16,8 @@
 #simbolos{
   table{
     td{
-      font-size: 1.2rem;
       &:first-child{
         font-weight: 800;
-        width: 10rem;
         text-align: right;
         padding-right: 2rem;
       }
@@ -37,7 +33,6 @@
   width: 100%;
   border-collapse: collapse;
   margin: 1rem 0rem 0rem;
-  font-size: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -54,7 +49,6 @@
   background-color: #f2f2f2;
 }*/
 .nota {
-  font-size: 0.8rem;
   text-align: center !important;
   padding: 0rem 0rem 1.5rem 0rem !important;
   font-style: italic;
@@ -75,7 +69,7 @@
   padding-top: 1.5rem !important;
 }
 
-.tabla_ecuaciones{
+.tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26{
   width: 100%;
   display: flex;
   align-items: center;
@@ -85,6 +79,12 @@
       vertical-align: middle;
       text-align: center;
       width: 15rem;
+      scrollbar-width:thin;
+      scroll-behavior: smooth;
+      scrollbar-color: rgb(203, 203, 248) transparent;
+      overflow: scroll;
+      overflow-x: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+      overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
     }
   }
 }

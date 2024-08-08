@@ -8,35 +8,56 @@ header{
   flex-direction: column;
   justify-content:stretch;
   align-items: center;
-
 }
 
 header section{
-  padding: 4rem;
-  width: 60%;
+  padding: 1rem;
+  width: 90%;
   background-color: #fff;
   text-align: center;
 }
 
 header section h1{
   margin: 0;
-  font-size: 2rem;
 }
 
 .panel-btn{
   position: fixed;
-  z-index: 999;
-  bottom: 1vh;
-  right: 1vw;
-  width: 5rem;
-  height: 5rem;
   border-radius: 50% !important;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 255, 0.5) !important;
+  z-index: 999;
+  bottom: 1rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.5rem;
 }
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .panel-btn{
+    z-index: 999;
+    bottom: 1rem;
+    right: 0.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .panel-btn{
+    z-index: 999;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
 
 .panel-btn:hover{
   background-color: rgba(0, 0, 255, 0.9)!important;
@@ -139,14 +160,7 @@ header section h1{
   margin-left: 2rem;
 }
 
-#header-autor{font-size: 2rem;}
-#header-uni{font-size: 1rem;
-padding-top: 2rem};
-#header-prof{font-size: 1rem};
-#header-director, #header-ing1, #header-ing2{font-size: 0.8rem; font-weight: 400};
-#header-mag{font-size: 0.8rem};
-#header-rep{font-size: 1rem};
-#header-anio{font-size: 1rem; font-weight: 900 !important};
+
 /*
 @media (min-width: 601px) {
   header section{

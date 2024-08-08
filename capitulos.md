@@ -1057,44 +1057,44 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <h1 id="abreviaturas">Abreviaturas</h1>
 
 ```html
-<a class="abreviatura" title="Análisis de Varianzas (Analysis of variance)." href="ANOVA">ANOVA</a>
+<a data-dark class="abreviatura" title="Análisis de Varianzas (Analysis of variance)." href="ANOVA">ANOVA</a>
 
-<a class="abreviatura" title="Antena radar de apertura sintética." href="ARAS">ARAS</a>
+<a data-dark class="abreviatura" title="Antena radar de apertura sintética." href="ARAS">ARAS</a>
 
-<a class="abreviatura" title="Sociedad Estadounidense para Pruebas y Materiales (American Society for Testing and Materials)."
+<a data-dark class="abreviatura" title="Sociedad Estadounidense para Pruebas y Materiales (American Society for Testing and Materials)."
   href="ASTM">ASTM</a>
 
-<a class="abreviatura" title="Centro Atómico Constituyentes." href="CAC">CAC</a>
+<a data-dark class="abreviatura" title="Centro Atómico Constituyentes." href="CAC">CAC</a>
 
-<a class="abreviatura" title="Comisión Nacional de Energía Atómica." href="CNEA">CNEA</a>
+<a data-dark class="abreviatura" title="Comisión Nacional de Energía Atómica." href="CNEA">CNEA</a>
 
-<a class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>
+<a data-dark class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>
 
-<a class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>
+<a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>
 
-<a class="abreviatura" title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>
+<a data-dark class="abreviatura" title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>
 
-<a class="abreviatura" title="Fibra de Carbono." href="FC">FC</a>
+<a data-dark class="abreviatura" title="Fibra de Carbono." href="FC">FC</a>
 
-<a class="abreviatura" title="Método del corte (Split Method)." href="MC">MC</a>
+<a data-dark class="abreviatura" title="Método del corte (Split Method)." href="MC">MC</a>
 
-<a class="abreviatura" title="Método de flexibilidad de grietas (Crack Compliance Method)." href="MFG">MFG</a>
+<a data-dark class="abreviatura" title="Método de flexibilidad de grietas (Crack Compliance Method)." href="MFG">MFG</a>
 
-<a class="abreviatura" title="Modelo de la Microestructura Periódica." href="MMP">MMP</a>
+<a data-dark class="abreviatura" title="Modelo de la Microestructura Periódica." href="MMP">MMP</a>
 
-<a class="abreviatura" title="Momentos Residuales." href="MR">MR</a>
+<a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a>
 
-<a class="abreviatura" title="Poliacrilonitrilo." href="PAN">PAN</a>
+<a data-dark class="abreviatura" title="Poliacrilonitrilo." href="PAN">PAN</a>
 
-<a class="abreviatura" title="Regla de las Mezclas." href="RM">RM</a>
+<a data-dark class="abreviatura" title="Regla de las Mezclas." href="RM">RM</a>
 
-<a class="abreviatura" title="Revoluciones Por Minuto." href="RPM">RPM</a>
+<a data-dark class="abreviatura" title="Revoluciones Por Minuto." href="RPM">RPM</a>
 
-<a class="abreviatura" title="Teoría Clásica de Laminados." href="TCL">TCL</a>
+<a data-dark class="abreviatura" title="Teoría Clásica de Laminados." href="TCL">TCL</a>
 
-<a class="abreviatura" title="Temperatura de Transición Vítrea." href="Tg">Tg</a>
+<a data-dark class="abreviatura" title="Temperatura de Transición Vítrea." href="Tg">Tg</a>
 
-<a class="abreviatura" title="Tensiones residuales." href="TR">TR</a>
+<a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a>
 ```
 
 # Llamada
