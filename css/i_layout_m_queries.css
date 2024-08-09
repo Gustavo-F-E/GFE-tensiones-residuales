@@ -57,7 +57,7 @@ header {
 
 ;
 
-.panel-btn {
+#hamburger-btn {
   z-index: 999;
   bottom: 1rem;
   right: 0.5rem;
@@ -81,7 +81,7 @@ header {
   right: 0.5rem;
   width: 2rem;
   height: 2rem;
-  font-size: 0.5rem;
+  font-size: 0.8rem;
 }
 /*
 .hamburger-box svg {
@@ -228,7 +228,7 @@ main section {
 
   ;
 
-  .panel-btn {
+  #hamburger-btn {
     z-index: 999;
     bottom: 1rem;
     right: 0.8rem;
@@ -259,6 +259,10 @@ main section {
   .katex-display {
     font-size: 1rem !important;
     /* Tamaño de fuente por defecto */
+  }
+
+  #moment_residual span{
+    font-size: 0.7rem !important;
   }
 
   #moment_residual {
@@ -399,7 +403,7 @@ main section {
 
   ;
 
-  .panel-btn{
+  #hamburger-btn{
     z-index: 999;
     bottom: 2rem;
     right: 2rem;
@@ -428,8 +432,12 @@ main section {
 
   .katex,
   .katex-display {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
     /* Tamaño de fuente por defecto */
+  }
+
+  #moment_residual span{
+    font-size: 0.9rem !important;
   }
 
 

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #hamburger-btn {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      padding: 15px;
+      background-color: blue;
+      color: white;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      font-size: 1.5rem;
+      width: 3rem;
+      height: 3rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    #grid_indice_completo{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    #menu{
+      grid-column: 1/2;
+    }
+    #desplegable_capitulo_1, #desplegable_capitulo_2, #desplegable_capitulo_3, #desplegable_capitulo_4, #desplegable_capitulo_5, #desplegable_anexo_5{
+      grid-column: 2/3;
+    }
+
+    #indice_completo{
+      background: rgba(0, 0, 0, 0.6);
+      color:#ccc;
+      width: 100vw;
+      height: 100vh;
+      ul{
+        margin-left: 1rem;
+        list-style: none;
+      }
+    }
+
+    button{
+      background-color: transparent;
+      border: none;
+    }
+
+    .icono_desplegable{
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      margin: 0;
+      color: inherit;
+      font-size: inherit;
+      cursor: pointer;
+      }
+  </style>
+</head>
+
+<body>
+  <aside id="indice_completo" class="hidden">
+    <article id="grid_indice_completo">
+      <nav class="menu">
+        <navigation goes here>
+        <ul>
+          <li><a href="#agradecimientos">Agradecimientos.</a></li>
+          <li><a href="#resumen">Resumen.</a></li>
+          <li><a href="#abstract">Abstract.</a></li>
+          <li><a href="#indice">Índice.</a></li>
+          <li><a href="#tablas">Índice de Tablas.</a></li>
+          <li><a href="#figuras">Índice de Figuras.</a></li>
+          <li><a href="#simbolos">Símbolos.</a></li>
+          <li><a href="#abreviaturas">Abreviaturas.</a></li>
+          <li><span><a href="#capitulo_1">Capítulo 1: Introducción.</a></span>
+            <span>
+              <button id="cap_1_btn" type="button" aria-label="Menu">
+                <span id="cap_1_hamburger_icon" class="icono_desplegable">►</span>
+                <span id="cap_1_close_icon" class="hidden">✕</span>
+              </button>
+            </span>
+          </li>
+          <li>
+            <span><a href="#capitulo_2">Capítulo 2: Marco Teórico.</a></span>
+            <span>
+              <button id="cap_2_btn" type="button" aria-label="Menu">
+                <span id="cap_2_hamburger_icon" class="icono_desplegable">►</span>
+                <span id="cap_2_close_icon" class="hidden">✕</span>
+              </button>
+            </span>
+          </li>
+          <li>
+            <span><a href="#capitulo_3">Capítulo 3: Metodología.</a></span>
+            <span>
+              <button id="cap_3_btn" type="button" aria-label="Menu">
+                <span id="cap_3_hamburger_icon" class="icono_desplegable">►</span>
+                <span id="cap_3_close_icon" class="hidden">✕</span>
+              </button>
+            </span>
+          </li>
+          <li>
+            <span><a href="#capitulo_4">Capítulo 4: Resultados.</a></span>
+            <span>
+              <button id="cap_4_btn" type="button" aria-label="Menu">
+                <span id="cap_4_hamburger_icon" class="icono_desplegable">►</span>
+                <span id="cap_4_close_icon" class="hidden">✕</span>
+              </button>
+            </span>
+          </li>
+          <li>
+            <span><a href="#capitulo_5">Capítulo 5: Discusión. </a></span>
+            <span>
+              <button id="cap_5_btn" type="button" aria-label="Menu">
+                <span id="cap_5_hamburger_icon" class="icono_desplegable">►</span>
+                <span id="cap_5_close_icon" class="hidden">✕</span>
+              </button>
+            </span>
+          </li>
+          <li><span><a href="#capitulo_6">Capítulo 6: Conclusión.</a></li>
+          <li><a href="#capitulo_7">Capítulo 7: Trabajos a Futuro.</a></li>
+          <li><a href="#anexo_1">Anexo 1: Ficha Técnica de la Resina. </a></li>
+          <li><a href="#anexo_2">Anexo 2: Preparación de la resina. </a></li>
+          <li><a href="#anexo_3">Anexo 3: Tipos de pines. </a></li>
+          <li><a href="#anexo_4">Anexo 4: Ciclo de curado empleado. </a></li>
+          <li>
+            <span><a href="#anexo_5">Anexo 5: Resumen del Análisis mediante Micrografías.</a></span>
+            <span>
+              <button id="anexo_5_btn" type="button" aria-label="Menu">
+                <span id="anexo_5_hamburger_icon" class="icono_desplegable">►</span>
+                <span id="anexo_5_close_icon" class="hidden">✕</span>
+              </button>
+            </span>
+          </li>
+          <li><a href="#referencias">Referencias. </a></li>
+        </ul>
+      </nav>
+      <section id="desplegable_capitulo_1" class="hidden">
+        <ul class="sublista">
+          <li><a class="sublista_1" href="#capitulo_1_1">1.1 Aplicación.</a></li>
+          <li><a class="sublista_1" href="#capitulo_1_2">1.2 Objetivos generales.</a></li>
+          <li><a class="sublista_1" href="#capitulo_1_3">1.3 Objetivos particulares.</a></li>
+          <li><a class="sublista_1" href="#capitulo_1_4">1.4 Estado de Arte.</a></li>
+          <li><a class="sublista_1" href="#capitulo_1_5">1.5 Hipótesis adoptadas.</a></li>
+          <li><a class="sublista_1" href="#capitulo_1_6">1.6 Contenido.</a></li>
+        </ul>
+      </section>
+      <section id="desplegable_capitulo_2" class="hidden">
+        <ul class="sublista">
+          <li><a class="desplegable" href="#capitulo_2_1">2.1. Sistema material compuesto. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_2_1_1">2.1.1. Fibra de Carbono. </a></li>
+              <li><a href="#capitulo_2_1_2">2.1.2. Matriz Epóxica. </a></li>
+              <li><a href="#capitulo_2_1_3">2.1.3. Proceso de fabricación del material compuesto. </a></li>
+              <li><a href="#capitulo_2_1_4">2.1.4. Propiedades mecánicas y físicas de la fibra y de la matriz. </a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="desplegable" href="#capitulo_2_2">2.2 Tensiones residuales. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_2_2_1">2.2.1. Técnicas de medición de TR. </a></li>
+            </ul>
+          </li>
+          <li><a class="desplegable" href="#capitulo_2_3">2.3. Cálculos complementarios. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_2_3_1">2.3.1. Cálculo de las Constantes ingenieriles. </a></li>
+              <li><a href="#capitulo_2_3_2">2.3.2. Cálculo de las TR según la mecánica del continuo. </a></li>
+              <li><a href="#capitulo_2_3_3">2.3.3. Modelo de predicción de DR. </a></li>
+              <li><a href="#capitulo_2_3_4">2.3.4. Modelo de elementos finitos propuesto. </a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="desplegable_capitulo_3" class="hidden">
+        <ul class="sublista">
+          <li><a class="desplegable" href="#capitulo_3_1">3.1. Definición del DOE utilizado. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_3_1_1">3.1.1. Selección de los Factores del DOE. </a></li>
+              <li><a href="#capitulo_3_1_2">3.1.2. Niveles del DOE elegido. </a></li>
+              <li><a href="#capitulo_3_1_3">3.1.3. Fraccionamiento del número de experimentos y obtención del DOE
+                  final.
+                </a></li>
+              <li><a href="#capitulo_3_1_4">3.1.4 Respuestas a estudiar del DOE. </a></li>
+            </ul>
+          </li>
+          <li><a class="desplegable" href="#capitulo_3_2">3.2. Control de los factores del proceso de EF. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_3_2_1">3.2.1. Tensión de bobinado. </a></li>
+              <li><a href="#capitulo_3_2_2">3.2.2. Gradiente de ángulo entre pasadas. </a></li>
+              <li><a href="#capitulo_3_2_3">3.2.3. Tiempo de bobinado. </a></li>
+              <li><a href="#capitulo_3_2_4">3.2.4. Grosor de las capas. </a></li>
+              <li><a href="#capitulo_3_2_5">3.2.5. Temperatura de la batea. </a></li>
+            </ul>
+          </li>
+          <li><a class="desplegable" href="#capitulo_3_3">3.3. Preparación de las muestras. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_3_3_1">3.3.1. Muestras para el análisis micrográfico. </a></li>
+              <li><a href="#capitulo_3_3_2">3.3.2. Muestras para medir las DR. </a></li>
+              <li><a href="#capitulo_3_3_3">3.3.3. Muestras para la medición de la Resistencia. </a></li>
+            </ul>
+          </li>
+          <li><a class="desplegable" href="#capitulo_3_4">3.4. Obtención de las Respuestas del DOE. </a>
+            <ul class="sublista">
+              <li><a href="#capitulo_3_4_1">3.4.1. Fracción en Volumen de las Fibras, Resina y Poros. </a></li>
+              <li><a href="#capitulo_3_4_2">3.4.2. Evaluación de las DR mediante el Método del Corte. </a></li>
+              <li><a href="#capitulo_3_4_3">3.4.3. Resistencia aparente de un aro de los tubos. </a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="desplegable_capitulo_4" class="hidden">
+        <ul class="sublista">
+          <li><a class="sublista_1" href="#capitulo_4_1">4.1. Fracción en volumen de fibra, resina y poros de las micrografías. </a></li>
+          <li><a class="sublista_1" href="#capitulo_4_2">4.2. Constantes Ingenieriles de cada Tubo. </a></li>
+          <li><a class="sublista_1" href="#capitulo_4_3">4.3. Deformaciones residuales. </a></li>
+          <li><a class="sublista_1" href="#capitulo_4_4">4.4. TR calculadas a partir de ecuaciones de elasticidad.</a></li>
+          <li><a class="sublista_1" href="#capitulo_4_5">4.5 DR predichas mediante la TCL. </a></li>
+          <li><a class="sublista_1" href="#capitulo_4_6">4.6. TR predichas según el modelo de elementos finitosplanteado. </a></li>
+          <li><a class="sublista_1" href="#capitulo_4_7">4.7. Carreras máximas y Tensiones máximas según el estándarASTM D 2290. </a></li>
+        </ul>
+      </section>
+      <section id="desplegable_capitulo_5" class="hidden">
+        <ul class="sublista">
+          <li><a class="sublista_1" href="#capitulo_5_1">5.1. Fracción en volumen de Fibra. </a></li>
+          <li><a class="sublista_1" href="#capitulo_5_2">5.2. Fracción en volumen de Poros. </a></li>
+          <li><a class="sublista_1" href="#capitulo_5_3">5.3. Resistencia aparente alcanzada en el ensayo ASTM D 2290.
+            </a></li>
+          <li><a class="sublista_1" href="#capitulo_5_4">5.4. Carrera Máxima alcanzada en el ensayo ASTM D 2290. </a>
+          </li>
+          <li><a class="sublista_1" href="#capitulo_5_5">5.5. Deformaciones Residuales (DR). </a></li>
+          <li><a class="sublista_1" href="#capitulo_5_6">5.6. Tensiones Residuales. </a></li>
+        </ul>
+      </section>
+      <section id="desplegable_anexo_5" class="hidden">
+        <ul class="sublista">
+          <li><a class="sublista_1" href="#anexo_5_1">A.5.1 Micrografías pertenecientes a la Corrida 1. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_2">A.5.2 Micrografías pertenecientes a la Corrida 2. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_7A">A.5.3 Micrografías pertenecientes a la Corrida 7A. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_7B">A.5.4 Micrografías pertenecientes a la Corrida 7B. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_7C">A.5.5 Micrografías pertenecientes a la Corrida 7C. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_8">A.5.6 Micrografías pertenecientes a la Corrida 8. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_11">A.5.7 Micrografías pertenecientes a la Corrida 11. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_12">A.5.8 Micrografías pertenecientes a la Corrida 12. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_13">A.5.9 Micrografías pertenecientes a la Corrida 13. </a></li>
+          <li><a class="sublista_1" href="#anexo_5_14">A.5.10 Micrografías pertenecientes a la Corrida 14. </a></li>
+        </ul>
+      </section>
+    </article>
+  </aside>
+
+  <button id="hamburger-btn" type="button" aria-label="Menu">
+    <span id="hamburger-icon">≡</span>
+    <span id="close-icon" class="hidden">✕</span>
+  </button>
+  <script>
+    mostrar_ocultar_menu('hamburger-btn', 'hamburger-icon', 'close-icon', 'indice_completo', 'true');
+    mostrar_ocultar_menu('cap_1_btn', 'cap_1_hamburger_icon', 'cap_1_close_icon', 'desplegable_capitulo_1', 'false');
+    mostrar_ocultar_menu('cap_2_btn', 'cap_2_hamburger_icon', 'cap_2_close_icon', 'desplegable_capitulo_2', 'false');
+    mostrar_ocultar_menu('cap_3_btn', 'cap_3_hamburger_icon', 'cap_3_close_icon', 'desplegable_capitulo_3', 'false');
+    mostrar_ocultar_menu('cap_4_btn', 'cap_4_hamburger_icon', 'cap_4_close_icon', 'desplegable_capitulo_4', 'false');
+    mostrar_ocultar_menu('cap_5_btn', 'cap_5_hamburger_icon', 'cap_5_close_icon', 'desplegable_capitulo_5', 'false');
+    mostrar_ocultar_menu('anexo_5_btn', 'anexo_5_hamburger_icon', 'anexo_5_close_icon', 'desplegable_anexo_5', 'false');
+
+
+    function mostrar_ocultar_menu(id_boton, id_icono_abrir, id_icono_cerrar, id_lista_desplegable, interactivo){
+      const hamburgerButton = document.getElementById(id_boton);
+      const hamburgerIcon = document.getElementById(id_icono_abrir);
+      const closeIcon = document.getElementById(id_icono_cerrar);
+      const indice_completo = document.getElementById(id_lista_desplegable);
+
+      hamburgerButton.addEventListener('click', function () {
+      // Alterna la visibilidad de los iconos
+      hamburgerIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+      // Muestra u oculta el aside
+      indice_completo.classList.toggle('hidden');
+        // Controlar la interactividad de los botones
+
+        const desactivar_botones = ['cap_1_btn', 'cap_2_btn', 'cap_3_btn','cap_4_btn', 'cap_5_btn', 'anexo_5_btn'];
+        if (interactivo === 'false') {
+          hamburgerButton.style.pointerEvents = 'auto';
+          desactivar_botones.forEach(buttonId => {
+            button = document.getElementById(buttonId);
+            if (button !== hamburgerButton) {
+              button.style.pointerEvents= 'none';
+            }
+          });
+        } else {
+        desactivar_botones.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          button.style.pointerEvents= 'auto';
+        });
+      }
+      const mostrar_icono = ['cap_1_hamburger_icon', 'cap_2_hamburger_icon', 'cap_3_hamburger_icon','cap_4_hamburger_icon', 'cap_5_hamburger_icon', 'anexo_5_hamburger_icon'];
+        const ocultar_icono = ['cap_1_close_icon', 'cap_2_close_icon', 'cap_3_close_icon','cap_4_close_icon', 'cap_5_close_icon', 'anexo_5_close_icon'];
+        const ocultar_menues = ['desplegable_capitulo_1', 'desplegable_capitulo_2', 'desplegable_capitulo_3', 'desplegable_capitulo_4', 'desplegable_capitulo_5', 'desplegable_anexo_5'];
+        if (interactivo === 'true') {
+          mostrar_icono.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          if (button.classList.contains('hidden')){button.classList.toggle('hidden');}
+          });
+          ocultar_icono.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          if (!button.classList.contains('hidden')){button.classList.toggle('hidden');}
+          });
+          ocultar_menues.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          if (!button.classList.contains('hidden')){button.classList.toggle('hidden');}
+          });
+        }
+        if (interactivo === 'false' && closeIcon.classList.contains('hidden')) {
+          desactivar_botones.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          button.style.pointerEvents= 'auto';
+        });
+        }
+    })}
+
+  </script>
+
+
+</body>
+
+</html>
+
+

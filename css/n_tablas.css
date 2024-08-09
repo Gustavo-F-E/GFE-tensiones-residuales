@@ -85,6 +85,37 @@
       overflow: scroll;
       overflow-x: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
       overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+      &:last-child{
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26 {
+    tr {
+      td {
+        width: max-content;
+        overflow: visible;
+        &:last-child{
+          padding-left: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26 {
+    tr {
+      td {
+        width: max-content;
+        overflow: visible;
+        &:last-child{
+          padding-left: 2rem;
+        }
+      }
     }
   }
 }

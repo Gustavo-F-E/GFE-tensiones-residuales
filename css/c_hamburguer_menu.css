@@ -1,124 +1,91 @@
-/*
-* Hamburgers
-* @description Tasty CSS-animated hamburgers
-* @author Jonathan Suh @jonsuh
-* @site https://jonsuh.com/hamburgers
-* @link https://github.com/jonsuh/hamburgers
-*/
-
-.hamburger {
-  padding: 15px 15px;
-  display: inline-block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
+#hamburger-btn {
+  position: fixed;
   margin: 0;
-  overflow: visible;
-}
-.hamburger:hover {
-  opacity: 0.7;
-}
-.hamburger.is-active:hover {
-  opacity: 0.7;
-}
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-  background-color: var(--bg-color-1);
-}
-
-.hamburger-box {
-  width: 40px; /* Puedes ajustar esto según el tamaño deseado */
-  height: 24px;
-  display: flex;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 255, 0.5) !important;
+  color: #222;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display:flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  /*overflow: hidden;*/
-}
-
-.hamburger-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  right:0;
-  transform: scale(0.5); 
-}
-
-@media screen and (min-width: 576px) and (max-width: 991px) {
-  .hamburger-inner {
-    transform: scale(0.8); 
+  &:hover{
+    background-color: rgba(0, 0, 255, 0.9)!important;
+    color: #aaa;
   }
 }
 
-@media screen and (min-width: 992px) {
-  .hamburger-inner {
-    transform: scale(1); 
+.hidden_menu {
+  display: none;
+}
+
+#grid_indice_completo{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#menu{
+  grid-column: 1/2;
+}
+#desplegable_capitulo_1, #desplegable_capitulo_2, #desplegable_capitulo_3, #desplegable_capitulo_4, #desplegable_capitulo_5, #desplegable_anexo_5{
+  grid-column: 2/3;
+}
+
+#indice_completo{
+  background: rgba(0, 0, 0, 0.6);
+  color:#ccc;
+  width: 100vw;
+  height: 100vh;
+  ul{
+    margin-left: 1rem;
+    list-style: none;
   }
 }
 
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-  width: 40px;
-  height: 4px;
-  background-color: var(--bg-color-1);
-  border-radius: 4px;
-  position: absolute;
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-  left: 0;
-  bottom: -10px;
-}
-.hamburger-inner::before,
-.hamburger-inner::after {
-  content: "";
-  display: block;
-}
-.hamburger-inner::before {
-  top: -10px;
-}
-.hamburger-inner::after {
-  bottom: -10px;
+button{
+  background-color: transparent;
+  border: none;
 }
 
-/*
-* Spin
-*/
-.hamburger--spin .hamburger-inner {
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-.hamburger--spin .hamburger-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-}
-.hamburger--spin .hamburger-inner::after {
-  transition: bottom 0.1s 0.25s ease-in,
-    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+.icono_desplegable{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  }
+
+  #hamburger-btn {
+    z-index: 999;
+    bottom: 1rem;
+    right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+  #hamburger-btn {
+    z-index: 999;
+    bottom: 1rem;
+    right: 0.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
 }
 
-.hamburger--spin.is-active .hamburger-inner {
-  transform: rotate(225deg);
-  transition-delay: 0.12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-.hamburger--spin.is-active .hamburger-inner::before {
-  top: 0;
-  opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-}
-.hamburger--spin.is-active .hamburger-inner::after {
-  bottom: 0;
-  transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out,
-    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  @media screen and (min-width: 576px) and (max-width: 991px) {
+  #hamburger-btn{
+    z-index: 999;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
 }
