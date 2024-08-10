@@ -1,0 +1,92 @@
+/*Header, aside y navigation bar*/
+header{
+  /*position: sticky;*/
+  top: 0;
+  background-color: #aaa;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch;
+  align-items: center;
+}
+
+header section{
+  padding: 1rem;
+  width: 90%;
+  background-color: #fff;
+  text-align: center;
+}
+
+header section h1{
+  margin: 0;
+}
+
+.panel-btn{
+  position: fixed;
+  border-radius: 50% !important;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 255, 0.5) !important;
+  z-index: 999;
+  bottom: 1rem;
+  right: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.5rem;
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .panel-btn{
+    z-index: 999;
+    bottom: 1rem;
+    right: 0.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .panel-btn{
+    z-index: 999;
+    bottom: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+}
+
+
+.panel-btn:hover{
+  background-color: rgba(0, 0, 255, 0.9)!important;
+}
+
+.panel{
+  position: fixed;
+  z-index: 998;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(43, 43, 43, 0.8);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  /* Desde arriba*/
+  transform: translate(0,-100%);
+  /* Desde abajo*/
+  transform: translate(0,100%);
+  /* Desde izquierda*/
+  transform: translate(100%,0);
+  /* Desde derecha*/
+  transform: translate(-100%,0);
+}
+
+.panel.is-active{
+  transform: translate(0,0);
+  opacity: 1;
+  visibility:visible;
+}

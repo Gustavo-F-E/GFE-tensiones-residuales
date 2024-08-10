@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Influencia de Parámetros de Fabricación sobre Tensiones Residuales en Tubos de Fibra de Carbono-Epoxi</title>
   <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
@@ -34,7 +35,7 @@
       <h2 id="header-anio">2023</h2><br><br><br><br><br><br>
     </section>
   </header>
-  <aside id="indice_completo" class="hidden_menu">
+  <aside id="indice_completo" class="hidden_menu pepelapapa">
     <article id="grid_indice_completo">
       <nav class="menu">
         <navigation goes here>
@@ -51,7 +52,7 @@
             <span>
               <button id="cap_1_btn" type="button" aria-label="Menu">
                 <span id="cap_1_hamburger_icon" class="icono_desplegable">►</span>
-                <span id="cap_1_close_icon" class="hidden_menu">✕</span>
+                <span id="cap_1_close_icon" class="hidden_menu cruz">✕</span>
               </button>
             </span>
           </li>
@@ -60,7 +61,7 @@
             <span>
               <button id="cap_2_btn" type="button" aria-label="Menu">
                 <span id="cap_2_hamburger_icon" class="icono_desplegable">►</span>
-                <span id="cap_2_close_icon" class="hidden_menu">✕</span>
+                <span id="cap_2_close_icon" class="hidden_menu cruz">✕</span>
               </button>
             </span>
           </li>
@@ -69,7 +70,7 @@
             <span>
               <button id="cap_3_btn" type="button" aria-label="Menu">
                 <span id="cap_3_hamburger_icon" class="icono_desplegable">►</span>
-                <span id="cap_3_close_icon" class="hidden_menu">✕</span>
+                <span id="cap_3_close_icon" class="hidden_menu cruz">✕</span>
               </button>
             </span>
           </li>
@@ -78,7 +79,7 @@
             <span>
               <button id="cap_4_btn" type="button" aria-label="Menu">
                 <span id="cap_4_hamburger_icon" class="icono_desplegable">►</span>
-                <span id="cap_4_close_icon" class="hidden_menu">✕</span>
+                <span id="cap_4_close_icon" class="hidden_menu cruz">✕</span>
               </button>
             </span>
           </li>
@@ -87,7 +88,7 @@
             <span>
               <button id="cap_5_btn" type="button" aria-label="Menu">
                 <span id="cap_5_hamburger_icon" class="icono_desplegable">►</span>
-                <span id="cap_5_close_icon" class="hidden_menu">✕</span>
+                <span id="cap_5_close_icon" class="hidden_menu cruz">✕</span>
               </button>
             </span>
           </li>
@@ -336,7 +337,7 @@
   </main>
   <button id="hamburger-btn" type="button" aria-label="Menu">
     <span id="hamburger-icon">≡</span>
-    <span id="close-icon" class="hidden_menu">✕</span>
+    <span id="close-icon" class="hidden_menu cruz">✕</span>
   </button>
   <button title="Ir arriba" class="scroll-top-btn hidden">&#11014</button>
   <!--https://emojipedia.org/ -->
@@ -344,7 +345,72 @@
   <footer>
     <p>Sitio diseñado por <a href="https://gustavo-f-eichhorn.netlify.app/" target="_blank" rel="noopener noreferrer">Gustavo Francisco Eichhorn</a>. Todos los derechos reservados.</p>
   </footer>
-  <script src="js/indexJS.js" type="module"></script>
+  <script src="js/indexJS.js" type="module" defer></script>
+  <script>
+    mostrar_ocultar_menu('hamburger-btn', 'hamburger-icon', 'close-icon', 'indice_completo', 'true');
+    mostrar_ocultar_menu('cap_1_btn', 'cap_1_hamburger_icon', 'cap_1_close_icon', 'desplegable_capitulo_1', 'false');
+    mostrar_ocultar_menu('cap_2_btn', 'cap_2_hamburger_icon', 'cap_2_close_icon', 'desplegable_capitulo_2', 'false');
+    mostrar_ocultar_menu('cap_3_btn', 'cap_3_hamburger_icon', 'cap_3_close_icon', 'desplegable_capitulo_3', 'false');
+    mostrar_ocultar_menu('cap_4_btn', 'cap_4_hamburger_icon', 'cap_4_close_icon', 'desplegable_capitulo_4', 'false');
+    mostrar_ocultar_menu('cap_5_btn', 'cap_5_hamburger_icon', 'cap_5_close_icon', 'desplegable_capitulo_5', 'false');
+    mostrar_ocultar_menu('anexo_5_btn', 'anexo_5_hamburger_icon', 'anexo_5_close_icon', 'desplegable_anexo_5', 'false');
+
+
+    function mostrar_ocultar_menu(id_boton, id_icono_abrir, id_icono_cerrar, id_lista_desplegable, interactivo){
+      const hamburgerButton = document.getElementById(id_boton);
+      const hamburgerIcon = document.getElementById(id_icono_abrir);
+      const closeIcon = document.getElementById(id_icono_cerrar);
+      const indice_completo = document.getElementById(id_lista_desplegable);
+
+      hamburgerButton.addEventListener('click', function () {
+      // Alterna la visibilidad de los iconos
+      hamburgerIcon.classList.toggle('hidden_menu');
+      closeIcon.classList.toggle('hidden_menu');
+      // Muestra u oculta el aside
+      indice_completo.classList.toggle('hidden_menu');
+        // Controlar la interactividad de los botones
+
+        const desactivar_botones = ['cap_1_btn', 'cap_2_btn', 'cap_3_btn','cap_4_btn', 'cap_5_btn', 'anexo_5_btn'];
+        if (interactivo === 'false') {
+          hamburgerButton.style.pointerEvents = 'auto';
+          desactivar_botones.forEach(buttonId => {
+            button = document.getElementById(buttonId);
+            if (button !== hamburgerButton) {
+              button.style.pointerEvents= 'none';
+            }
+          });
+        } else {
+        desactivar_botones.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          button.style.pointerEvents= 'auto';
+        });
+      }
+      const mostrar_icono = ['cap_1_hamburger_icon', 'cap_2_hamburger_icon', 'cap_3_hamburger_icon','cap_4_hamburger_icon', 'cap_5_hamburger_icon', 'anexo_5_hamburger_icon'];
+        const ocultar_icono = ['cap_1_close_icon', 'cap_2_close_icon', 'cap_3_close_icon','cap_4_close_icon', 'cap_5_close_icon', 'anexo_5_close_icon'];
+        const ocultar_menues = ['desplegable_capitulo_1', 'desplegable_capitulo_2', 'desplegable_capitulo_3', 'desplegable_capitulo_4', 'desplegable_capitulo_5', 'desplegable_anexo_5'];
+        if (interactivo === 'true') {
+          mostrar_icono.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          if (button.classList.contains('hidden_menu')){button.classList.toggle('hidden_menu');}
+          });
+          ocultar_icono.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          if (!button.classList.contains('hidden_menu')){button.classList.toggle('hidden_menu');}
+          });
+          ocultar_menues.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          if (!button.classList.contains('hidden_menu')){button.classList.toggle('hidden_menu');}
+          });
+        }
+        if (interactivo === 'false' && closeIcon.classList.contains('hidden_menu')) {
+          desactivar_botones.forEach(buttonId => {
+          button = document.getElementById(buttonId);
+          button.style.pointerEvents= 'auto';
+        });
+        }
+    })}
+
+  </script>
 </body>
 
 </html>
