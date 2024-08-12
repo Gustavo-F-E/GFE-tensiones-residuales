@@ -160,6 +160,36 @@ main section {
   font-size: 0.8rem;
 }
 
+.notas_al_pie {
+  font-size: 0.6rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  padding: 0.5rem 0rem !important;
+  p{
+    width: 80%;
+    text-indent: 0rem !important;
+    margin: 0;
+    padding: 0.2rem 0rem !important;
+  }
+  ul{
+    width: 75%;
+    padding: 0.2rem 0rem !important;
+    list-style: disc;
+  }
+}
+
+.title_notas_al_pie {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.id_notas_al_pie {
+  color: blue;
+}
+
 .nota {
   font-size: 0.6rem;
 }

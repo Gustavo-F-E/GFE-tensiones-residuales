@@ -1,192 +1,1151 @@
 <h2>Capítulo 3: Metodología.</h2>
+<p>La metodología seguida en el presente trabajo es a partir de un diseño estadístico de experimentos (o <a data-dark
+    class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>, del inglés <span
+    style="font-style: italic;">“Design of experiments”</span>). En este capítulo se detalla el mismo y cómo a partir de
+  este se fabricaron 8 tubos de materiales compuestos. Esto se realizó a partir del sistema material compuesto definido
+  en el capítulo anterior (fibra de carbono-epoxi) y el proceso de EF. Del <a data-dark class="abreviatura"
+    title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> definido surgen los factores o parámetros
+  del proceso a variar por el experimentador: Tensión de fibra, Gradiente de ángulo entre capas sucesivas, Tiempo de
+  bobinado, Grosor de las capas y Temperatura de la batea. Se estudiaron las siguientes respuestas a partir del <a
+    data-dark class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> previamente
+  definido: porcentaje en volumen de la fibra y poros, las <a data-dark class="abreviatura"
+    title="Deformaciones Residuales." href="DR">DR</a> y la Resistencia aparente de los tubos, según la norma estándar
+  <a class='enlaces_referencias'
+    href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+    title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+    rel='noopener noreferrer'>ASTM D 2290</a>. A partir de estas respuestas, se calcularon el porcentaje en volumen de
+  resina, las constantes Ingenieriles, las <a data-dark class="abreviatura" title="Tensiones residuales."
+    href="TR">TR</a>, las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> calculadas
+  mediante un modelo teórico propuesto y las <a data-dark class="abreviatura" title="Tensiones residuales."
+    href="TR">TR</a> mediante un modelo de elementos finitos.</p>
 <article>
   <h3 id="capitulo_3_1">3.1. Definición del DOE utilizado.</h3>
+  <p>Para el trabajo de investigación actual, se requiere llevar a cabo una investigación de diseño experimental de los
+    FACTORES de fabricación y diseño que afectan la calidad, resistencia y rigidez de los recipientes fabricados con
+    materiales compuestos, y sobre todo medir el impacto de estos factores en el valor de las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a> obtenidas. El <a data-dark class="abreviatura"
+      title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> determinado a continuación surge de la
+    aplicación del método según la siguiente bibliografía: "Análisis y diseño de experimentos" de Humberto Gutiérrez
+    Pulido (<a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1fSjlHfGpPy1-sDzDgYFJRrnI-T45KHdL/view?usp=sharing' target="_blank"
+      title='-Humberto Gutiérrez Pulido (2008). "Análisis y diseño experimentos". México DC, McGrawHill.'
+      rel='noopener noreferrer'>H. G. Pulido, 2008</a>) y "Diseño de experimentos: estrategias y análisis en ciencias e
+    ingenierías" de Jorge Dominguez Dominguez (<a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1PmczwqGlBMNU0K69Jauyqn5WJt2fSZY8/view?usp=sharing' target="_blank"
+      title='-Jorge Domínguez Domínguez (2010). "Diseño de experimentos: estrategias y análisis en ciencias e ingenierías". México DC, Alfaomega.'
+      rel='noopener noreferrer'>Jorge Dominguez Dominguez, 2010</a>).</p>
   <h4 id="capitulo_3_1_1">3.1.1 Selección de los Factores del DOE.</h4>
+  <p>En primer lugar, se deben determinar los factores de los experimentos (o tratamientos o corridas según la jerga del
+    <a data-dark class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>) a
+    estudiar. Los factores de fabricación para un tubo estructural mediante <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a> son muchos y de origen muy diverso. Según
+    el trabajo de Cohen, pueden llegar a ser 50 factores (<a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1dEQFLVp_0CeCbW5CoxNRv4VxSIfmNFZV/view?usp=drive_link' target="_blank"
+      title='-D. Cohen (1997). "Influence of filament Winding Parameters on Composite Vessel Quality and Strength".Composites Part A-applied Science and Manufacturing, 28, 1035-1047.'
+      rel='noopener noreferrer'>Cohen, 1997</a>). Se mencionan a continuación algunos de los factores que el autor
+    considera que influyen en el presente estudio, reflejados en la <a href="#tabla_3_1"
+      title="Tabla 3.1: Factores más importantes del proceso de EF." class="enlaces_tablas">Tabla 3.1</a>. Los factores
+    resaltados en cursiva son los FACTORES de estudio para el diseño de experimentos (<a data-dark class="abreviatura"
+      title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>) elegidos por el autor del presente
+    trabajo. En rojo, se encuentra un factor más que será propuesto para investigar a futuro, que es la temperatura del
+    mandril. Al momento de realizar la investigación, no se contaba con el tiempo, el equipamiento y la instrumentación
+    para estudiar ese factor. </p>
   <p id="tabla_3_1" class="descripcion_tabla">Tabla 3.1: Factores más importantes del proceso de EF.</p>
   <table>
     <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
+      <tr class="borde-top-tabla"><td style="font-weight: bold;">Factores Aleatorios</td></tr>
+      <tr><td>Temperatura Ambiente</td></tr>
+      <tr><td>Humedad Relativa</td></tr>
+      <tr><td>Variabilidad en la resistencia de las fibras</td></tr>
+      <tr><td>Daño de la fibra durante el enrollamiento</td></tr>
+      <tr><td></td></tr>
+      <tr><td style="font-weight: bold;">Factores propios del compuesto</td></tr>
+      <tr><td>Tipo y calidad de la fibra</td></tr>
+      <tr><td>Tipo y calidad del sistema resina-endurecedor</td></tr>
+      <tr><td></td></tr>
+      <tr class="borde-top-tabla"><td style="font-weight: bold;">Factores Controlables por el operador</td></tr>
+      <tr><td>Diámetro del Tubo (101,6 mm)</td></tr>
+      <tr><td>Longitud a laminar (mayor a 300 mm)</td></tr>
+      <tr><td>Preparación de la Resina (Véase Anexo 2)</td></tr>
+      <tr><td>Impregnación de la fibra</td></tr>
+      <tr><td>Contenido de resina (20 mm en la batea)</td></tr>
+      <tr><td>Tiempo de enrollamiento entre pasadas</td></tr>
+      <tr><td>Calibración del Dr. Blade (0,2 mm de luz)</td></tr>
+      <tr><td>Calibración de la posición 0º del ojal</td></tr>
+      <tr><td>Presencia o no de pines (Sí)</td></tr>
+      <tr><td>Tipos de pines (Véase Anexo 3)</td></tr>
+      <tr><td>Distancia entre pines (300 mm)</td></tr>
+      <tr><td>Distancia del Devanador a la máquina (50 mm)</td></tr>
+      <tr><td>Ciclo de curado (Véase Anexo 4)</td></tr>
+      <tr><td>Tipo y calidad de la Mylar</td></tr>
+      <tr><td>Tensión del Mylar</td></tr>
+      <tr><td>Sistema de Extracción de los tubos (extractor de poleas)</td></tr>
+      <tr><td style="color: red; font-weight: bold;">Temperatura del Mandril</td></tr>
+      <tr><td></td></tr>
+      <tr class="borde-top-tabla"><td style="font-weight: bold;">Factores Controlables por el operador & DOE</td></tr>
+      <tr><td style="font-style: italic;">Tensión durante el enrollamiento</td></tr>
+      <tr><td style="font-style: italic;">Gradiente angular entre pasadas (Secuencia de apilamiento)</td></tr>
+      <tr><td style="font-style: italic;">Tiempo total del proceso de enrollamiento</td></tr>
+      <tr><td style="font-style: italic;">Grosor de las capas </td></tr>
+      <tr class="borde-bottom-tabla"><td style="font-style: italic;">Temperatura de la Batea</td></tr>
   </table>
+  <p>Para elegir estos factores, el autor tuvo en cuenta aquellas que puede controlar adecuadamente mediante el proceso,
+    son de interés propio y del Departamento de Diseño (consideradas de interés para futuros proyectos en CNEA) y se
+    presumen a priori que pueden influir en las <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a>.</p>
+  <p>Los materiales y la geometría del mandril son factores que dependen del sistema que se quiere estudiar en el
+    Departamento de Diseño, en base a futuros proyectos. Los factores aleatorios, como su nombre lo indica, no se pueden
+    controlar adecuadamente en la experiencia por el investigador. Más allá de que se realizaron las laminaciones en
+    ambientes controlados mediante aires acondicionados, no se pudo asegurar adecuadamente la invariabilidad de las
+    condiciones medioambientales en cada experiencia. El daño que se produce en las fibras durante el proceso y su
+    variabilidad de resistencia tampoco puede controlarlas adecuadamente el experimentador. </p>
+  <p>Otros factores detallados en la <a href="#tabla_3_1" title="Tabla 3.1: Factores más importantes del proceso de EF."
+      class="enlaces_tablas">Tabla 3.1</a>, dependen de las calibraciones previas que se realizan en la máquina, en las
+    que el investigador tiene incidencia directa. Se presume que estos procedimientos de calibración y puesta a punto de
+    la máquina, preparaciones previas o el ciclo de curado de las piezas se realizaron de la misma manera cada vez, y
+    por tanto no influyeron en la variabilidad de las respuestas.</p>
   <h4 id="capitulo_3_1_2">3.1.2 Niveles del DOE elegido.</h4>
+  <p>En los <a data-dark class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>,
+    la técnica estadística central en el análisis de los experimentos es el llamado análisis de varianza o <a data-dark
+      class="abreviatura" title="Análisis de Varianzas (Analysis of variance)." href="ANOVA">ANOVA</a> (acrónimo en
+    inglés). Esto quiere decir que tenemos que estudiar como las respuestas varían cuando manipulamos los parámetros o
+    factores. Los valores en los cuales manipulamos los factores se llaman Niveles. En este estudio, el Nivel de cada
+    uno de los factores es de 2. Esto quiere decir que se adoptan dos valores, lo más extremos posibles, para estudiar
+    la varianza a partir del <a data-dark class="abreviatura" title="Análisis de Varianzas (Analysis of variance)."
+      href="ANOVA">ANOVA</a> y determinar así si un factor tiene incidencia en las respuestas elegidas. </p>
+
+  <p>Los parámetros'' de fabricación a variar en el <a data-dark class="abreviatura"
+      title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> son las siguientes: </p>
+
+  <p>
+  <ul>
+    <li>- Tensión de bobinado: Alta o baja (<span style="font-weight: bold; color: red;">+1</span> y <span style="font-weight: bold; color: blue;">-1</span>).</li>
+    <li>-Gradiente de ángulo entre pasadas: Grande o chico (<span style="font-weight: bold; color: red;">+1</span> y <span style="font-weight: bold; color: blue;">-1</span>).</li>
+    <li>-Tiempo de bobinado: Largo o corto (<span style="font-weight: bold; color: red;">+1</span> y <span style="font-weight: bold; color: blue;">-1</span>).</li>
+    <li>-Grosor de las capas: Grueso o Fino (<span style="font-weight: bold; color: red;">+1</span> y <span style="font-weight: bold; color: blue;">-1</span>).</li>
+    <li>-Temperatura de la batea: 40ºC o ambiente (<span style="font-weight: bold; color: red;">+1</span> y <span style="font-weight: bold; color: blue;">-1</span>). </li>
+  </ul>
+  </p>
+  <p>En la terminología relativa a <a data-dark class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> es conveniente adoptar una nomenclatura muy común en la bibliografía. Se adopta como <span style="font-weight: bold; color: red;">+1</span> cuando el factor ocurre o tiene su valor máximo, y <span style="font-weight: bold; color: blue;">-1</span> cuando no ocurre o tiene su valor mínimo.</p>
   <h4 id="capitulo_3_1_3">3.1.3 Fraccionamiento del número de experimentos y obtención del DOE final.</h4>
+  <p>Si se tienen en cuenta todos los posibles experimentos a realizar, contabilizando las combinaciones entre dos
+    niveles de los factores del proceso de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>, se tienen que realizar una importante
+    cantidad de experimentos. Se contabilizan en total 25=32 experimentos. Por cuestiones de tiempo y presupuesto, se
+    hace imperiosa la necesidad de reducir la cantidad de experimentos necesarios. De todas maneras, aunque se reduzca
+    el número de experimentos, el <a data-dark class="abreviatura"
+      title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> ofrece herramientas que nos permiten
+    obtener conclusiones provechosas y estadísticamente fundamentadas. La reducción del número de experimentos se llama
+    "Fraccionamiento", y en nuestro caso se dice que es de un cuarto (1/4). El <a data-dark class="abreviatura"
+      title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> así definido se define como de
+    Factorial 25 Fraccionado a ¼ (un cuarto), con lo que en este caso serían 8 corridas, con Resolución 3. La <a
+      href="#tabla_3_2" title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores."
+      class="enlaces_tablas">Tabla 3.2</a> resume la información relativa a los factores, los niveles, las corridas y
+    los patrones propuestos. </p>
   <h4 id="capitulo_3_1_4">3.1.4 Respuestas a estudiar del DOE.</h4>
+  <p>Las respuestas que se consideran de interés de estudio en los experimentos son las siguientes: </p>
+
+  <p>
+  <ul>
+    <li>-La fracción en volumen de las fibras.</li>
+    <li>-La fracción en volumen de los <span class="llamadas" title="La fracción en volumen de la resina no es un factor o variable independiente, ya que el método para determinarla implica calcularla a partir de la fracción en volumen de fibra y de los poros (Véase Capítulo 3.4.1).">poros<sup>1 </sup></span>.</li>
+    <li>-<a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> mediante el método del
+      corte.</li>
+    <li>-Resistencia aparente mediante el estándar <a class='enlaces_referencias'
+        href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+        title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+        rel='noopener noreferrer'>ASTM D 2290</a>.</li>
+  </ul>
+  </p>
+  <p>Existen algunos resultados adicionales a estudiar a partir de las respuestas anteriormente calculadas. A partir del
+    porcentaje de fibra, resina y poros se calculan las constantes Ingenieriles. A partir de las constantes ingenieriles
+    y las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> se calculan las <a
+      data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a>. Las <a data-dark class="abreviatura"
+      title="Deformaciones Residuales." href="DR">DR</a> obtenidas en los experimentos se contrastan con <a data-dark
+      class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> calculadas mediante un modelo teórico
+    propuesto. Las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> a su vez se comparan
+    con un modelo obtenido a partir de un análisis mediante elementos finitos. </p>
   <p id="tabla_3_2" class="descripcion_tabla">Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores.
   </p>
   <table>
     <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
+        <tr class="borde-top-tabla borde-bottom-tabla">
+            <th>N°de Corrida</th>
+            <th>Tensión</th>
+            <th>Tiempo</th>
+            <th>Diferencia de Ángulo</th>
+            <th>Grosor</th>
+            <th>Temperatura</th>
+            <th>Patrón</th>
+        </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Contenido 1</td>
+        <tr>
+            <td>1</td>
+            <td><span style="font-weight: bold; color: blue;">-1</span></td>
+            <td><span style="font-weight: bold; color: blue;">-1</span></td>
+            <td><span style="font-weight: bold; color: blue;">-1</span></td>
+            <td><span style="font-weight: bold; color: blue;">-1</span></td>
+            <td><span style="font-weight: bold; color: blue;">-1</span></td>
+            <td>[±89 ±45 ±5 ±45 ±89]<sub>T</sub> </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td>[±89 ±45 ±5 ±45 ±89]<sub>T</sub></td>
       </tr>
       <tr>
-        <td>Contenido 2</td>
+          <td>7</td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td>[±45]<sub>5</sub></td>
       </tr>
       <tr>
-        <td>Contenido 3</td>
+          <td>8</td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td>[±45]<sub>5</sub></td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td>[±89<sub>2</sub> ±45<sub>2</sub> ±5]<sub>S</sub></td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td>[±89<sub>2</sub> ±45<sub>2</sub> ±5]<sub>S</sub></td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td>[±89<sub>2</sub> ±5<sub>2</sub> ±89]<sub>S</sub></td>
+      </tr>
+      <tr class="borde-bottom-tabla">
+          <td>14</td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: red;">+1</span></td>
+          <td><span style="font-weight: bold; color: blue;">-1</span></td>
+          <td>[±89<sub>2</sub> ±5<sub>2</sub> ±89]<sub>S</sub></td>
       </tr>
     </tbody>
-  </table>
+</table>
 </article>
 <article>
   <h3 id="capitulo_3_2">3.2. Control de los factores del proceso de EF.</h3>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_1.png" data-src-medium="./assets/images/media_calidad/figura_3_1.png" data-src-high="./assets/images/alta_calidad/figura_3_1.png" alt="Figura 3.1: Máquina de EF utilizada en el CAC.">
+  <p>
+    El proceso de <a data-dark class="abreviatura" title="Enrollamiento Filamentario (Filament Winding)."
+      href="EF">EF</a> consiste básicamente en enrollar un filamento de fibra en un mandril. Dicho filamento,
+    previamente pasa sobre una batea, en la cuál se impregna de resina. Este proceso de enrollamiento sigue un
+    determinado patrón que ejecuta una máquina con control numérico. En la <a href="#figura_3_1"
+      title="Figura 3.1:Máquina de EF utilizada en el CAC." class="enlaces_figuras">Figura 3.1</a> se ven las diferentes
+    partes de la máquina de <a data-dark class="abreviatura" title="Enrollamiento Filamentario (Filament Winding)."
+      href="EF">EF</a> utilizada para realizar los experimentos del presente trabajo: </p>
+
+  <p>-Parte A: Devanador. Contiene los rollos de fibra que se van a utilizar en el proceso. En este caso de <a data-dark
+      class="abreviatura" title="Fibra de Carbono." href="FC">FC</a>. El devanador tiene la capacidad de tener 4 rollos
+    de filamento al mismo tiempo. Debe estar ubicado a 5 metros de la Guía de Rovings, sino se corre el riesgo de que la
+    fibra se resbale sobre el mandril y genere un cilindro con protuberancias. </p>
+
+  <p>-Parte B: Guía de Rovings. La Guía de Rovings, tiene 4 canales en donde se pueden desviar los hilos que vienen del
+    devanador y redireccionarlos correctamente en su paso por la batea de impregnación. </p>
+
+  <p>-Parte C: Batea de impregnación. Posee 4 rodillos, en los cuales se van impregnando los filamentos de fibra con la
+    resina contenida en él. Posee un controlador de temperatura y se regula la cantidad de resina con la pieza
+    denominada "Doctor Blade" y un cilindro regulable. </p>
+
+  <p>- Parte D: Mandril. El mandril es un cilindro de aluminio sobre el cuál se va enrollando la fibra impregnada con
+    resina y está hermanado a la máquina de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a> mediante una varilla roscada y tornillos
+    en sus tapas. La varilla roscada va girando, trasladando el movimiento giratorio mediante los tornillos en las
+    tapas, mientras que el cabezal de la máquina va haciendo los movimientos pertinentes para generar los diversos
+    patrones. </p>
+
+  <p>-Parte E: esta parte posee el Mylar. El mismo es un recubrimiento que se coloca al tubo para escurrir el exceso de
+    resina del mismo, previo a su paso por el autoclave para el proceso de curado. </p>
+
+  <p>-Parte F: es el armazón de la estructura de la máquina de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>. </p>
+
+  <p>-Parte G: el gabinete eléctrico, donde se conecta la máquina a la red y a la PC. </p>
+
+  <p>-Parte H: la PC en donde el software Mach3 hace correr las instrucciones del Código G para realizar los movimientos
+    precisos que generan los patrones de la máquina de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>. En este caso, la máquina cuenta con 4
+    ejes para controlar los movimientos (aunque para la fabricación de tubos de presión el eje Z se regula pero se
+    mantiene estático en el proceso). </p>
+  <p>Dados los factores (también llamados parámetros o variables) que se desean variar en los 8 tratamientos referidos
+    anteriormente, se detalla a continuación cómo se varían cada uno de ellos entre dos niveles lo más extremos
+    posibles. Para esto existen regulaciones propias de la máquina de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a> o se deben modificar los patrones que
+    sirven para configurar el código G que ejecuta la máquina para realizar el tubo. </p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_1.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_1.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_1.png" alt="Figura 3.1: Máquina de EF utilizada en el CAC.">
   <p class="descripcion_figura">Figura 3.1:Máquina de EF utilizada en el CAC.</p>
+
   <h4 id="capitulo_3_2_1">3.2.1 Tensión de bobinado.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_2.png" data-src-medium="./assets/images/media_calidad/figura_3_2.png" data-src-high="./assets/images/alta_calidad/figura_3_2.png" alt="Figura 3.2: Detalle de los Frenos de Cinta del Devanador de la Máquina de EF.">
+  <p>El nivel de tensión de cada fibra se muestra en la <a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>.
+    La tensión se regula mediante un dispositivo tensador, que consiste básicamente en un <span class="llamadas" title="Los frenos de cinta son un tipo de freno muy sencillo. Para más información, visitar https://es.wikipedia.org/wiki/Freno_de_cinta.">Freno de Cinta<sup>2 </sup></span>. Está ubicado
+    en la parte inferior de cada bobina, para mantener a las fibras con una tensión adecuada para el proceso. En la <a
+      href="#figura_3_2" title="Figura 3.2:Detalle de los Frenos de Cinta del Devanador de la Máquina de EF."
+      class="enlaces_figuras">Figura 3.2</a> se muestra cómo se regula: En la izquierda (Recuadro A) se encuentra una
+    bobina completamente suelta y sin regulación. A la derecha (Recuadro B), se observa a la bobina regulada mediante
+    tornillos, ubicada en la parte inferior. En el recuadro amarillo de la misma figura se encuentra resaltado el
+    tornillo para calibrar la tensión. </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_2.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_2.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_2.png"
+    alt="Figura 3.2: Detalle de los Frenos de Cinta del Devanador de la Máquina de EF.">
   <p class="descripcion_figura">Figura 3.2:Detalle de los Frenos de Cinta del Devanador de la Máquina de EF.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_3.png" data-src-medium="./assets/images/media_calidad/figura_3_3.png" data-src-high="./assets/images/alta_calidad/figura_3_3.png" alt="Figura 3.3: Procedimiento de medición de la Tensión.">
+  <p>El nivel inferior de tensión de la bobina de fibra, teniendo en cuenta el <a data-dark class="abreviatura"
+      title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a>, es la bobina a la cual se le sacaba el
+    freno de cinta. El nivel superior de tensión, se estableció como aquel nivel máximo de tensión en que la máquina
+    funciona forzada pero sin producir roturas de fibra durante el proceso. Para asegurar la repetitividad en los
+    niveles de tensión entre experimento y experimento, fue necesario medir los niveles de tensiones generados. En la <a
+      href="#figura_3_3" title="Figura 3.3:Procedimiento de medición de la Tensión." class="enlaces_figuras">Figura
+      3.3</a> se muestra cómo se procedía a medir la Tensión: </p>
+
+  <p>
+  <ol>
+    <li>1- Se coloca una galga para medir peso mediante un nudo en la fibra.</li>
+    <li>2-La persona que realiza la medición se aleja en dirección contraria al devanador (en la dirección de la flecha
+      azul).</li>
+    <li>3-Con esa acción, el brazo inferior va pivotando hasta que llega a la parte superior (realiza el movimiento que
+      se indica con la flecha roja).</li>
+    <li>4-El movimiento se detiene cuando la fibra (indicada con la línea punteada amarilla), está bien tirante.</li>
+    <li>5-En ese momento se hace la lectura del instrumento.</li>
+  </ol>
+  </p>
+  <p>En la/s bobina/s que no tenía/n tensión, el resultado de la medición daba ≈0,065 kg. En las bobinas reguladas a
+    alta tensión, el resultado de la medida era de ≈1,300 kg, lo cuál en la práctica se veía que la máquina trabajaba
+    bastante exigida, y además después costaba mucho más retirar el tubo del mandril. En la <a href="#figura_3_4"
+      title="Figura 3.4:Lectura de la Tensión de la fibra." class="enlaces_figuras">Figura 3.4</a> se muestran los
+    resultados de esas mediciones. En la izquierda está la medición de baja tensión y en la derecha la de alta tensión.
+  </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_3.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_3.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_3.png"
+    alt="Figura 3.3: Procedimiento de medición de la Tensión.">
   <p class="descripcion_figura">Figura 3.3:Procedimiento de medición de la Tensión.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_4.png" data-src-medium="./assets/images/media_calidad/figura_3_4.png" data-src-high="./assets/images/alta_calidad/figura_3_4.png" alt="Figura 3.4: Lectura de la Tensión de la fibra.">
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_4.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_4.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_4.png" alt="Figura 3.4: Lectura de la Tensión de la fibra.">
   <p class="descripcion_figura">Figura 3.4:Lectura de la Tensión de la fibra.</p>
   <h4 id="capitulo_3_2_2">3.2.2 Gradiente de ángulo entre pasadas.</h4>
+  <p>La regulación del gradiente de ángulo entre capas de pasadas sucesivas, se realizó mediante la configuración del
+    patrón a seguir por la máquina de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>. Las capas sucesivas con un nivel bajo
+    respecto del gradiente, eran aquellas en las que el mismo variaba suavemente en un ángulo de aproximadamente 45º
+    (Corridas 1, 2, 11 y12). El nivel más alto de gradiente angular ocurre cuando la diferencia angular entre capas
+    sucesivas es cercana a los 90º (Corridas 7, 8, 13, 14). Los patrones citados figuran en la <a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>.
+  </p>
+
+  <p>Los ángulos extremos adoptados en este trabajo son los de 5º y 89º, mientras que el ángulo intermedio es de 45º. El
+    ángulo de 0º, sería un ángulo en que la fibra recorre el mandril en forma perfectamente paralela al eje del
+    cilindro, mientras que uno de 90º sería un ángulo en que la fibra está en un plano perfectamente perpendicular a
+    dicho eje. En <a data-dark class="abreviatura" title="Enrollamiento Filamentario (Filament Winding)."
+      href="EF">EF</a> no es factible hacer un tubo que tenga una capa de ángulo 0º o 90º, ya que no se tendría avance
+    (angular en el primer caso y longitudinal en el segundo) para realizar la operación de fabricación del tubo. El
+    ángulo de 5º trajo muchas dificultades para que produzca un patrón prolijo al autor del trabajo. Es por ello que se
+    recomienda para futuros trabajos configurar la máquina con un patrón de 10º o 15º que son más sencillos de trabajar
+    (además, estos ángulos bajos siempre se deben trabajar con pines). </p>
   <h4 id="capitulo_3_2_3">3.2.3 Tiempo de bobinado.</h4>
+  <p>La regulación del tiempo de bobinado para cada corrida, que figura en la <a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>,
+    también se realiza mediante la configuración del patrón a seguir por la máquina de <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>. En realidad, se configura la velocidad: a
+    más alta velocidad de procesado, menor tiempo y viceversa. El nivel más bajo (tiempo más alto), es función del
+    diámetro del tubo y se define configurando el gasto de fibra [mm/min] con el valor de 10.000 mm/min. El tiempo
+    promedio de laminación de un tubo realizado a esta velocidad era de 1 hora y 30 minutos (obviando la preparación y
+    el curado). El nivel más alto (tiempos largos), se definió como aquel en que se tardaba aproximadamente 3 horas en
+    fabricar un tubo. Se obtuvo estableciendo el gasto de fibra en 5.000 mm/min. Cabe aclarar que para las capas finas
+    se utilizaba 1 carretel de hilo, mientras que para las gruesas, se utilizaban 2 carreteles de hilo, debido a que si
+    no se tendrían 4 escalas de tiempo diferentes. De esta manera, los tiempos de fabricación se mantenían
+    aproximadamente iguales a la misma velocidad, aunque se fabricara un tubo grueso o un tubo fino. </p>
   <h4 id="capitulo_3_2_4">3.2.4 Grosor de las capas.</h4>
+  <p>La regulación del grosor de las capas con el mismo ángulo también se realiza mediante la configuración del patrón a
+    seguir por la máquina de <a data-dark class="abreviatura" title="Enrollamiento Filamentario (Filament Winding)."
+      href="EF">EF</a>. El nivel más bajo son las corridas 1, 2, 7, 8. El nivel más alto son las corridas 11, 12, 13,
+    14. Para consultar los niveles del grosor de cada corrida, véase la <a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>.
+  </p>
   <h4 id="capitulo_3_2_5">3.2.5 Temperatura de la batea.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_5.png" data-src-medium="./assets/images/media_calidad/figura_3_5.png" data-src-high="./assets/images/alta_calidad/figura_3_5.png" alt="Figura 3.5: Distintas partes de la Batea de la Máquina de EF.">
+  <p>La batea de impregnación (<a href="#figura_3_5"
+      title="Figura 3.5:Distintas partes de la Batea de la Máquina de EF." class="enlaces_figuras">Figura 3.5</a>),
+    tiene la importante misión de regular cuanta resina se impregna en el proceso y a qué temperatura. Lo primero lo
+    consigue gracias al dispositivo llamado "Dr. Blade" (Parte A) y a unos cilindros regulables mediante unos tornillos
+    (Parte B). Lo segundo, mediante un controlador de resistencias (las resistencias se alojan en las partes C y D), en
+    el cuál una termocupla (Parte C) sumergida con la resina de la batea va midiendo la temperatura del líquido y un
+    sistema de control (<a href="#figura_3_6" title="Figura 3.6:Sistema de control de temperatura en la batea."
+      class="enlaces_figuras">Figura 3.6</a>) va activando o desactivando las resistencias según se necesite calentar o
+    enfriar el líquido en base a una temperatura preestablecida de control. El nivel más bajo de la temperatura es
+    cuando este sistema de regulación se encuentra inactivo y la temperatura de la resina de la batea es la temperatura
+    ambiente. En su nivel más alto, se configura el sistema de control para que regule la temperatura en 40ºC, dado que
+    es la temperatura de procesamiento recomendada por el proveedor de la resina (<a class='enlaces_referencias'
+      href='http://www.kohlenia.com.ar/' target="_blank" title='http://www.kohlenia.com.ar/'>Kohlenia ®</a>). Los
+    niveles para cada corrida están en la <a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>.
+  </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_5.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_5.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_5.png"
+    alt="Figura 3.5: Distintas partes de la Batea de la Máquina de EF.">
   <p class="descripcion_figura">Figura 3.5:Distintas partes de la Batea de la Máquina de EF.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_6.png" data-src-medium="./assets/images/media_calidad/figura_3_6.png" data-src-high="./assets/images/alta_calidad/figura_3_6.png" alt="Figura 3.6: Sistema de control de temperatura en la batea.">
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_6.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_6.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_6.png"
+    alt="Figura 3.6: Sistema de control de temperatura en la batea.">
   <p class="descripcion_figura">Figura 3.6:Sistema de control de temperatura en la batea.</p>
 </article>
 <article>
   <h3 id="capitulo_3_3">3.3. Preparación de las muestras.</h3>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_7.png" data-src-medium="./assets/images/media_calidad/figura_3_7.png" data-src-high="./assets/images/alta_calidad/figura_3_7.png" alt="Figura 3.7: Sierra Cortadora Sensitiva.">
+  <p>Luego que se ha pasado por todas las etapas de fabricación, incluido el Curado en el horno, se procede a seccionar
+    el tubo. El método elegido fue mediante el corte de disco mediante una sierra cortadora sensitiva (Véase la <a
+      href="#figura_3_7" title="Figura 3.7:Sierra Cortadora Sensitiva." class="enlaces_figuras">Figura 3.7</a>). Se
+    utilizó un disco de corte de 310 mm de diámetro y 3 mm de espesor, que es suficiente para cortar tubos de al menos 4
+    pulgadas de diámetro (101.6 mm de diámetro) como es el caso del presente trabajo. El tiempo empleado para fabricar
+    los tubos y prepararlos para los cortes es de tres días aproximadamente: el 1º día se coloca el sellador y el
+    desmoldante en el mandril, en el 2º se realiza la fabricación y el curado en autoclave y en el tercero se realiza el
+    proceso de extracción mediante un extractor de poleas. </p>
+  <p>Cabe aclarar que se consideró cortar con sierra sinfín, pero tenía el inconveniente de que la sierra es para acero.
+    Cómo para cortar un compuesto no se puede refrigerar la zona del corte (debido a una segura absorción de humedad en
+    la pieza), la velocidad de corte tenía que ser extremadamente baja. La calidad del corte no era la adecuada y el
+    ancho del disco cortado tenía mucha dispersión. También se ensayó un dispositivo de fabricación propia que hermanaba
+    con una amoladora con disco diamantado, pero tenía el inconveniente que los tubos de gran espesor no los cortaba en
+    toda su profundidad. Finalmente, el autor del presente trabajo optó por la sierra sensitiva, por su sencillez de
+    operación, su rapidez y adecuada repetitividad en el ancho de los discos de la probeta. Los cortes para obtener las
+    muestras se realizaron en dos días. </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_7.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_7.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_7.png" alt="Figura 3.7: Sierra Cortadora Sensitiva.">
   <p class="descripcion_figura">Figura 3.7:Sierra Cortadora Sensitiva.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_8.png" data-src-medium="./assets/images/media_calidad/figura_3_8.png" data-src-high="./assets/images/alta_calidad/figura_3_8.png" alt="Figura 3.8: Tubos obtenidos en el presente trabajo mediante EF.">
+  <p>Los cortes se realizaban quitando los extremos del cilindro compuesto (una vez ya extraídos del mandril, por
+    supuesto), obteniéndose cilindros de aproximadamente 300 mm de largo. Estos a su vez se seccionaron en 10 u 11
+    partes, para obtener todas las probetas que sean necesarias para los ensayos. Se apartaba una probeta para el
+    estudio del porcentaje en volumen de fibra, resina y poros, una probeta para el ensayo de tracción mediante disco
+    partido y una probeta para los ensayos de <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a>. En el caso de la Corrida 7, se ensayaban 3 probetas para la medición de <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>, para evaluar si hay alguna dispersión
+    importante en la medición de la misma a lo largo de la longitud del tubo. </p>
+
+  <p>De los tubos fabricados se evaluaron los siguientes parámetros de calidad, que no es más que un muestreo de la
+    dispersión que se tiene al fabricar los tubos mediante <a data-dark class="abreviatura"
+      title="Enrollamiento Filamentario (Filament Winding)." href="EF">EF</a>: </p>
+
+  <p>- Longitud del Tubo compuesto. </p>
+
+  <p>En la <a href="#tabla_3_3" title="Tabla 3.3: Longitud y cantidad de partes por tubo." class="enlaces_tablas">Tabla
+      3.3</a> se resumen las longitudes de los tubos obtenidos y la cantidad de probetas obtenidas de cada tubo. El
+    ancho de corte elegido era de aproximadamente 30 mm. Se optó por esta medida, ya que el autor del trabajo se
+    aseguraba que se superara el ancho mínimo con cierta holgura, especificado en la norma del ensayo de tracción de
+    disco partido <a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a>. El autor obtuvo cierta dispersión en el espesor al cortar los discos,
+    por ello se obtienen diferentes cantidades de probetas por tubos. En la <a href="#figura_3_8"
+      title="Figura 3.8:Tubos obtenidos en el presente trabajo mediante EF." class="enlaces_figuras">Figura 3.8</a> se
+    observan todos los tubos previos al corte, en la <a href="#figura_3_9"
+      title="Figura 3.9:Etiquetado de las partes de cada tubo." class="enlaces_figuras">Figura 3.9</a> se observa cómo
+    se etiquetaban cada una de las probetas luego del corte y en la <a href="#figura_3_10"
+      title="Figura 3.10:Todos los tubos convenientemente etiquetados." class="enlaces_figuras">Figura 3.10</a> se
+    muestran todos los tubos ya cortados y etiquetados. </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_8.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_8.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_8.png"
+    alt="Figura 3.8: Tubos obtenidos en el presente trabajo mediante EF.">
   <p class="descripcion_figura">Figura 3.8:Tubos obtenidos en el presente trabajo mediante EF.</p>
   <p id="tabla_3_3" class="descripcion_tabla">Tabla 3.3: Longitud y cantidad de partes por tubo.</p>
   <table>
     <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
+        <tr class="borde-top-tabla borde-bottom-tabla">
+            <th>Tubo</th>
+            <th>Longitud [mm]</th>
+            <th>Partes obtenidas x tubo</th>
+        </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
+        <tr>
+            <td>Corrida N° 1:</td>
+            <td>298 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 2:</td>
+            <td>301 ±0.5</td>
+            <td>11 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 7A:</td>
+            <td>297 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 7B:</td>
+            <td>308 ±0.5</td>
+            <td>11 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 7C:</td>
+            <td>301 ±0.5</td>
+            <td>11 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 8:</td>
+            <td>300 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 11:</td>
+            <td>299 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 12:</td>
+            <td>298 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
+        <tr>
+            <td>Corrida N° 13:</td>
+            <td>299 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+            <td>Corrida N° 14:</td>
+            <td>300 ±0.5</td>
+            <td>10 partes</td>
+        </tr>
     </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_9.png" data-src-medium="./assets/images/media_calidad/figura_3_9.png" data-src-high="./assets/images/alta_calidad/figura_3_9.png" alt="Figura 3.9: Etiquetado de las partes de cada tubo.">
+</table>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_9.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_9.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_9.png"
+    alt="Figura 3.9: Etiquetado de las partes de cada tubo.">
   <p class="descripcion_figura">Figura 3.9:Etiquetado de las partes de cada tubo.</p>
+  <p>- Diámetro Interior. </p>
+
+  <p>El diámetro interior de los tubos se obtuvo midiendo con un calibre digital 5 discos de cada tubo anteriormente
+    cortado. De esta manera se obtiene la media del diámetro interior de cada tubo y su desvío estándar. Los resultados
+    se muestran en la <a href="#tabla_3_4" title="Tabla 3.4: Diámetro interior de los tubos."
+      class="enlaces_tablas">Tabla 3.4</a>. El promedio y el desvío estándar no tienen en cuenta los valores extremos
+    (máximo en rojo y mínimo en azul). </p>
   <p id="tabla_3_4" class="descripcion_tabla">Tabla 3.4: Diámetro interior de los tubos.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_10.png" data-src-medium="./assets/images/media_calidad/figura_3_10.png" data-src-high="./assets/images/alta_calidad/figura_3_10.png" alt="Figura 3.10: Todos los tubos convenientemente etiquetados.">
+  <table><thead>
+    <tr>
+      <th rowspan="2" class="borde-top-tabla borde-bottom-tabla">Tubo</th>
+      <th colspan="7" class="borde-top-tabla borde-bottom-tabla">Diámetro Interior [mm]</th>
+    </tr>
+    <tr class="borde-top-tabla borde-bottom-tabla">
+      <th>Medida 1</th>
+      <th>Medida 2</th>
+      <th>Medida 3</th>
+      <th>Medida 4</th>
+      <th>Medida 5</th>
+      <th>Promedio</th>
+      <th>Desvío Estándar</th>
+    </tr></thead>
+  <tbody>
+    <tr>
+      <td>Corrida Nº 1:</td>
+      <td>101,49</td>
+      <td>101,45</td>
+      <td style="font-weight: bold; color: blue;">101,38</td>
+      <td>101,49</td>
+      <td style="font-weight: bold; color: red;">101,54</td>
+      <td>101,48</td>
+      <td>0,02</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 2:</td>
+      <td>101,27</td>
+      <td style="font-weight: bold; color: blue;">101,03</td>
+      <td>101,62</td>
+      <td>101,64</td>
+      <td style="font-weight: bold; color: red;">101,89</td>
+      <td>101,5</td>
+      <td>0,21</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7A:</td>
+      <td>101,78</td>
+      <td style="font-weight: bold; color: red;">101,96</td>
+      <td>101,64</td>
+      <td style="font-weight: bold; color: blue;">101,60</td>
+      <td>101,71</td>
+      <td>101,71</td>
+      <td>0,07</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7B:</td>
+      <td style="font-weight: bold; color: red;">102,04</td>
+      <td>101,88</td>
+      <td>101,83</td>
+      <td style="font-weight: bold; color: blue;">101,48</td>
+      <td>101,84</td>
+      <td>101,85</td>
+      <td>0,03</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7C:</td>
+      <td style="font-weight: bold; color: blue;">101,30</td>
+      <td>102,02</td>
+      <td>102,01</td>
+      <td>101,74</td>
+      <td style="font-weight: bold; color: red;">102,18</td>
+      <td>101,9</td>
+      <td>0,16</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 8:</td>
+      <td style="font-weight: bold; color: blue;">101,25</td>
+      <td style="font-weight: bold; color: red;">101,86</td>
+      <td>101,65</td>
+      <td>101,83</td>
+      <td>101,55</td>
+      <td>101,6</td>
+      <td>0,14</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 11:</td>
+      <td>101,37</td>
+      <td style="font-weight: bold; color: blue;">101,06</td>
+      <td>101,35</td>
+      <td style="font-weight: bold; color: red;">101,77</td>
+      <td>101,23</td>
+      <td>101,32</td>
+      <td>0,08</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 12:</td>
+      <td>101,74</td>
+      <td>101,38</td>
+      <td style="font-weight: bold; color: blue;">100,06</td>
+      <td style="font-weight: bold; color: red;">101,75</td>
+      <td>101,38</td>
+      <td>101,5</td>
+      <td>0,21</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 13:</td>
+      <td>101,09</td>
+      <td>101,08</td>
+      <td>101,33</td>
+      <td style="font-weight: bold; color: red;">101,68</td>
+      <td style="font-weight: bold; color: blue;">100,86</td>
+      <td>101,1</td>
+      <td>0,14</td>
+    </tr>
+    <tr class="borde-bottom-tabla">
+      <td>Corrida Nº 14:</td>
+      <td>101,54</td>
+      <td style="font-weight: bold; color: blue;">101,18</td>
+      <td>101,36</td>
+      <td>101,49</td>
+      <td style="font-weight: bold; color: red;">101,56</td>
+      <td>101,46</td>
+      <td>0,09</td>
+    </tr>
+  </tbody></table>
+  <p>- Espesor de cada tubo. </p>
+
+  <p>El espesor de los tubos se obtuvo de manera similar al caso del diámetro interior, midiendo con un calibre digital
+    5 discos de cada tubo anteriormente cortado. De esta manera se obtiene la media del espesor de cada tubo y su desvío
+    estándar. Los resultados se muestran en la <a href="#tabla_3_5" title="Tabla 3.5: Espesor de los tubos."
+      class="enlaces_tablas">Tabla 3.5</a>. El promedio y el desvío estándar no tienen en cuenta los valores extremos
+    (máximo en rojo y mínimo en azul). </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_10.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_10.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_10.png"
+    alt="Figura 3.10: Todos los tubos convenientemente etiquetados.">
   <p class="descripcion_figura">Figura 3.10:Todos los tubos convenientemente etiquetados.</p>
   <p id="tabla_3_5" class="descripcion_tabla">Tabla 3.5: Espesor de los tubos.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-
+  <table><thead>
+    <tr  class="borde-top-tabla borde-bottom-tabla">
+      <th rowspan="2">Tubo</th>
+      <th colspan="7">Espesor [mm]</th>
+    </tr>
+    <tr>
+      <th>Medida 1</th>
+      <th>Medida 2</th>
+      <th>Medida 3</th>
+      <th>Medida 4</th>
+      <th>Medida 5</th>
+      <th>Promedio</th>
+      <th>Desvío Estándar</th>
+    </tr></thead>
+  <tbody>
+    <tr>
+      <td>Corrida Nº 1:</td>
+      <td>1,70</td>
+      <td>1,68</td>
+      <td style="font-weight: bold; color: blue;">1,48</td>
+      <td>1,86</td>
+      <td style="font-weight: bold; color: red;">1,87</td>
+      <td>1,7</td>
+      <td>0,10</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 2:</td>
+      <td style="font-weight: bold; color: red;">1,61</td>
+      <td>1,52</td>
+      <td>1,49</td>
+      <td>1,54</td>
+      <td style="font-weight: bold; color: blue;">1,34</td>
+      <td>1,52</td>
+      <td>0,03</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7A:</td>
+      <td style="font-weight: bold; color: red;">1,93</td>
+      <td>1,69</td>
+      <td>1,75</td>
+      <td style="font-weight: bold; color: blue;">1,61</td>
+      <td>1,67</td>
+      <td>1,70</td>
+      <td>0,04</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7B:</td>
+      <td style="font-weight: bold; color: red;">2,18</td>
+      <td style="font-weight: bold; color: blue;">1,25</td>
+      <td>1,88</td>
+      <td>1,85</td>
+      <td>1,80</td>
+      <td>1,84</td>
+      <td>0,04</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7C:</td>
+      <td style="font-weight: bold; color: blue;">1,43</td>
+      <td style="font-weight: bold; color: red;">1,55</td>
+      <td>1,50</td>
+      <td>1,55</td>
+      <td>1,51</td>
+      <td>1,52</td>
+      <td>0,03</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 8:</td>
+      <td>1,37</td>
+      <td style="font-weight: bold; color: red;">1,44</td>
+      <td>1,42</td>
+      <td style="font-weight: bold; color: blue;">1,34</td>
+      <td>1,38</td>
+      <td>1,39</td>
+      <td>0,03</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 11:</td>
+      <td>2,81</td>
+      <td>3,05</td>
+      <td>3,11</td>
+      <td style="font-weight: bold; color: red;">3,21</td>
+      <td style="font-weight: bold; color: blue;">2,59</td>
+      <td>2,9</td>
+      <td>0,16</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 12:</td>
+      <td>2,57</td>
+      <td>2,73</td>
+      <td style="font-weight: bold; color: red;">2,74</td>
+      <td style="font-weight: bold; color: blue;">2,47</td>
+      <td>2,66</td>
+      <td>2,65</td>
+      <td>0,08</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 13:</td>
+      <td style="font-weight: bold; color: red;">2,74</td>
+      <td>2,67</td>
+      <td>2,62</td>
+      <td style="font-weight: bold; color: blue;">2,57</td>
+      <td>2,70</td>
+      <td>2,66</td>
+      <td>0,04</td>
+    </tr>
+    <tr class="borde-bottom-tabla">
+      <td>Corrida Nº 14:</td>
+      <td style="font-weight: bold; color: red;">3,98</td>
+      <td>3,42</td>
+      <td>3,53</td>
+      <td>3,24</td>
+      <td style="font-weight: bold; color: blue;">3,17</td>
+      <td>3,4</td>
+      <td>0,15</td>
+    </tr>
+  </tbody></table>
+  <p>Se resumen a continuación, en la <a href="#tabla_3_6"
+      title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla 3.6</a>, los
+    parámetros de calidad de los tubos fabricados. </p>
   <p id="tabla_3_6" class="descripcion_tabla">Tabla 3.6: Resumen de parámetros de calidad de los tubos.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
+  <table><thead>
+    <tr>
+      <th><br>Tubo</th>
+      <th><br>Longitud [mm]</th>
+      <th><br>Diámetro Interior [mm]</th>
+      <th><br>Espesor [mm]</th>
+    </tr></thead>
+  <tbody>
+    <tr>
+      <td>Corrida Nº 1</td>
+      <td>298 ±0.5</td>
+      <td>101,48</td>
+      <td>1,75</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 2</td>
+      <td>301 ±0.5</td>
+      <td>101,51</td>
+      <td>1,52</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7A</td>
+      <td>297 ±0.5</td>
+      <td>101,71</td>
+      <td>1,70</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7B</td>
+      <td>308 ±0.5</td>
+      <td>101,85</td>
+      <td>1,84</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 7C</td>
+      <td>301 ±0.5</td>
+      <td>101,92</td>
+      <td>1,52</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 8</td>
+      <td>300 ±0.5</td>
+      <td>101,68</td>
+      <td>1,39</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 11</td>
+      <td>299 ±0.5</td>
+      <td>101,32</td>
+      <td>2,99</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 12</td>
+      <td>298 ±0.5</td>
+      <td>101,50</td>
+      <td>2,65</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 13</td>
+      <td>299 ±0.5</td>
+      <td>101,17</td>
+      <td>2,66</td>
+    </tr>
+    <tr>
+      <td>Corrida Nº 14</td>
+      <td>300 ±0.5</td>
+      <td>101,46</td>
+      <td>3,40</td>
+    </tr>
+  </tbody></table>
   <h4 id="capitulo_3_3_1">3.3.1 Muestras para el análisis micrográfico.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_11.png" data-src-medium="./assets/images/media_calidad/figura_3_11.png" data-src-high="./assets/images/alta_calidad/figura_3_11.png" alt="Figura 3.11: Muestras de los tubos para el análisis mediante micrografías.">
+  <p>El procedimiento de obtención de las micrografías se explica a continuación: </p>
+  <p>1- En primer lugar, se extraen las muestras de los tubos mediante un disco diamantado o dremel. El autor de este
+    trabajo recomienda el dremel, ya que el disco de corte es más fino y tiende a desgarrar menos la fibra. La muestra
+    así obtenida requiere de un lijado previo al proceso de inclusión de las muestras. El tamaño de las muestras es de
+    aproximadamente 15x15mm. Véase la <a href="#figura_3_11"
+      title="Figura 3.11:Muestras de los tubos para el análisis mediante micrografías." class="enlaces_figuras">Figura
+      3.11</a>.</p>
+  <p>2- Sigue el proceso de inclusión propiamente dicho. Véase la <a href="#figura_3_12"
+      title="Figura 3.12:Proceso de inclusión de las muestras." class="enlaces_figuras">Figura 3.12</a>.</p>
+
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_11.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_11.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_11.png"
+    alt="Figura 3.11: Muestras de los tubos para el análisis mediante micrografías.">
   <p class="descripcion_figura">Figura 3.11:Muestras de los tubos para el análisis mediante micrografías.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_12.png" data-src-medium="./assets/images/media_calidad/figura_3_12.png" data-src-high="./assets/images/alta_calidad/figura_3_12.png" alt="Figura 3.12: Proceso de inclusión de las muestras.">
+  3- Luego de transcurrido ese tiempo, ya se puede iniciar el proceso de desbaste. Véase la <a href="#figura_3_13"
+    title="Figura 3.13:Proceso de desbaste de las muestras." class="enlaces_figuras">Figura 3.13</a>.
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_12.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_12.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_12.png"
+    alt="Figura 3.12: Proceso de inclusión de las muestras.">
   <p class="descripcion_figura">Figura 3.12:Proceso de inclusión de las muestras.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_13.png" data-src-medium="./assets/images/media_calidad/figura_3_13.png" data-src-high="./assets/images/alta_calidad/figura_3_13.png" alt="Figura 3.13: Proceso de desbaste de las muestras.">
+  4- Finalmente, se realiza el pulido de la muestra, en el cual no deben observarse rayones de lijado en el microscopio.
+  Véase la <a href="#figura_3_14" title="Figura 3.14:Proceso de pulido ya finalizado de las muestras."
+    class="enlaces_figuras">Figura 3.14</a>. </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_13.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_13.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_13.png"
+    alt="Figura 3.13: Proceso de desbaste de las muestras.">
   <p class="descripcion_figura">Figura 3.13:Proceso de desbaste de las muestras.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_14.png" data-src-medium="./assets/images/media_calidad/figura_3_14.png" data-src-high="./assets/images/alta_calidad/figura_3_14.png" alt="Figura 3.14: Proceso de pulido ya finalizado de las muestras.">
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_14.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_14.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_14.png"
+    alt="Figura 3.14: Proceso de pulido ya finalizado de las muestras.">
   <p class="descripcion_figura">Figura 3.14:Proceso de pulido ya finalizado de las muestras.</p>
+
   <h4 id="capitulo_3_3_2">3.3.2 Muestras para medir las DR.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_15.png" data-src-medium="./assets/images/media_calidad/figura_3_15.png" data-src-high="./assets/images/alta_calidad/figura_3_15.png" alt="Figura 3.15: Muestra para la medición de DR.">
+  <p>En la <a href="#figura_3_15" title="Figura 3.15:Muestra para la medición de DR." class="enlaces_figuras">Figura
+      3.15</a> se muestra como se extrae, a partir del tubo original, una muestra para realizar el ensayo de medición de
+    <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> mediante el método del disco
+    partido. En la parte superior izquierda se muestra la pieza de partida y los ejes coordenados de la pieza. La parte
+    inferior izquierda muestra el seccionamiento de la pieza de partida. De un cilindro de 300 mm de largo, se lo
+    secciona en aproximadamente 10 piezas más pequeñas de alrededor de 25 mm de largo cada una. De ellas se extrae una
+    muestra de la zona central para medir <a data-dark class="abreviatura" title="Deformaciones Residuales."
+      href="DR">DR</a>. La excepción a esto son las muestras replicadas de la Corrida 7 (7A, 7B y 7C), de las que se
+    extrajeron 3 muestras con el objeto de evaluar si hay alguna dispersión de valores en las <a data-dark
+      class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>. Una al comienzo del tubo, otra en el
+    centro y otra al final. El objetivo de esto es evaluar si hay alguna dispersión de valores en las <a data-dark
+      class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> medidas que sean estadísticamente
+    significativas a lo largo del tubo.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_15.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_15.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_15.png" alt="Figura 3.15: Muestra para la medición de DR.">
   <p class="descripcion_figura">Figura 3.15:Muestra para la medición de DR.</p>
+  <p class="subtitulos-figuras">Procedimiento de extracción de una muestra para la medición de DR de la parte central del tubo fabricado mediante EF. En la imagen de la derecha en naranja se encuentra el lugar donde se pega mediante adhesivos la galga extensométrica. La flecha azul indica la extensión en longitud de la galga.</p>
   <h4 id="capitulo_3_3_3">3.3.3 Muestras para la medición de la Resistencia.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_16.png" data-src-medium="./assets/images/media_calidad/figura_3_16.png" data-src-high="./assets/images/alta_calidad/figura_3_16.png" alt="Figura 3.16: Mecanizado de las entallas en el CAC.">
+  <p>La muestra se extrae de alguna de las partes centrales (partes 5 o 6 según el caso) del seccionamiento de los
+    tubos. Luego se procede a realizar una entalla para conformar el concentrador de tensiones recomendado por la norma
+    <a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a>. Esto se realizó en las facilidades del Edificio ARAS del <a data-dark
+      class="abreviatura" title="Centro Atómico Constituyentes." href="CAC">CAC</a>. Mediante una fresa de 4,5 mm de
+    diámetro se procedió a realizar las entallas de un solo lado (el modo de fijar la pieza para realizar la entalla de
+    ambos lados no garantiza una alineación perfecta, y como la norma lo permite, se realizaron las entallas de un solo
+    lado). Véase la <a href="#figura_3_16" title="Figura 3.16:Mecanizado de las entallas en el CAC."
+      class="enlaces_figuras">Figura 3.16</a>. Por otro lado, se respetaron las dimensiones mínimas explicitadas por la
+    norma: Ancho mínimo: (0,9 in-22,86 mm), Ancho reducido mínimo (0,55 in-13,97 mm) y Diámetro mínimo (0,35 in-8,89
+    mm). </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_16.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_16.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_16.png"
+    alt="Figura 3.16: Mecanizado de las entallas en el CAC.">
   <p class="descripcion_figura">Figura 3.16:Mecanizado de las entallas en el CAC.</p>
 </article>
 <article>
   <h3 id="capitulo_3_4">3.4. Obtención de las Respuestas del DOE.</h3>
+  <p>Se presenta a continuación la metodología empleada para evaluar cada una de las respuestas del <a data-dark
+      class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> establecido a
+    partir de las muestras obtenidas. </p>
   <h4 id="capitulo_3_4_1">3.4.1 Fracción en Volumen de las Fibras, Resina y Poros.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_17.png" data-src-medium="./assets/images/media_calidad/figura_3_17.png" data-src-high="./assets/images/alta_calidad/figura_3_17.png" alt="Figura 3.17: Ejemplo de Post-Procesado de las micrografías con ImageJ.">
+  <p>A continuación, se presenta la metodología para la obtención de la fracción en volumen de las fibras, resina y <span class="llamadas" title="El porcentaje en volumen de resina se calcula una vez obtenidos los porcentajes de fibra y de poros.">poros<sup>3 </sup></span>. Para obtener las fracciones en volumen de las fibras, resina y poros se emplean técnicas de <span class="llamadas" title="Esta técnica ha ido actualizándose desde sus primeros pasos (M. C. Waterbury and L. T. Drzal, 1989) hasta hoy en día, que mediante softwares más modernos permiten analizar una gran cantidad de imágenes (Brian Hayes & Luther Gammon, 2010).">micrografía<sup>4 </sup></span>. Se
+    empleó esta técnica, ya que experiencias anteriores con digestión ácida no fueron satisfactorias. </p>
+
+  <p>Una vez obtenidas las muestras según el procedimiento detallado en el <a class="enlaces_capitulo"
+      href="capitulo_3_1_1" title="Capítulo 3.1.1: Selección de los Factores del DOE."
+      rel="noopener noreferrer">Capítulo 3.1.1</a>, se realizaron las micrografías mediante una cámara montada en el
+    microscopio OLYMPUS BX60M de la Gerencia de Materiales del Centro Atómico Constituyentes (<a data-dark
+      class="abreviatura" title="Centro Atómico Constituyentes." href="CAC">CAC</a>). De las muestras obtenidas se
+    obtienen las siguientes micrografías: 5 micrografías de 5X de aumento, 5 micrografías de 10X de aumento, 5
+    micrografías de 20X de aumento y 5 micrografías de 50X de aumento. Para muestras de 10 capas, se realizaron 25
+    micrografías de 10X de aumento, para abarcar mejor todo el espesor de la muestra. </p>
+
+  <p>Las micrografías de 20X se utilizaron solo con el fin de contrastar los resultados del volumen de fibra que se
+    estaban obteniendo. Esto es debido a que haría falta un gran trabajo muestral (es decir, básicamente tomar muchas
+    más fotos con los aumentos de 20X), para abarcar todos los defectos que se pueden observar. Como en todos los casos
+    hubo un buen acuerdo entre el porcentaje de fibra obtenido mediante las micrografías de 5X y 10X con las de 20X, los
+    resultados de estas últimas no se muestran en este trabajo. </p>
+
+  <p>Los aumentos de 50X son más convenientes para chequear la orientación de las fibras utilizadas en cada capa. Pero
+    dado que las orientaciones de las fibras daban cuenta de esto en forma notoria, por lo que tampoco se las incluyó en
+    el presente análisis. </p>
+
+  <p>Luego de obtenidas las micrografías, se debe post-procesar la imagen para obtener la información que necesitamos.
+    En este caso, los porcentajes de fibra, resina, poros, su morfología, distribución y ángulo de las fibras. Esto se
+    realiza mediante el <span class="llamadas" title="Para más información sobre este software, visitar la página https://imagej.nih.gov/ij/download.html.">software<sup>5 </sup></span> <span class="llamadas" title="El procedimiento seguido está adaptado de un tutorial de la NASA respecto del tema: https://ntrs.nasa.gov/api/citations/20170001570/downloads/20170001570.pdf.">ImageJ®<sup>6 </sup></span>, . La <a href="#figura_3_17"
+      title="Figura 3.17:Ejemplo de Post-Procesado de las micrografías con ImageJ." class="enlaces_figuras">Figura
+      3.17</a> muestra un ejemplo del post-procesamiento que se realizó mediante macros con ImageJ para colorear de
+    forma diferenciada la fibra, la resina y los poros respecto de la micrografía original. Se realizó este
+    procedimiento para todas las imágenes de todas las muestras, lo cual llevó un tiempo total de aproximadamente un
+    mes. El resultado de este proceso para todas las muestras se presenta en el Anexo 5. </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_17.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_17.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_17.png"
+    alt="Figura 3.17: Ejemplo de Post-Procesado de las micrografías con ImageJ.">
   <p class="descripcion_figura">Figura 3.17:Ejemplo de Post-Procesado de las micrografías con ImageJ.</p>
+  <p class="subtitulos-figuras">En el procedimiento, primero se determina en una escala de grices, las regiones que integran el pico más claro (relacionadas con la fracción en volumen de las fibras). Luego se distinguen las regiones relacionadas a los picos oscuros (relacionadas con la fracción en volumen de los poros). La fracción en volumen de la resina son aquellas comprendidas entre estas dos ultimas, y la suma de las tres da 1.</p>
+
   <h4 id="capitulo_3_4_2">3.4.2 Evaluación de las DR mediante el Método del Corte.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_18.png" data-src-medium="./assets/images/media_calidad/figura_3_18.png" data-src-high="./assets/images/alta_calidad/figura_3_18.png" alt="Figura 3.18: Conexionado físico en el equipo registrador de datos.">
+  <p>En el Método del Corte, las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a>
+    presentes en el material se relajan mediante la eliminación de material. En este caso, se realiza justamente un
+    corte de una tira de una muestra cilíndrica, lo que da como resultado la creación de los bordes libres, que se
+    deforman hasta alcanzar el estado de tensión nulo. Opuesta a la zona donde va a realizarse el corte de la tira, se
+    coloca una galga extensométrica (o Strain Gage), la cual amplifica la señal mediante un puente de Wheatstone. Un
+    adquisidor registra el campo de deformación resultante de la muestra. Acto seguido, se pueden calcular las <a
+      data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a>. </p>
+  <p>Para el resto de la discusión que sigue, se aclara la convención de los ejes coordenados cilíndricos que se va a
+    mantener en todo este trabajo. El eje principal es el eje X o eje longitudinal (en rojo); el eje Y es el eje
+    circunferencial (en azul); el eje Z es el eje radial, en dirección del espesor de la pieza (en verde). El esquema
+    general de la medición se mostró anteriormente en la <a href="#figura_3_15"
+      title="Figura 3.15:Muestra para la medición de DR." class="enlaces_figuras">Figura 3.15</a>. La parte superior de
+    una pieza se corta mediante un Dremel en dos lugares para retirar una tira de material, lo que garantiza la medición
+    de una deformación libre y sin interferencias en la propia pieza; debajo está colocada una galga extensométrica
+    unidireccional y en el sentido del eje circunferencial (eje Y), ya que son las tensiones más importantes: las que
+    soportarían la carga en caso de que el cilindro compuesto esté presurizado (de todas maneras, las tensiones
+    longitudinales ya se liberaron cuando se extrajo el tubo y las tensiones en la dirección del espesor, en el eje Z,
+    para materiales compuestos, siempre se suponen nulas, tanto sea para una placa como para una pieza de revolución).
+    Se mide de esta manera las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>. </p>
+
+  <p>Las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> se obtienen entonces
+    montando un circuito de puente de Wheatstone con la configuración de un cuarto. En la <a href="#figura_3_18"
+      title="Figura 3.18:Conexionado físico en el equipo registrador de datos." class="enlaces_figuras">Figura 3.18</a>
+    se muestra el conexionado físico del puente en la bornera del adquisidor de datos. El cable negro siempre se conecta
+    en la bornera P+, el blanco en la bornera S+ y el rojo en la bornera D350 (esto último tiene que ver con el valor de
+    las resistencias que completan el puente). En la <a href="#figura_3_19"
+      title="Figura 3.19:Conexionado físico en la galga extensométrica." class="enlaces_figuras">Figura 3.19</a> se
+    muestra el conexionado físico del lago de la galga, la cuál ya se encuentra pegada sobre la muestra con Loctite® 414
+    (el pegamento debe ser de una calidad que asegure que se transmita correctamente el campo de deformación de la pieza
+    a la galga para producir la deformación en esta). </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_18.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_18.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_18.png"
+    alt="Figura 3.18: Conexionado físico en el equipo registrador de datos.">
   <p class="descripcion_figura">Figura 3.18:Conexionado físico en el equipo registrador de datos.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_19.png" data-src-medium="./assets/images/media_calidad/figura_3_19.png" data-src-high="./assets/images/alta_calidad/figura_3_19.png" alt="Figura 3.19: Conexionado físico en la galga extensométrica.">
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_19.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_19.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_19.png"
+    alt="Figura 3.19: Conexionado físico en la galga extensométrica.">
   <p class="descripcion_figura">Figura 3.19:Conexionado físico en la galga extensométrica.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_20.png" data-src-medium="./assets/images/media_calidad/figura_3_20.png" data-src-high="./assets/images/alta_calidad/figura_3_20.png" alt="Figura 3.20: Corte de la pieza mediante un dremel.">
+  <p>Finalmente, se realiza la experiencia de medición propiamente dicha. Se sujeta la pieza con ayuda de unas pinzas de
+    punta y se realizan dos cortes, tal como se indica en la <a href="#figura_3_15"
+      title="Figura 3.15:Muestra para la medición de DR." class="enlaces_figuras">Figura 3.15</a>. En la <a
+      href="#figura_3_20" title="Figura 3.20:Corte de la pieza mediante un dremel." class="enlaces_figuras">Figura
+      3.20</a> se muestra el <span class="llamadas" title="El Dremel me asegura un corte fino, preciso y maniobrable, frente a otros instrumentos que se probaron para realizar el corte (sierra manual y amoladora).">Dremel<sup>7 </sup></span>
+      utilizado para hacer el corte y una "carpa" hecha con nylon sobre la caja donde se
+    realizaba el corte. Esto es debido a que el polvillo que se desprende del corte es muy nocivo para el cuerpo humano
+    y se deben tomar medidas para que no se disperse el polvo en el ambiente (se abre la "carpa" para que el
+    experimentador realice el corte y luego la cierra, conteniendo de esta manera el polvo) y además el experimentador
+    debe utilizar protección en los ojos (anteojos), en las manos (guantes de látex), en el cuerpo (usar guardapolvos
+    para que no quede polvillo en la ropa) y protección para nuestros pulmones (máscara con filtro de polvo). </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_20.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_20.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_20.png"
+    alt="Figura 3.20: Corte de la pieza mediante un dremel.">
   <p class="descripcion_figura">Figura 3.20:Corte de la pieza mediante un dremel.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_21.png" data-src-medium="./assets/images/media_calidad/figura_3_21.png" data-src-high="./assets/images/alta_calidad/figura_3_21.png" alt="Figura 3.21: Medición de las DR.">
+  <p class="subtitulos-figuras">Montaje de la caja y la “carpa” donde se realiza el corte de la pieza mediante un dremel.</p>
+  <p>En la <a href="#figura_3_21" title="Figura 3.21:Medición de las DR." class="enlaces_figuras">Figura 3.21</a> se
+    muestra el resultado de la medición: en la parte central se encuentra el segmento del disco que se ha cortado,
+    mientras que la pantalla está registrando un valor (en microstrains). Se debe esperar de 3 a 5 minutos a que se
+    estabilice la medición, porque hay efectos de compensación de cargas propios del instrumento y efectos de
+    temperatura debido al corte efectuado en la pieza que hacen que la medición oscile un poco hasta que se estabilice
+    en un valor. La medición tomada en la experiencia es aquella en la cuál no se muestra una variación en la pantalla
+    del equipo registrador por más de un minuto. </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_21.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_21.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_21.png" alt="Figura 3.21: Medición de las DR.">
   <p class="descripcion_figura">Figura 3.21:Medición de las DR.</p>
+  <p class="subtitulos-figuras">Una vez realizado el corte, el equipo registra un valor en microstrains (1με=1E<sup>-6</sup> ε). El segmento cortado se encuentra en el centro del cilindro.</p>
   <h4 id="capitulo_3_4_3">3.4.3 Resistencia aparente de un aro de los tubos.</h4>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_22.png" data-src-medium="./assets/images/media_calidad/figura_3_22.png" data-src-high="./assets/images/alta_calidad/figura_3_22.png" alt="Figura 3.22: Piezas fabricadas para realizar el ensayo de disco partido.">
+  <p>
+    Se procedió a ensayar según el procedimiento A (válido para polímeros termoestables reforzados) de la norma <a
+      class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a>, con una velocidad de 0,5 ipm (12,7 mm/min). Se ensayó una muestra por
+    corrida de tubo. Con el objeto de hermanar el aro de la muestra a los cabezales de la máquina de ensayo universal,
+    se debieron fabricar las piezas que se muestran en la <a href="#figura_3_22"
+      title="Figura 3.22:Piezas fabricadas para realizar el ensayo de disco partido." class="enlaces_figuras">Figura
+      3.22</a>. Esto es debido a que la norma <a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a> no especifica qué dimensiones debe tener el tubo a ensayar, sino sólo
+    dimensiones mínimas que hay que respetar. </p>
+
+  <p>Las máquinas utilizadas para los ensayos fueron la Shimadzu AG-100kNG (<a href="#figura_3_23"
+      title="Figura 3.23:Ensayo de disco partido con la Shimadzu AG-100kNG." class="enlaces_figuras">Figura 3.23</a>) y
+    la Instron 8802 (<a href="#figura_3_24" title="Figura 3.24:Ensayo de disco partido con la Instron 8802."
+      class="enlaces_figuras">Figura 3.24</a>). Las mismas pertenecen al laboratorio Sur100 del <a data-dark
+      class="abreviatura" title="Centro Atómico Constituyentes." href="CAC">CAC</a>. Las muestras de las Corridas 1, 2,
+    7A, 7B, 7C, 8, 11 y 12 fueron ensayadas con la Shimadzu, mientras que las muestras de las corridas 13 y 14 fueron
+    ensayadas con la máquina Instron. La razón de esto es que según la <a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>,
+    las corridas 13 y 14 tienen 6 capas circunferenciales (±89º), con lo cuál el límite de carga para la rotura estaría
+    muy próximo al límite de funcionamiento permitido para la Shimadzu. </p>
+
+  <p>Por otra parte, un adquisidor de datos presente en cada máquina facilitó el procesamiento de los mismos para
+    obtener las Curvas de Carga [kN] vs. Desplazamiento [mm]. Se midió el área de la zona de la entalla para obtener la
+    Tensión máxima de cada corrida (que es igual a la resistencia máxima del material). </p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_22.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_22.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_22.png"
+    alt="Figura 3.22: Piezas fabricadas para realizar el ensayo de disco partido.">
   <p class="descripcion_figura">Figura 3.22:Piezas fabricadas para realizar el ensayo de disco partido.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_23.png" data-src-medium="./assets/images/media_calidad/figura_3_23.png" data-src-high="./assets/images/alta_calidad/figura_3_23.png" alt="Figura 3.23: Ensayo de disco partido con la Shimadzu AG-100kNG.">
+  <p class="subtitulos-figuras">Piezas fabricadas para hermanarse con las máquinas de ensayo universal Shimadzu AG-100kNG e Instron 8802.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_23.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_23.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_23.png"
+    alt="Figura 3.23: Ensayo de disco partido con la Shimadzu AG-100kNG.">
   <p class="descripcion_figura">Figura 3.23:Ensayo de disco partido con la Shimadzu AG-100kNG.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_3_24.png" data-src-medium="./assets/images/media_calidad/figura_3_24.png" data-src-high="./assets/images/alta_calidad/figura_3_24.png" alt="Figura 3.24: Ensayo de disco partido con la Instron 8802.">
+  <img class="lazy" src="./assets/images/baja_calidad/figura_3_24.png"
+    data-src-medium="./assets/images/media_calidad/figura_3_24.png"
+    data-src-high="./assets/images/alta_calidad/figura_3_24.png"
+    alt="Figura 3.24: Ensayo de disco partido con la Instron 8802.">
   <p class="descripcion_figura">Figura 3.24:Ensayo de disco partido con la Instron 8802.</p>
 </article>
+<br>
+<br>
+<hr>
+<div class="notas_al_pie">
+  <p class="title_notas_al_pie">Notas al pie:</p>
+
+  <p><span class="id_notas_al_pie">[1]</span>: La fracción en volumen de la resina no es un factor o variable independiente, ya que el método para determinarla implica calcularla a partir de la fracción en volumen de fibra y de los poros (Véase <a class="enlaces_capitulo" href="capitulo_3_4_1"
+    title="Capítulo 3.4.1: Fracción en Volumen de las Fibras, Resina y Poros." rel="noopener noreferrer">Capítulo
+    3.4.1</a>).
+  </p>
+
+  <p><span class="id_notas_al_pie">[2]</span>: Los frenos de cinta son un tipo de freno muy sencillo. Para más información, visitar https://es.wikipedia.org/wiki/Freno_de_cinta.
+  </p>
+
+  <p><span class="id_notas_al_pie">[3]</span>: El porcentaje en volumen de resina se calcula una vez obtenidos los porcentajes de fibra y de poros.
+  </p>
+
+  <p><span class="id_notas_al_pie">[4]</span>: Esta técnica ha ido actualizándose desde sus primeros pasos (<a class='enlaces_referencias' href='https://drive.google.com/file/d/1gbmGcPzOnqVAwZLnYmLlQcN9Bn3Hvubh/view?usp=sharing' target="_blank" title='-M. C. Waterbury and L. T. Drzal (1989). "Determination of Fiber Volume Fractions by Optical Numeric Volume Fraction Analysis". Journal of Reinforced Plastics and Composites, Vol. 8, November 1989, pp. 627 - 636.' rel='noopener noreferrer'>M. C. Waterbury and L. T. Drzal, 1989</a>) hasta hoy en día, que mediante softwares más modernos permiten analizar una gran cantidad de imágenes (<a class='enlaces_referencias' href='https://drive.google.com/file/d/1hePZnCx6aVbXHmbcpWUO1QWU6EgO3-Hp/view?usp=sharing' target="_blank" title='-Brian Hayes & Luther Gammon (2010). "Optical Microcopy of Fiber Reinforced Composites". Ohio, USA. ASM International.' rel='noopener noreferrer'>Brian Hayes & Luther Gammon, 2010</a>).
+  </p>
+
+  <p><span class="id_notas_al_pie">[5]</span>: Para más información sobre este software, visitar la página https://imagej.nih.gov/ij/download.html.
+  </p>
+
+  <p><span class="id_notas_al_pie">[6]</span>: El procedimiento seguido está adaptado de un tutorial de la NASA respecto del tema: https://ntrs.nasa.gov/api/citations/20170001570/downloads/20170001570.pdf.
+  </p>
+
+  <p><span class="id_notas_al_pie">[7]</span>: El Dremel me asegura un corte fino, preciso y maniobrable, frente a otros instrumentos que se probaron para realizar el corte (sierra manual y amoladora).
+  </p>
+
+<hr>
+</div>
+<hr>
+<br>
+<br>

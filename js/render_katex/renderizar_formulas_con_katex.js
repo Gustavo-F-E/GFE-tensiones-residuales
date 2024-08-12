@@ -236,5 +236,5 @@ export const formulas = [
         id: "Phi26_2",
         formula: "\\Phi_{26}^{k}",
         displayMode: "false",
-    },
+  },
 ];
