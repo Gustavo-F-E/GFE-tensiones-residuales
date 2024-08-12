@@ -10,8 +10,6 @@ export default function mostrar_ocultar_menu(id_boton, id_icono_abrir, id_icono_
   console.log(`closeIcon: ${closeIcon}`);
   console.log(`indice_completo: ${indice_completo}`);
 
-
-
   hamburgerButton.addEventListener('click', function () {*/
   // Alterna la visibilidad de los iconos
   const hamburgerButton = document.getElementById(id_boton);

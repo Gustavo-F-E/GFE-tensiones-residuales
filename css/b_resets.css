@@ -22,6 +22,7 @@ body {
   scroll-behavior: smooth;
   scrollbar-color: rgb(203, 203, 248) transparent;
   overflow: scroll;
+  position: relative;
 }
 
 img{
