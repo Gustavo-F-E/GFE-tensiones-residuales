@@ -225,7 +225,22 @@ main section {
   padding-bottom: 2rem !important;
 }
 
-.enlace_ecuaciones{
+.subtitulos-tablas{
+  text-align: center!important;
+  font-style: italic;
+  font-weight: 300;
+  width: 100% !important;
+  padding-bottom: 1rem !important;
+}
+.subtitulos-tablas-chiquitito{
+  text-align: left!important;
+  font-style: italic;
+  font-weight: 300;
+  width: 100% !important;
+  font-size: 0.8rem;
+}
+
+.enlaces_ecuaciones{
   font-weight: 900;
   color:darkred;
 

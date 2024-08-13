@@ -237,4 +237,6 @@ export const formulas = [
         formula: "\\Phi_{26}^{k}",
         displayMode: "false",
   },
+  { id: "ebx_4", formula: "\\mathrm{E}_{b}^{x}", displayMode: false },
+  { id: "ebx_5", formula: "\\mathrm{E}_{b}^{x}", displayMode: false },
 ];

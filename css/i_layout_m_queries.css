@@ -68,20 +68,20 @@ header {
 
 .dark-theme-btn {
   z-index: 999;
-  bottom: 4rem;
+  bottom: 5.5rem;
   right: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  font-size: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
 }
 
 .scroll-top-btn {
   z-index: 999;
-  bottom: 7rem;
+  bottom: 10rem;
   right: 0.5rem;
-  width: 2rem;
-  height: 2rem;
-  font-size: 0.8rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  font-size: 1.5rem;
 }
 /*
 .hamburger-box svg {
@@ -273,7 +273,7 @@ main section {
     right: 0.8rem;
     width: 3.5rem;
     height: 3.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .scroll-top-btn {
@@ -282,7 +282,7 @@ main section {
     right: 0.8rem;
     width: 3.5rem;
     height: 3.5rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .katex,

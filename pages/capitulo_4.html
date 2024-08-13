@@ -1,357 +1,1689 @@
 <h2>Capítulo 4: Resultados.</h2>
+<p>En este capítulo se presentan los siguientes resultados de cada corrida de los tubos, definida según el <a data-dark
+    class="abreviatura" title="Diseño de experimentos (Design of Experiments)." href="DOE">DOE</a> de la <a
+    href="#tabla_3_2" title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores."
+    class="enlaces_tablas">Tabla 3.2</a>:</p>
+<ul class="ul">
+  <li>Fracción en volumen de las fibras y <span class="llamadas"
+      title="El porcentaje en volumen de resina se calcula una vez obtenidos los porcentajes de fibra y de poros.">poros<sup
+        style="color: blue;">1 </sup></span>.</li>
+  <li>Constantes ingenieriles de cada tubo.</li>
+  <li>Deformaciones residuales (<a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>).
+  </li>
+  <li><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> calculadas a partir de ecuaciones
+    de elasticidad.</li>
+  <li><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> predichas mediante la <a data-dark
+      class="abreviatura" title="Teoría Clásica de Laminados." href="TCL">TCL</a>. </li>
+  <li><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> predichas según el modelo de
+    elementos finitos planteado.</li>
+  <li>Carreras máximas y Tensiones máximas según el estándar <a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a>.
+</ul>
+</li>
 <article>
   <h3 id="capitulo_4_1">4.1 Fracción en volumen de fibra, resina y poros de las micrografías.</h3>
+  <p>Se muestra como ejemplo el análisis micrográfico de la corrida 1 en la <a href="#tabla_4_1"
+      title="Tabla 4.1: Fracción en volumen de Fibra, Resina y Poros de la Muestra 1." class="enlaces_tablas">Tabla
+      4.1</a>. Como se puede ver, el análisis
+    más detallado de cada micrografía es extremadamente extenso. Por cuestiones de legibilidad del documento (45 páginas
+    de micrografías), el análisis micrográfico de cada corrida se encuentra en el <a class="enlaces_capitulo"
+      href="anexo_5" title="Anexo 5: Resumen del Análisis mediante Micrografías." rel="noopener noreferrer">Anexo 5</a>.
+  </p>
   <p id="tabla_4_1" class="descripcion_tabla">Tabla 4.1: Fracción en volumen de Fibra, Resina y Poros de la
     Muestra 1.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-
+    <img src="../assets/images/Tabla_4_1_a.png" alt="Tabla 4.1 A">
+    <img src="../assets/images/Tabla_4_1_b.png" alt="Tabla 4.1 B">
+    <img src="../assets/images/Tabla_4_1_c.png" alt="Tabla 4.1 C">
+    <img src="../assets/images/Tabla_4_1_d.png" alt="Tabla 4.1 D">
+  <p>El resumen de la fracción en volumen de fibra, resina y poros para cada muestra se muestra en la <a
+      href="#tabla_4_2" title="Tabla 4.2: Fracción en volumen de Fibra, Resina y Poros de las muestras."
+      class="enlaces_tablas">Tabla 4.2</a>.</p>
   <p id="tabla_4_2" class="descripcion_tabla">Tabla 4.2: Fracción en volumen de Fibra, Resina y Poros de las
     muestras.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
+    <table class="tabla_general">
+      <tr class="borde-top-tabla borde-bottom-tabla">
+        <th style="font-weight: bold;">Muestra</th>
+        <th style="font-weight: bold;">%Poros</th>
+        <th style="font-weight: bold;">%Fibra</th>
+        <th style="font-weight: bold;">%Resina</th>
       </tr>
       <tr>
-        <td>Contenido 2</td>
+        <td>1</td>
+        <td>3,38</td>
+        <td>63,39</td>
+        <td>33,23</td>
       </tr>
       <tr>
-        <td>Contenido 3</td>
+        <td>2</td>
+        <td>9,00</td>
+        <td>56,96</td>
+        <td>34,04</td>
       </tr>
-    </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_1.png" data-src-medium="./assets/images/media_calidad/figura_4_1.png" data-src-high="./assets/images/alta_calidad/figura_4_1.png" alt="Figura 4.1: Grietas en las regiones con capas de ±5º.">
-  <p class="descripcion_figura">Figura 4.1:Grietas en las regiones con capas de ±5º.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_2.png" data-src-medium="./assets/images/media_calidad/figura_4_2.png" data-src-high="./assets/images/alta_calidad/figura_4_2.png" alt="Figura 4.2: Diferencia de morfología de los poros en las diferentes capas.">
+      <tr>
+        <td>7A</td>
+        <td>5,01</td>
+        <td>55,08</td>
+        <td>39,92</td>
+      </tr>
+      <tr>
+        <td>7B</td>
+        <td>5,83</td>
+        <td>53,37</td>
+        <td>40,81</td>
+      </tr>
+      <tr>
+        <td>7C</td>
+        <td>2,77</td>
+        <td>69,39</td>
+        <td>27,85</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>2,44</td>
+        <td>61,62</td>
+        <td>35,94</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>12,78</td>
+        <td>55,83</td>
+        <td>31,42</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>3,12</td>
+        <td>66,51</td>
+        <td>30,37</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>5,94</td>
+        <td>57,81</td>
+        <td>36,25</td>
+      </tr>
+      <tr class="borde-bottom-tabla">
+        <td>14</td>
+        <td>4,92</td>
+        <td>67,51</td>
+        <td>27,57</td>
+      </tr>
+    </table>
+  <p>Teniendo en cuenta la totalidad de los tubos pertenecientes a la Corrida 7, el promedio de poros, fibra y resina es
+    de 4,54%, 59,28% y 36,19% respectivamente, siendo el desvío estándar esperable de 1,58%, 8,80% y 7,24%.</p>
+  <p style="font-weight: bold;">Resultados cualitativos de las micrografías.</p>
+  <p>Se presentan a continuación algunas observaciones personales del autor del presente trabajo en base a la
+    observación de algunas de las micrografías.</p>
+  <ul class="ul">
+    <li>En general, se observan grietas en aquellos patrones en los que presentaban una capa con ángulos de ±5º. Véase
+      la <a href="#figura_4_1" title="Figura 4.1: Grietas en las regiones con capas de ±5º."
+        class="enlaces_figuras">Figura 4.1</a>. En ella se resumen algunas micrografías. Hubo algunas micrografías que
+      presentaban grietas en otros
+      lados, pero se cree que estas se producen por el procesamiento de las muestras previo al análisis micrográfico. En
+      cambio, en las muestras que tenían capas a ±5º, estas grietas se presentaron en todos los casos. Véase el <a
+        class="enlaces_capitulo" href="anexo_5" title="Anexo 5: Resumen del Análisis mediante Micrografías."
+        rel="noopener noreferrer">Anexo 5</a>
+      si se quiere profundizar en este aspecto. El autor cree que, dado la dificultad para conseguir patrones prolijos
+      de ±5º, se deben realizar patrones de ángulos bajos más repetibles como en ±10º y ±15º para trabajos futuros.</li>
+    <li>Los defectos (poros) en las capas con ángulos a ±89º en general son más alargados que los defectos con ángulos
+      de ±45º y ±5º. En la <a href="#figura_4_2"
+        title="Figura 4.2:Diferencia de morfología de los poros en las diferentes capas." class="enlaces_figuras">Figura
+        4.2</a> se ve que los defectos de las capas de ángulos bajos son muy alargados (en las
+      corridas 1, 13 y 14). En la Corrida 7A que presenta todas capas de ángulos a ±45º, se ve que la morfología de los
+      poros es redondeada, lo cuál permite distinguir fácilmente en las otras micrografías cuando un defecto es de una
+      capa de ±89, dado que estas son más oblongas.</li>
+    <li>Hubo dos corridas excepcionales en cuanto a la cantidad de defectos: la Corrida 2 (9%) y la Corrida 11 (12,78%).
+      Se estima que la Corrida 2 presenta estos defectos por la mencionada falta de cohesión en las capas con ángulos
+      bajos. De la Corrida 11 se desconoce por qué surgieron tal tamaño y abundancia en los defectos. Véase la <a
+        href="#figura_4_3" title="Figura 4.3:Defectos en la Corrida 11." class="enlaces_figuras">Figura 4.3</a>.</li>
+  </ul>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_1.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_1.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_1.png"
+    alt="Figura 4.1: Grietas en las regiones con capas de ±5º.">
+  <p class="descripcion_figura">Figura 4.1: Grietas en las regiones con capas de ±5º.</p>
+  <p class="subtitulos-figuras">Micrografías en donde se observan grietas en las regiones con capas de ±5º.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_2.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_2.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_2.png"
+    alt="Figura 4.2: Diferencia de morfología de los poros en las diferentes capas.">
   <p class="descripcion_figura">Figura 4.2:Diferencia de morfología de los poros en las diferentes capas.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_3.png" data-src-medium="./assets/images/media_calidad/figura_4_3.png" data-src-high="./assets/images/alta_calidad/figura_4_3.png" alt="Figura 4.3: Defectos en la Corrida 11.">
-  <p class="descripcion_figura">Figura 4.3:Defectos en la Corrida 11.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_3.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_3.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_3.png" alt="Figura 4.3: Defectos en la Corrida 11.">
+  <p class="descripcion_figura">Figura 4.3: Defectos en la Corrida 11.</p>
 </article>
 <article>
   <h3 id="capitulo_4_2">4.2 Constantes ingenieriles de cada tubo.</h3>
+  <p>En base a los resultados de la <a href="#tabla_4_2"
+      title="Tabla 4.2: Fracción en volumen de Fibra, Resina y Poros de las muestras." class="enlaces_tablas">Tabla
+      4.2</a>, se pueden determinar las propiedades micromecánicas de los laminados
+    unidireccionales en base a su contenido de fibra y resina. Esto se hace teniendo en cuenta las fórmulas
+    micromecánicas del <a class="enlaces_capitulo" href="capitulo_2_3_1"
+      title="Capítulo 2.3.1: Cálculo de las Constantes ingenieriles." rel="noopener noreferrer">Capítulo 2.3.1</a> para
+    el caso de la Regla de las Mezclas. Dichas fórmulas, se calculan en base a
+    las propiedades de Fibra y Resina que se encuentran en la <a href="#tabla_2_1"
+      title="Tabla 2.1: Propiedades de la Fibra Toray T700 S." class="enlaces_tablas">Tabla 2.1</a> para las fibras y <a
+      href="#tabla_2_2" title="Tabla 2.2: Propiedades de la matriz epóxica." class="enlaces_tablas">Tabla 2.2</a> para
+    la resina. Las
+    propiedades mecánicas de una lámina unidireccional se encuentran resumidas en la <a href="#tabla_4_3"
+      title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas." class="enlaces_tablas">Tabla 4.3</a>.
+  </p>
   <p id="tabla_4_3" class="descripcion_tabla">Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas.
   </p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
+  <table class="tabla_general">
+    <tr class="borde-top-tabla borde-bottom-tabla">
+      <th style="font-weight: bold;"></th>
+      <th style="font-weight: bold;">E1 [GPa]</th>
+      <th style="font-weight: bold;">E2 [GPa]</th>
+      <th style="font-weight: bold;">G12 [GPa]</th>
+      <th style="font-weight: bold;">G13 [GPa]</th>
+      <th style="font-weight: bold;">G23 [GPa]</th>
+      <th style="font-weight: bold;">ν12</th>
+      <th style="font-weight: bold;">ν13</th>
+      <th style="font-weight: bold;">ν23</th>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 1</td>
+      <td>152,88</td>
+      <td>9,96</td>
+      <td>3,70</td>
+      <td>3,70</td>
+      <td>4,43</td>
+      <td>0,40</td>
+      <td>0,40</td>
+      <td>0,13</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 2</td>
+      <td>137,51</td>
+      <td>9,76</td>
+      <td>3,64</td>
+      <td>3,64</td>
+      <td>3,73</td>
+      <td>0,37</td>
+      <td>0,37</td>
+      <td>0,31</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7A</td>
+      <td>133,21</td>
+      <td>8,35</td>
+      <td>3,13</td>
+      <td>3,13</td>
+      <td>3,56</td>
+      <td>0,38</td>
+      <td>0,38</td>
+      <td>0,17</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7B</td>
+      <td>129,15</td>
+      <td>8,18</td>
+      <td>3,07</td>
+      <td>3,07</td>
+      <td>3,42</td>
+      <td>0,38</td>
+      <td>0,38</td>
+      <td>0,20</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7C</td>
+      <td>167,06</td>
+      <td>11,79</td>
+      <td>4,35</td>
+      <td>4,35</td>
+      <td>5,31</td>
+      <td>0,41</td>
+      <td>0,41</td>
+      <td>0,11</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 8</td>
+      <td>148,73</td>
+      <td>9,24</td>
+      <td>3,44</td>
+      <td>3,44</td>
+      <td>4,21</td>
+      <td>0,40</td>
+      <td>0,40</td>
+      <td>0,10</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 11</td>
+      <td>134,73</td>
+      <td>10,56</td>
+      <td>3,93</td>
+      <td>3,93</td>
+      <td>3,63</td>
+      <td>0,36</td>
+      <td>0,36</td>
+      <td>0,46</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 12</td>
+      <td>160,26</td>
+      <td>10,86</td>
+      <td>4,02</td>
+      <td>4,02</td>
+      <td>4,85</td>
+      <td>0,41</td>
+      <td>0,41</td>
+      <td>0,12</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 13</td>
+      <td>139,63</td>
+      <td>9,17</td>
+      <td>3,42</td>
+      <td>3,42</td>
+      <td>3,81</td>
+      <td>0,38</td>
+      <td>0,38</td>
+      <td>0,20</td>
+    </tr>
+    <tr  class="borde-bottom-tabla">
+      <td style="font-weight: bold;">Corrida 14</td>
+      <td>162,56</td>
+      <td>11,92</td>
+      <td>4,40</td>
+      <td>4,40</td>
+      <td>5,00</td>
+      <td>0,40</td>
+      <td>0,40</td>
+      <td>0,19</td>
+    </tr>
   </table>
 </article>
 <article>
   <h3 id="capitulo_4_3">4.3. Deformaciones residuales.</h3>
-  <p id="tabla_4_4" class="descripcion_tabla">Tabla 4.4: Deformaciones Residuales (DR).</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_4.png" data-src-medium="./assets/images/media_calidad/figura_4_4.png" data-src-high="./assets/images/alta_calidad/figura_4_4.png" alt="Figura 4.4: Tendencia a abrirse o cerrarse de los tubos.">
+  <p>Se presentan a continuación, en la <a href="#tabla_4_4" title="Tabla 4.4: Deformaciones Residuales (DR)."
+      class="enlaces_tablas">Tabla 4.4</a>, los datos de las <a data-dark class="abreviatura" title="Deformaciones
+      Residuales." href="DR">DR</a> obtenidos según el procedimiento descrito en el <a class="enlaces_capitulo"
+      href="capitulo_3_4_2" title="Capítulo 3.4.2: Evaluación de las DR mediante el Método del Corte."
+      rel="noopener noreferrer">Capítulo
+      3.4.2</a>.
+    Se muestra a continuación la <a href="#figura_4_4" title="Figura 4.4:Tendencia a abrirse o cerrarse de los tubos."
+      class="enlaces_figuras">Figura 4.4</a>. Cómo se comentó en el <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a>, los anillos tienden a cerrarse o
+    abrirse según como sean los <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> presentes
+    al momento de liberarse las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> mediante
+    el método del corte (ver la <a href="#figura_2_1" title="Figura 2.1:Efectos de los Momentos residuales."
+      class="enlaces_figuras">Figura 2.1</a>). La <a href="#figura_4_4"
+      title="Figura 4.4:Tendencia a abrirse o cerrarse de los tubos." class="enlaces_figuras">Figura 4.4</a> presenta a
+    la izquierda la muestra de la Corrida 7B-Inicio
+    con tendencia a abrirse y a la derecha la muestra de la Corrida 12 con tendencia a cerrarse. Casi todas las muestras
+    tuvieron este último comportamiento, excepto las muestras de la Corrida 7B. No está claro el por qué de esta
+    excepción (se cree que puede ser debido a que, como las corridas son a 45º para todas las capas y hay una región de
+    entrecruzamiento, esta región puede introducir un comportamiento anómalo en su cercanía, en la cual las partes 4 y 5
+    de la muestra 7B parecen compartir). En cuanto a la dispersión de los valores, se descartan por el motivo mencionado
+    anteriormente las muestras de las Corridas 7B. Se obtuvo para la muestra de la Corrida 7A un promedio de -78 με con
+    un desvío estándar de 20,22 με y para la muestra de la Corrida 7C, un promedio de -67,67 με con un desvío estándar
+    de 21,36 με. Teniendo en cuenta las dos Corridas 7A y 7C, tienen un promedio de -72,83 με con un desvío estándar de
+    19,45 με, siendo este último desvío el esperable cuando se fabrica un mismo tubo bajo las mismas condiciones.</p>
+  <p id="tabla_4_4" class="descripcion_tabla">Tabla 4.4: Deformaciones Residuales (<a data-dark class="abreviatura"
+      title="Deformaciones Residuales." href="DR">DR</a>).</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;">Corrida Nº</th>
+          <th style="font-weight: bold;">Parte Nº</th>
+          <th style="font-weight: bold;"> </th>
+          <th style="font-weight: bold;">Deformación residual [με≡10⁻⁶ε]</th>
+          <th style="font-weight: bold;">Tendencia del anillo</th>
+        </tr>
+      
+        <tr>
+          <td>1</td>
+          <td>5</td>
+          <td> </td>
+          <td>-297</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>5</td>
+          <td> </td>
+          <td>-503</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7A - Inicio</td>
+          <td>1</td>
+          <td> </td>
+          <td>-70</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7A - Mitad</td>
+          <td>5</td>
+          <td> </td>
+          <td>-101</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7A - Final</td>
+          <td>8</td>
+          <td> </td>
+          <td>-63</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7B - Inicio</td>
+          <td>4</td>
+          <td> </td>
+          <td>1074</td>
+          <td style="color: red;">Abrirse</td>
+        </tr>
+        <tr>
+          <td>7B - Mitad</td>
+          <td>5</td>
+          <td> </td>
+          <td>98</td>
+          <td style="color: red;">Abrise</td>
+        </tr>
+        <tr>
+          <td>7B - Final</td>
+          <td>11</td>
+          <td> </td>
+          <td>-126</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7C - Inicio</td>
+          <td>1</td>
+          <td> </td>
+          <td>-52</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7C - Mitad</td>
+          <td>5</td>
+          <td> </td>
+          <td>-59</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>7C - Final</td>
+          <td>11</td>
+          <td> </td>
+          <td>-92</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>5</td>
+          <td> </td>
+          <td>-22</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>5</td>
+          <td> </td>
+          <td>-347</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>5</td>
+          <td> </td>
+          <td>-781</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>5</td>
+          <td> </td>
+          <td>-362</td>
+          <td>Cerrarse</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td>14</td>
+          <td>5</td>
+          <td> </td>
+          <td>-538</td>
+          <td>Cerrarse</td>
+        </tr>
+      </table>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_4.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_4.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_4.png"
+    alt="Figura 4.4: Tendencia a abrirse o cerrarse de los tubos.">
   <p class="descripcion_figura">Figura 4.4:Tendencia a abrirse o cerrarse de los tubos.</p>
+  <p class="subtitulos-figuras">Fotografías de los casos más extremos de tendencia a abrirse o cerrarse de los tubos,
+    según como sean los <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> presentes al
+    momento de liberarse las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>
+    mediante el método del corte.</p>
 </article>
 <article>
-  <h3 id="capitulo_4_4">4.4 TR calculadas a partir de ecuaciones de elasticidad.</h3>
-  <p id="tabla_4_5" class="descripcion_tabla">Tabla 4.5: Constantes Q para el cálculo de las TR.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
+  <h3 id="capitulo_4_4">4.4 <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> calculadas a
+    partir de ecuaciones de elasticidad.</h3>
+  <p>Como se detalló en el <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a>, previamente al cálculo de las <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a> se deben conocer diversas constantes, tales como las Qij, Φ_ij,
+    Dij, los módulos flectores E_y^b y los momentos flectores para finalmente calcular las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
+  <p>A partir de la <a href="#tabla_4_3" title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas."
+      class="enlaces_tablas">Tabla 4.3</a>, y teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_14' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.14</a> del <a class="enlaces_capitulo"
+      href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo."
+      rel="noopener noreferrer">Capítulo 2.3.2</a>, se pueden evaluar las
+    constantes Q11, Q22, Q12 y Q66. Los valores de estas constantes se resumen a continuación en la <a href="#tabla_4_5"
+      title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>.</p>
+  <p>De manera similar al caso de las constantes Q, se pueden evaluar las constantes Φ partir de los valores de la <a href="#tabla_4_5"
+    title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>. Teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_13' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.13</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a> y las <a class='enlaces_ecuaciones' href='#ecuaciones_17' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.17</a> del <a class="enlaces_capitulo" href="capitulo_2_3_3"
+      title="Capítulo 2.3.3: Modelo de predicción de DR." rel="noopener noreferrer">Capítulo 2.3.3</a>, se pueden
+    evaluar las constantes Φ_11, Φ_12, Φ_22 y Φ_26 para los ángulos utilizados en las capas de los tubos de esta tesis,
+    que son los ángulos de 5º, 45º y 89º. Los valores de estas constantes se resumen a continuación en la <a
+      href="#tabla_4_6" title="Tabla 4.6: Constantes Φ para el cálculo de las TR." class="enlaces_tablas">Tabla 4.6</a>.
+  </p>
+  <p id="tabla_4_5" class="descripcion_tabla">Tabla 4.5: Constantes Q para el cálculo de las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;"></th>
+          <th style="font-weight: bold;">Q11 [MPa]</th>
+          <th style="font-weight: bold;">Q22 [MPa]</th>
+          <th style="font-weight: bold;">Q12 [MPa]</th>
+          <th style="font-weight: bold;">Q66 [MPa]</th>
+        </tr>
+      
+        <tr>
+          <td style="font-weight: bold;">Corrida 1</td>
+          <td>154.496,86</td>
+          <td>10.067,49</td>
+          <td>4.037,06</td>
+          <td>3.703,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 2</td>
+          <td>138.880,73</td>
+          <td>9.852,24</td>
+          <td>3.674,89</td>
+          <td>3.638,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7A</td>
+          <td>134.443,82</td>
+          <td>8.431,57</td>
+          <td>3.229,29</td>
+          <td>3.128,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7B</td>
+          <td>130.319,18</td>
+          <td>8.254,31</td>
+          <td>3.111,87</td>
+          <td>3.066,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7C</td>
+          <td>169.083,07</td>
+          <td>11.936,03</td>
+          <td>4.917,64</td>
+          <td>4.350,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 8</td>
+          <td>150.232,97</td>
+          <td>9.328,14</td>
+          <td>3.740,58</td>
+          <td>3.442,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 11</td>
+          <td>136.114,09</td>
+          <td>10.664,28</td>
+          <td>3.839,14</td>
+          <td>3.931,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 12</td>
+          <td>162.076,20</td>
+          <td>10.982,27</td>
+          <td>4.469,78</td>
+          <td>4.022,00</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 13</td>
+          <td>140.997,54</td>
+          <td>9.260,69</td>
+          <td>3.556,10</td>
+          <td>3.423,00</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 14</td>
+          <td>164.517,92</td>
+          <td>12.061,62</td>
+          <td>4.860,83</td>
+          <td>4.399,00</td>
+        </tr>
+      </table>
+  <p>A partir de las constantes Φij en la <a href="#tabla_4_6"
+      title="Tabla 4.6: Constantes Φ para el cálculo de las TR." class="enlaces_tablas">Tabla 4.6</a> y de los
+    resultados de calidad resumidos en la <a href="#tabla_3_6"
+      title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla
+      3.6</a>, se pueden
+    evaluar, teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_10' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.10</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a>, las constantes D11, D22 y D12. Los valores de
+    estas constantes se resumen en la <a href="#tabla_4_7" title="Tabla 4.7: Constantes Dij para el cálculo de las TR."
+      class="enlaces_tablas">Tabla 4.7</a>.</p>
+  <p>Mediante los valores de las constantes Dij de la <a href="#tabla_4_7"
+      title="Tabla 4.7: Constantes Dij para el cálculo de las TR." class="enlaces_tablas">Tabla 4.7</a>, se pueden
+    evaluar entonces los módulos flectores con la
+    <a class='enlaces_ecuaciones' href='#ecuaciones_9' target="_blank" rel='noopener noreferrer'>Ecuación 2.9</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a>, lo que luego nos permitirá calcular los <a data-dark class="abreviatura" title="Momentos Residuales."
+      href="MR">MR</a>. Los valores de los módulos flectores se resumen en la <a href="#tabla_4_8"
+      title="Tabla 4.8: Módulos Flectores Eyb." class="enlaces_tablas">Tabla 4.8</a>.
+  </p>
+  <p id="tabla_4_6" class="descripcion_tabla">Tabla 4.6: Constantes Φ para el cálculo de las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;"> </th>
+          <th style="font-weight: bold;">Ángulo de Capa</th>
+          <th style="font-weight: bold;">Φ11 [MPa]</th>
+          <th style="font-weight: bold;">Φ22 [MPa]</th>
+          <th style="font-weight: bold;">Φ12 [MPa]</th>
+          <th style="font-weight: bold;">|Φ26| [MPa]</th>
+        </tr>
+      
+        <tr>
+          <td style="font-weight: bold;" rowspan="3">Corrida 1<br>[89/45/5/45/89]</td>
+          <td style="font-weight: bold;">±5º</td>
+          <td>152.331,73</td>
+          <td>10.096,56</td>
+          <td>5.105,09</td>
+          <td>212,87</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±45º</td>
+          <td>46.862,62</td>
+          <td>46.862,62</td>
+          <td>39.456,62</td>
+          <td>36.107,34</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±89º</td>
+          <td>10.068,34</td>
+          <td>154.409,73</td>
+          <td>4.080,20</td>
+          <td>2.495,50</td>
+        </tr>
+        <tr class="borde-top-tabla">
+          <td style="font-weight: bold;" rowspan="3">Corrida 2<br>[89/45/5/45/89]</td>
+          <td style="font-weight: bold;">±5º</td>
+          <td>136.944,51</td>
+          <td>9.876,25</td>
+          <td>4.630,99</td>
+          <td>179,04</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±45º</td>
+          <td>42.658,69</td>
+          <td>42.658,69</td>
+          <td>35.382,69</td>
+          <td>32.257,12</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±89º</td>
+          <td>9.852,92</td>
+          <td>138.802,81</td>
+          <td>3.713,50</td>
+          <td>2.231,67</td>
+        </tr>
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 7A<br>[455]</td>
+          <td style="font-weight: bold;">±45º</td>
+          <td>40.461,49</td>
+          <td>40.461,49</td>
+          <td>34.205,49</td>
+          <td>31.503,06</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 7B<br>[455]</td>
+          <td style="font-weight: bold;">±45º</td>
+          <td>39.265,31</td>
+          <td>39.265,31</td>
+          <td>33.133,31</td>
+          <td>30.516,22</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 7C<br>[455]</td>
+          <td style="font-weight: bold;">±45º</td>
+          <td>52.063,59</td>
+          <td>52.063,59</td>
+          <td>43.363,59</td>
+          <td>39.286,76</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 8<br>[455]</td>
+          <td style="font-weight: bold;">±45º</td>
+          <td>45.202,57</td>
+          <td>45.202,57</td>
+          <td>38.318,57</td>
+          <td>35.226,21</td>
+        </tr>
+        <tr class="borde-top-tabla">
+          <td style="font-weight: bold;" rowspan="3">Corrida 11<br>[892/452/5/]S</td>
+          <td style="font-weight: bold;">±5º</td>
+          <td>134.231,10</td>
+          <td>10.687,16</td>
+          <td>4.769,20</td>
+          <td>171,39</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±45º</td>
+          <td>42.545,17</td>
+          <td>42.545,17</td>
+          <td>34.683,17</td>
+          <td>31.362,45</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±89º</td>
+          <td>10.664,93</td>
+          <td>136.038,31</td>
+          <td>3.876,71</td>
+          <td>2.170,32</td>
+        </tr>
+        <tr class="borde-top-tabla">
+          <td style="font-weight: bold;" rowspan="3">Corrida 12<br>[892/452/5/]S</td>
+          <td style="font-weight: bold;">±5º</td>
+          <td>159.812,55</td>
+          <td>11.014,08</td>
+          <td>5.585,70</td>
+          <td>230,60</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±45º</td>
+          <td>49.521,51</td>
+          <td>49.521,51</td>
+          <td>41.477,51</td>
+          <td>37.773,48</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±89º</td>
+          <td>10.983,22</td>
+          <td>161.985,11</td>
+          <td>4.514,86</td>
+          <td>2.609,04</td>
+        </tr>
+        <tr class="borde-top-tabla">
+          <td style="font-weight: bold;" rowspan="2">Corrida 13<br>[892/52/89/]S</td>
+          <td style="font-weight: bold;">±5º</td>
+          <td>139.020,98</td>
+          <td>9.285,50</td>
+          <td>4.531,98</td>
+          <td>184,48</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">±89º</td>
+          <td>9.261,40</td>
+          <td>140.918,00</td>
+          <td>3.595,52</td>
+          <td>2.278,17</td>
+        </tr>
+        <tr class="borde-top-tabla">
+          <td style="font-weight: bold;" rowspan="2">Corrida 14<br>[892/52/89/]S</td>
+          <td style="font-weight: bold;">±5º</td>
+          <td>162.234,64</td>
+          <td>12.094,50</td>
+          <td>5.986,03</td>
+          <td>237,12</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">±89º</td>
+          <td>12.062,60</td>
+          <td>164.426,03</td>
+          <td>4.906,28</td>
+          <td>2.631,66</td>
+        </tr>
+      </table>
 
-  <p id="tabla_4_6" class="descripcion_tabla">Tabla 4.6: Constantes Φ para el cálculo de las TR.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <p id="tabla_4_7" class="descripcion_tabla">Tabla 4.7: Constantes Dij para el cálculo de las TR.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
+  <p id="tabla_4_7" class="descripcion_tabla">Tabla 4.7: Constantes Dij para el cálculo de las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;"> </th>
+          <th style="font-weight: bold;">D11 [MPa mm3]</th>
+          <th style="font-weight: bold;">D22 [MPa mm3]</th>
+          <th style="font-weight: bold;">D12 [MPa mm3]</th>
+        </tr>
+      
+        <tr>
+          <td style="font-weight: bold;">Corrida 1</td>
+          <td>8.423,00</td>
+          <td>58.455,34</td>
+          <td>5.112,26</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 2</td>
+          <td>5.177,94</td>
+          <td>34.466,47</td>
+          <td>3.016,65</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7A</td>
+          <td>16.565,61</td>
+          <td>16.565,61</td>
+          <td>14.004,30</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7B</td>
+          <td>20.383,62</td>
+          <td>20.383,62</td>
+          <td>17.200,34</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7C</td>
+          <td>15.236,45</td>
+          <td>15.236,45</td>
+          <td>12.690,38</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 8</td>
+          <td>10.116,41</td>
+          <td>10.116,41</td>
+          <td>8.575,76</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 11</td>
+          <td>40.730,20</td>
+          <td>257.483,00</td>
+          <td>22.925,29</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 12</td>
+          <td>31.310,41</td>
+          <td>213.056,80</td>
+          <td>18.937,86</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 13</td>
+          <td>56.857,57</td>
+          <td>178.076,49</td>
+          <td>5.944,81</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 14</td>
+          <td>141.816,65</td>
+          <td>434.771,25</td>
+          <td>16.805,31</td>
+        </tr>
+      </table>
 
   <p id="tabla_4_8" class="descripcion_tabla">Tabla 4.8: Módulos Flectores Eyb.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
+  <table class="tabla_general">
+    <tr class="borde-top-tabla borde-bottom-tabla">
+      <th style="font-weight: bold;"></th>
+      <th style="font-weight: bold;"><span id="ebx_4"></span> [MPa]</th>
+    </tr>
+  
+    <tr>
+      <td style="font-weight: bold;">Corrida 1</td>
+      <td>123.937,96</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 2</td>
+      <td>111.767,99</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7A</td>
+      <td>11.544,72</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7B</td>
+      <td>11.306,38</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7C</td>
+      <td>15.946,20</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 8</td>
+      <td>12.719,62</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 11</td>
+      <td>109.796,23</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 12</td>
+      <td>129.998,78</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 13</td>
+      <td>113.142,14</td>
+    </tr>
+    <tr class="borde-bottom-tabla">
+      <td style="font-weight: bold;">Corrida 14</td>
+      <td>132.133,06</td>
+    </tr>
+  
   </table>
+  <p>A partir de los datos de las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>
+    resumidos en la <a href="#tabla_4_4" title="Tabla 4.4: Deformaciones Residuales (DR)." class="enlaces_tablas">Tabla
+      4.4</a>, el valor de los módulos flectores en la <a href="#tabla_4_8" title="Tabla 4.8: Módulos Flectores Eyb."
+      class="enlaces_tablas">Tabla 4.8</a> y los parámetros de calidad resumidos
+    en la <a href="#tabla_3_6" title="Tabla 3.6: Resumen de parámetros de calidad de los tubos."
+      class="enlaces_tablas">Tabla
+      3.6</a>, se pueden evaluar los <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> con
+    la <a class='enlaces_ecuaciones' href='#ecuaciones_5' target="_blank" rel='noopener noreferrer'>Ecuación 2.5</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a>. Los resultados se encuentran resumidos en la <a href="#tabla_4_9"
+      title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>.
+  </p>
+  <p>Las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> se obtienen de evaluar las
+    <a class='enlaces_ecuaciones' href='#ecuaciones_7' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.7</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
+      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
+      2.3.2</a> para cada una de las corridas con los valores de <a data-dark class="abreviatura"
+      title="Momentos Residuales." href="MR">MR</a> de la <a href="#tabla_4_9"
+      title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>. Se
+    necesita evaluar también la <a class='enlaces_ecuaciones' href='#ecuaciones_8' target="_blank" rel='noopener noreferrer'>Ecuación 2.8</a> para
+    obtener la constante N para cada corrida. La <a href="#tabla_4_10"
+      title="Tabla 4.10: TR calculadas por elasticidad." class="enlaces_tablas">Tabla 4.10</a> resume la información
+    para los valores máximos de σy y σz.
+    Estos valores en el caso de σy se encuentran cuando el radio-vector r se encuentra en los extremos, es decir, r=a y
+    r=b. En cambio, para σz, el valor máximo se encuentra en el centro. Se evaluaron las <a class='enlaces_ecuaciones' href='#ecuaciones_7' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.7</a>, variando r
+    entre a y b en 11 puntos (véase la <a href="#figura_2_2"
+      title="Figura 2.2:Radiovector r y convención de momentos positivos." class="enlaces_figuras">Figura 2.2</a>), para
+    obtener la distribución típica de las <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a>. El resultado se muestra en la <a href="#figura_4_5"
+      title="Figura 4.5:Perfiles de las TR de σz según mecánica del continuo." class="enlaces_figuras">Figura 4.5</a>
+    para
+    σz y en la <a href="#figura_4_6" title="Figura 4.6:Perfiles de las TR de σy según mecánica del continuo."
+      class="enlaces_figuras">Figura 4.6</a> para σy. Se puede observar que las tensiones en la dirección Z son casi
+    nulas y que presentan
+    un valor bastante bajo.</p>
 
-  <p id="tabla_4_9" class="descripcion_tabla">Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
+  <p id="tabla_4_9" class="descripcion_tabla">Tabla 4.9: Momentos Residuales (<a data-dark class="abreviatura"
+      title="Momentos Residuales." href="MR">MR</a>) calculados por elasticidad.</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;">Corrida Nº</th>
+          <th style="font-weight: bold;">Desplazamiento δ [mm]</th>
+          <th style="font-weight: bold;">Radio Menor a [mm]</th>
+          <th style="font-weight: bold;">Radio Mayor b [mm]</th>
+          <th style="font-weight: bold;">Módulo de Flexión <span id="ebx_5"></span> [MPa]</th>
+          <th style="font-weight: bold;">Momento flector [N]</th>
+        </tr>
+      
+        <tr>
+          <td>1</td>
+          <td>-9,43E-04</td>
+          <td>50,74</td>
+          <td>52,49</td>
+          <td>123.937,96</td>
+          <td>-1,55E-05</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>-1,60E-03</td>
+          <td>50,76</td>
+          <td>52,28</td>
+          <td>111.767,99</td>
+          <td>-1,41E-05</td>
+        </tr>
+        <tr>
+          <td>7A</td>
+          <td>-2,48E-04</td>
+          <td>50,86</td>
+          <td>52,56</td>
+          <td>11.544,72</td>
+          <td>-23E-06</td>
+        </tr>
+        <tr>
+          <td>7B</td>
+          <td>1,11E-03</td>
+          <td>50,93</td>
+          <td>52,77</td>
+          <td>11.306,38</td>
+          <td>1,39E-05</td>
+        </tr>
+        <tr>
+          <td>7C</td>
+          <td>-2,15E-04</td>
+          <td>50,96</td>
+          <td>52,48</td>
+          <td>15.946,20</td>
+          <td>-1,78E-06</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>-6,99E-05</td>
+          <td>50,84</td>
+          <td>52,23</td>
+          <td>12.719,62</td>
+          <td>-3,26E-07</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>-1,10E-03</td>
+          <td>50,66</td>
+          <td>53,65</td>
+          <td>109.796,23</td>
+          <td>-1,47E-04</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>-2,48E-03</td>
+          <td>50,75</td>
+          <td>53,40</td>
+          <td>129.998,78</td>
+          <td>-2,25E-04</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>-1,15E-03</td>
+          <td>50,59</td>
+          <td>53,25</td>
+          <td>113.142,14</td>
+          <td>-2,02E-04</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td>14</td>
+          <td>-1,71E-03</td>
+          <td>50,73</td>
+          <td>54,13</td>
+          <td>132.133,06</td>
+          <td>-9,36E-04</td>
+        </tr>
+      </table>
 
-  <p id="tabla_4_10" class="descripcion_tabla">Tabla 4.10: TR calculadas por elasticidad.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_5.png" data-src-medium="./assets/images/media_calidad/figura_4_5.png" data-src-high="./assets/images/alta_calidad/figura_4_5.png" alt="Figura 4.5: Perfiles de las TR de σz según mecánica del continuo.">
-  <p class="descripcion_figura">Figura 4.5:Perfiles de las TR de σz según mecánica del continuo.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_6.png" data-src-medium="./assets/images/media_calidad/figura_4_6.png" data-src-high="./assets/images/alta_calidad/figura_4_6.png" alt="Figura 4.6: Perfiles de las TR de σy según mecánica del continuo.">
-  <p class="descripcion_figura">Figura 4.6:Perfiles de las TR de σy según mecánica del continuo.</p>
+  <p id="tabla_4_10" class="descripcion_tabla">Tabla 4.10: <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> calculadas por elasticidad.</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;">CorridaNº</th>
+          <th style="font-weight: bold;">N [mm4]</th>
+          <th style="font-weight: bold;">σy(a)<br>[MPa]</th>
+          <th style="font-weight: bold;">σy(b)[MPa]</th>
+          <th style="font-weight: bold;">σz(Centro)<br>[MPa]</th>
+        </tr>
+      
+        <tr>
+          <td>1</td>
+          <td>12,50</td>
+          <td>-3,07E-05</td>
+          <td>3,00E-05</td>
+          <td>7,05E-19</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>7,12</td>
+          <td>-3,70E-05</td>
+          <td>3,62E-05</td>
+          <td>-2,25E-19</td>
+        </tr>
+        <tr>
+          <td>7A</td>
+          <td>11,14</td>
+          <td>-4,89E-06</td>
+          <td>4,78E-06</td>
+          <td>7,13E-20</td>
+        </tr>
+        <tr>
+          <td>7B</td>
+          <td>15,28</td>
+          <td>2,49E-05</td>
+          <td>-2,43E-05</td>
+          <td>-1,55E-18</td>
+        </tr>
+        <tr>
+          <td>7C</td>
+          <td>7,12</td>
+          <td>-4,67E-06</td>
+          <td>4,58E-06</td>
+          <td>0,00E+00</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>4,98</td>
+          <td>-1,02E-06</td>
+          <td>1,00E-06</td>
+          <td>-3,72E-20</td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>106,56</td>
+          <td>-1,01E-04</td>
+          <td>9,70E-05</td>
+          <td>6,28E-19</td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>65,75</td>
+          <td>-1,96E-04</td>
+          <td>1,89E-04</td>
+          <td>-1,56E-18</td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>66,75</td>
+          <td>-1,74E-04</td>
+          <td>1,69E-04</td>
+          <td>3,44E-19</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td>14</td>
+          <td>178,15</td>
+          <td>-4,97E-04</td>
+          <td>4,76E-04</td>
+          <td>-5,97E-18</td>
+        </tr>
+      </table>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_5.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_5.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_5.png"
+    alt="Figura 4.5: Perfiles de las TR de σz según mecánica del continuo.">
+  <p class="descripcion_figura">Figura 4.5:Perfiles de las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> de σz según mecánica del continuo.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_6.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_6.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_6.png"
+    alt="Figura 4.6: Perfiles de las TR de σy según mecánica del continuo.">
+  <p class="descripcion_figura">Figura 4.6:Perfiles de las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> de σy según mecánica del continuo.</p>
 </article>
 <article>
-  <h3 id="capitulo_4_5">4.5. DR predichas mediante la TCL.</h3>
-  <p id="tabla_4_11" class="descripcion_tabla">Tabla 4.11: DR calculadas con TCL.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
+  <h3 id="capitulo_4_5">4.5. DR predichas mediante la <a data-dark class="abreviatura"
+      title="Teoría Clásica de Laminados." href="TCL">TCL</a>.</h3>
+  <p>Las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> predichas mediante la <a
+      data-dark class="abreviatura" title="Teoría Clásica de Laminados." href="TCL">TCL</a> se evaluaron mediante el
+    software MATLAB Online <span class="llamadas"
+      title="El archivo se puede descargar en https://github.com/Gustavo-F-E/deformaciones-residuales/raw/main/deformaciones_residuales_TCL.mlx.">(basic)<sup
+        style="color: blue;">2 </sup></span>, que ofrece 20 horas al mes de uso gratuito y acceso a los 10 productos más
+    comunes.
+    Los resultados se muestran en la <a href="#tabla_4_11" title="Tabla 4.11: DR calculadas con TCL."
+      class="enlaces_tablas">Tabla 4.11</a>.</p>
+  <p id="tabla_4_11" class="descripcion_tabla">Tabla 4.11: <a data-dark class="abreviatura"
+      title="Deformaciones Residuales." href="DR">DR</a> calculadas con <a data-dark class="abreviatura"
+      title="Teoría Clásica de Laminados." href="TCL">TCL</a>.</p>
+      <table class="tabla_general">
+        <tr class="borde-top-tabla borde-bottom-tabla">
+          <th style="font-weight: bold;"></th>
+          <th style="font-weight: bold;">Deformaciones residuales [mm]</th>
+        </tr>
+      
+        <tr>
+          <td style="font-weight: bold;">Corrida 1</td>
+          <td>-3,00E-04</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 2</td>
+          <td>-2,00E-03</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7A</td>
+          <td>-1,30E-03</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7B</td>
+          <td>-1,80E-03</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 7C</td>
+          <td>-4,00E-04</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 8</td>
+          <td>-2,00E-04</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 11</td>
+          <td>-4,00E-03</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 12</td>
+          <td>-2,00E-04</td>
+        </tr>
+        <tr>
+          <td style="font-weight: bold;">Corrida 13</td>
+          <td>-7,00E-04</td>
+        </tr>
+        <tr class="borde-bottom-tabla">
+          <td style="font-weight: bold;">Corrida 14</td>
+          <td>-5,00E-04</td>
+        </tr>
+      </table>
 </article>
 <article>
-  <h3 id="capitulo_4_6">4.6. TR predichas según el modelo de elementos finitos planteado.</h3>
+  <h3 id="capitulo_4_6">4.6. <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> predichas
+    según el modelo de elementos finitos planteado.</h3>
+  <p>Según el modelo de elementos finitos descrito en el inciso anterior, se simularon las 10 corridas, obteniéndose los
+    <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a>, las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> de Von Mises (o totales), las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> Circunferenciales y las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> Radiales.
+  </p>
+  <p>Para esto, es necesario tener en cuenta las propiedades micro-mecánicas según la Regla de las Mezclas para cada
+    corrida (<a href="#tabla_4_3" title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas."
+      class="enlaces_tablas">Tabla 4.3</a>), los patrones utilizados en cada corrida (<a href="#tabla_3_2"
+      title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla
+      3.2</a>), y las dimensiones geométricas de las
+    probetas de cada corrida. Para esto se tuvo en cuenta la medición de los parámetros de calidad de las probetas,
+    diámetro y espesor de las mismas, que se encuentran resumidos en la <a href="#tabla_3_6"
+      title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla
+      3.6</a>. Para el ancho de las mismas se
+    utilizó una longitud de 25,4 mm. Finalmente, se debe aplicar el momento unitario, y luego se aplica el momento total
+    según el cálculo de la <a class='enlaces_ecuaciones' href='#ecuaciones_19' target="_blank" rel='noopener noreferrer'>Ecuación 2.19</a>, teniendo en cuenta los valores de la <a href="#tabla_4_4"
+      title="Tabla 4.4: Deformaciones Residuales (DR)." class="enlaces_tablas">Tabla 4.4</a>.</p>
+  <p>Pero previo a esto, se debe realizar un análisis del tipo de elemento que resulte más óptimo en cuanto a la calidad
+    de los resultados, simplifique el problema y que conlleve a un menor gasto computacional. Para esto se resolvió el
+    problema para la Corrida 1, pero variando el tipo de elemento involucrado.</p>
+  <p>En la <a href="#tabla_4_12" title="Tabla 4.12: Datos de diferentes modelados mediante elementos finitos."
+      class="enlaces_tablas">Tabla 4.12</a> se comparan para cada elemento lineal el número de nodos y de elementos
+    utilizados en el modelo
+    para la Corrida Nº 1, así como también las <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a> de Von Mises (Totales) obtenidas para cada elemento (SHELL181, SOLID185 o SOLSH190). Se observa
+    en dicha tabla que los valores obtenidos para cada tipo de elemento son similares. También se modelaron el mismo
+    sistema con el tipo de elemento SHELL281 de orden cuadrático pero con el mismo tamaño promedio del elemento en la
+    zona de la galga de 1 mm, y finalmente un mallado más fino (tamaño del elemento en la zona de la galga de 0,5 mm)
+    con el mismo tipo de elemento. Esos resultados también se muestran en la <a href="#tabla_4_12"
+      title="Tabla 4.12: Datos de diferentes modelados mediante elementos finitos." class="enlaces_tablas">Tabla
+      4.12</a>. Dado que los valores obtenidos
+    por el elemento cuadrático SHELL281, con un tamaño en la zona de la galga de 0,5 mm, producen una aproximación
+    intermedia entre los valores de <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> del
+    tipo de elemento SHELL181 (1 mm) y SHELL281 (1 mm), a la vez que utiliza menos recursos informáticos que los
+    elementos tipo SOLID o SOLSH, se decidió utilizar para modelar las simulaciones el elemento tipo SHELL281 con un
+    tamaño de malla en la zona de la galga de 0,5 mm para el resto de las corridas. La representación de la malla para
+    este tipo de elementos se muestra en la <a href="#figura_4_7" title="Figura 4.7:Mallado utilizado en la Corrida 1."
+      class="enlaces_figuras">Figura 4.7</a>.</p>
+  <p>Para representar los ángulos de las capas de cada corrida, se crearon capas de espesor dividido en 20. Se
+    configuraron los ángulos para cada corrida tal como se muestra en la <a href="#tabla_4_13"
+      title="Tabla 4.13: Configuración de los ángulos en ANSYS para las diferentes capas." class="enlaces_tablas">Tabla
+      4.13</a>. Afortunadamente, en ANSYS Workbench
+    ACP-PRE® es bastante sencillo cerciorarse de que los ángulos de las capas fueron configurados correctamente, como se
+    muestra en la <a href="#figura_4_8" title="Figura 4.8:Chequeo de los ángulos de cada capa."
+      class="enlaces_figuras">Figura 4.8</a> para el caso de los ángulos de la Corrida 1.</p>
+
   <p id="tabla_4_12" class="descripcion_tabla">Tabla 4.12: Datos de diferentes modelados mediante elementos
     finitos.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
+  <p class="subtitulos-tablas">Se utilizaron diferentes tipos de elementos para decidir el modelo más adecuado para
+    simular y obtener las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> mediante el
+    software ANSYS Workbench®. El tipo de elemento elegido para la simulación está resaltado en gris.</p>
+    <table class="tabla_general">
+      <tr class="borde-top-tabla borde-bottom-tabla">
+        <th style="font-weight: bold;">Tipo de elemento</th>
+        <th style="font-weight: bold;">Orden del elemento</th>
+        <th style="font-weight: bold;">Tamaño mallado zona Galga [mm]</th>
+        <th style="font-weight: bold;">Nº Nodos</th>
+        <th style="font-weight: bold;">Nº Elementos</th>
+        <th style="font-weight: bold;"><a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a>[N mm]</th>
+        <th style="font-weight: bold;"><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> Von Mises <br>[Mpa]</th>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td>Contenido 1</td>
+        <td>Shell</td>
+        <td>Lineal</td>
+        <td>1</td>
+        <td>979</td>
+        <td>880</td>
+        <td>251,27</td>
+        <td>27,84</td>
       </tr>
       <tr>
-        <td>Contenido 2</td>
+        <td>Solid</td>
+        <td>Lineal</td>
+        <td>1</td>
+        <td>20559</td>
+        <td>17600</td>
+        <td>249,33</td>
+        <td>27,55</td>
       </tr>
       <tr>
-        <td>Contenido 3</td>
+        <td>Solsh</td>
+        <td>Lineal</td>
+        <td>1</td>
+        <td>20559</td>
+        <td>17600</td>
+        <td>249,20</td>
+        <td>27,58</td>
       </tr>
-    </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_7.png" data-src-medium="./assets/images/media_calidad/figura_4_7.png" data-src-high="./assets/images/alta_calidad/figura_4_7.png" alt="Figura 4.7: Mallado utilizado en la Corrida 1.">
+      <tr>
+        <td>Shell</td>
+        <td>Cuadrático</td>
+        <td>1</td>
+        <td>2837</td>
+        <td>880</td>
+        <td>249,12</td>
+        <td>27,45</td>
+      </tr>
+      <tr class="borde-bottom-tabla" style="background-color: #ccc;">
+        <td>Shell</td>
+        <td>Cuadrático</td>
+        <td>0,5</td>
+        <td>34393</td>
+        <td>11232</td>
+        <td>250,92</td>
+        <td>27,73</td>
+      </tr>
+    </table>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_7.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_7.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_7.png" alt="Figura 4.7: Mallado utilizado en la Corrida 1.">
   <p class="descripcion_figura">Figura 4.7:Mallado utilizado en la Corrida 1.</p>
+  <p class="subtitulos-figuras">Realizado con Elementos tipo SHELL281 y 0,5 mm de tamaño de elemento en la zona de la
+    galga. </p>
 
   <p id="tabla_4_13" class="descripcion_tabla">Tabla 4.13: Configuración de los ángulos en ANSYS para las
     diferentes capas.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
-  </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_8.png" data-src-medium="./assets/images/media_calidad/figura_4_8.png" data-src-high="./assets/images/alta_calidad/figura_4_8.png" alt="Figura 4.8: Chequeo de los ángulos de cada capa.">
+    <img src="../assets/images/Tabla_4_13.png" alt="Tabla 4.13">
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_8.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_8.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_8.png" alt="Figura 4.8: Chequeo de los ángulos de cada capa.">
   <p class="descripcion_figura">Figura 4.8:Chequeo de los ángulos de cada capa.</p>
+  <p class="subtitulos-figuras">Se verifica que los ángulos estén configurados correctamente en ANSYS Workbench
+    ACP-PRE®. Se muestra un mallado muy grueso, de 5 mm para el elemento promedio, para facilitar la visualización de
+    las flechas. En rosa indican la normal al elemento y en verde la dirección de la fibra.</p>
+  <p>Teniendo en cuenta todas estas consideraciones, se muestran en la <a href="#tabla_4_14"
+      title="Tabla 4.14: Resumen de todas las simulaciones de cada corrida." class="enlaces_tablas">Tabla 4.14</a> los
+    <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a>, las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> de Von Mises (o totales) promedio, las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a> Circunferenciales Promedio y las <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a> Radiales Promedio.</p>
 
   <p id="tabla_4_14" class="descripcion_tabla">Tabla 4.14: Resumen de todas las simulaciones de cada corrida.</p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
+  <table class="tabla_general">
+    <tr class="borde-top-tabla">
+      <th style="font-weight: bold;"> </th>
+      <th rowspan="2"><a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> [N mm]</th>
+      <th rowspan="2"><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> de Von Mises [Mpa]</th>
+      <th rowspan="2"><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> Circunferenciales [Mpa]</th>
+      <th rowspan="2"><a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> Radiales [Mpa]</th>
+    </tr>
+    <tr>
+      <th style="font-weight: bold;"> </th>
+    </tr>
+  
+    <tr class="borde-top-tabla">
+      <td style="font-weight: bold;">Corrida 1</td>
+      <td>250,92</td>
+      <td>27,73</td>
+      <td>28,11</td>
+      <td>3,10E-03</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 2</td>
+      <td>289,15</td>
+      <td>42,29</td>
+      <td>42,44</td>
+      <td>4,80E-03</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7A</td>
+      <td>12,30</td>
+      <td>3,56</td>
+      <td>1,84</td>
+      <td>2,00E-04</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7B</td>
+      <td>-61,86</td>
+      <td>15,97</td>
+      <td>8,26</td>
+      <td>8,00E-04</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 7C</td>
+      <td>11,43</td>
+      <td>3,65</td>
+      <td>1,89</td>
+      <td>2,00E-04</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 8</td>
+      <td>2,70</td>
+      <td>1,05</td>
+      <td>0,54</td>
+      <td>0,00E+00</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 11</td>
+      <td>716,93</td>
+      <td>22,60</td>
+      <td>28,26</td>
+      <td>3,00E-03</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 12</td>
+      <td>1508,50</td>
+      <td>73,62</td>
+      <td>74,50</td>
+      <td>8,20E-03</td>
+    </tr>
+    <tr>
+      <td style="font-weight: bold;">Corrida 13</td>
+      <td>613,62</td>
+      <td>28,76</td>
+      <td>29,27</td>
+      <td>3,20E-03</td>
+    </tr>
+    <tr class="borde-bottom-tabla">
+      <td style="font-weight: bold;">Corrida 14</td>
+      <td>1716,22</td>
+      <td>48,85</td>
+      <td>50,07</td>
+      <td>5,40E-03</td>
+    </tr>
   </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_9.png" data-src-medium="./assets/images/media_calidad/figura_4_9.png" data-src-high="./assets/images/alta_calidad/figura_4_9.png" alt="Figura 4.9: MR obtenidos en ANSYS Workbench®.">
-  <p class="descripcion_figura">Figura 4.9:MR obtenidos en ANSYS Workbench®.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_10.png" data-src-medium="./assets/images/media_calidad/figura_4_10.png" data-src-high="./assets/images/alta_calidad/figura_4_10.png" alt="Figura 4.10: TR de Von Mises obtenidas en ANSYS Workbench®.">
-  <p class="descripcion_figura">Figura 4.10:TR de Von Mises obtenidas en ANSYS Workbench®.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_11.png" data-src-medium="./assets/images/media_calidad/figura_4_11.png" data-src-high="./assets/images/alta_calidad/figura_4_11.png" alt="Figura 4.11: TR Circunferenciales obtenidas en ANSYS Workbench®.">
-  <p class="descripcion_figura">Figura 4.11:TR Circunferenciales obtenidas en ANSYS Workbench®.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_12.png" data-src-medium="./assets/images/media_calidad/figura_4_12.png" data-src-high="./assets/images/alta_calidad/figura_4_12.png" alt="Figura 4.12: TR Radiales obtenidas en ANSYS Workbench®.">
-  <p class="descripcion_figura">Figura 4.12:TR Radiales obtenidas en ANSYS Workbench®.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_13.png" data-src-medium="./assets/images/media_calidad/figura_4_13.png" data-src-high="./assets/images/alta_calidad/figura_4_13.png" alt="Figura 4.13: Perfiles de las TR de σz según modelo de elementos finitos.">
-  <p class="descripcion_figura">Figura 4.13:Perfiles de las TR de σz según modelo de elementos finitos.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_14.png" data-src-medium="./assets/images/media_calidad/figura_4_14.png" data-src-high="./assets/images/alta_calidad/figura_4_14.png" alt="Figura 4.14: Perfiles de las TR de σy según modelo de elementos finitos.">
-  <p class="descripcion_figura">Figura 4.14:Perfiles de las TR de σy según modelo de elementos finitos.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_15.png" data-src-medium="./assets/images/media_calidad/figura_4_15.png" data-src-high="./assets/images/alta_calidad/figura_4_15.png" alt="Figura 4.15: Predicción del comportamiento en elementos SOLID y SOLSH.">
+  <p>Como la interpretación de la información es difícil de realizar en formato de tablas, se muestra también la
+    información en forma de gráficos en la <a href="#figura_4_9" title="Figura 4.9:MR obtenidos en ANSYS Workbench®."
+      class="enlaces_figuras">Figura 4.9</a>, <a href="#figura_4_10"
+      title="Figura 4.10:TR de Von Mises obtenidas en ANSYS Workbench®." class="enlaces_figuras">Figura 4.10</a>, <a
+      href="#figura_4_11" title="Figura 4.11:TR Circunferenciales obtenidas en ANSYS Workbench®."
+      class="enlaces_figuras">Figura 4.11</a> y <a href="#figura_4_12"
+      title="Figura 4.12:TR Radiales obtenidas en ANSYS Workbench®." class="enlaces_figuras">Figura 4.12</a>. Se ve que
+    la tendencia es
+    la misma en todos los casos: momentos y tensiones casi nulos para los casos de las corridas cercanas al ángulo de
+    55º (condición de isotensión) que son las corridas con capas en ángulos de ±45º (Corrida 7A, Corrida 7B, Corrida 7C
+    y Corrida 8), y que el resto de las corridas, mientras más capas circunferenciales tengan (cercanas a 89º), más <a
+      data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> (y por lo tanto <a data-dark
+      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>) van a tener. Por otro lado, las corridas que
+    son con alta Tensión de Fibra tienen <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a>
+    y <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> más altas que las corridas
+    equivalentes con baja Tensión de Fibra. Finalmente, se presentan la <a href="#figura_4_13"
+      title="Figura 4.13:Perfiles de las TR de σz según modelo de elementos finitos." class="enlaces_figuras">Figura
+      4.13</a> para σz y <a href="#figura_4_14"
+      title="Figura 4.14:Perfiles de las TR de σy según modelo de elementos finitos." class="enlaces_figuras">Figura
+      4.14</a> para σy según
+    el modelo de elementos finitos. Se denota la diferencia de comportamiento, al estar modelado mediante capas
+    ortotrópicas con diferentes ángulos, entre las diferentes corridas, y éstas a su vez frente a las figuras análogas
+    para mecánica del continuo (<a href="#figura_4_5"
+      title="Figura 4.5:Perfiles de las TR de σz según mecánica del continuo." class="enlaces_figuras">Figura 4.5</a> y
+    <a href="#figura_4_6" title="Figura 4.6:Perfiles de las TR de σy según mecánica del continuo."
+      class="enlaces_figuras">Figura 4.6</a>).</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_9.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_9.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_9.png" alt="Figura 4.9: MR obtenidos en ANSYS Workbench®.">
+  <p class="descripcion_figura">Figura 4.9: <a data-dark class="abreviatura" title="Momentos Residuales."
+      href="MR">MR</a> obtenidos en ANSYS Workbench®.</p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_10.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_10.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_10.png"
+    alt="Figura 4.10: TR de Von Mises obtenidas en ANSYS Workbench®.">
+  <p class="descripcion_figura">Figura 4.10: <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a> de Von Mises obtenidas en ANSYS Workbench®.</p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_11.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_11.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_11.png"
+    alt="Figura 4.11: TR Circunferenciales obtenidas en ANSYS Workbench®.">
+  <p class="descripcion_figura">Figura 4.11: <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a> Circunferenciales obtenidas en ANSYS Workbench®.</p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_12.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_12.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_12.png"
+    alt="Figura 4.12: TR Radiales obtenidas en ANSYS Workbench®.">
+  <p class="descripcion_figura">Figura 4.12: <a data-dark class="abreviatura" title="Tensiones residuales."
+      href="TR">TR</a> Radiales obtenidas en ANSYS Workbench®.</p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_13.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_13.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_13.png"
+    alt="Figura 4.13: Perfiles de las TR de σz según modelo de elementos finitos.">
+  <p class="descripcion_figura">Figura 4.13: Perfiles de las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> de σz según modelo de elementos finitos.</p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_14.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_14.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_14.png"
+    alt="Figura 4.14: Perfiles de las TR de σy según modelo de elementos finitos.">
+  <p class="descripcion_figura">Figura 4.14:Perfiles de las <a data-dark class="abreviatura"
+      title="Tensiones residuales." href="TR">TR</a> de σy según modelo de elementos finitos.</p>
+  <p>Un último comentario respecto del modelo de elementos finitos utilizado es que predice perfectamente el
+    comportamiento de deformación antes y después de la aplicación de los momentos. Además, con elementos SOLID y SOLSH,
+    se predice perfectamente el comportamiento de la galga de la cara interior, en compresión, y de la cara exterior, en
+    <span class="llamadas" title="Todo esto se cumple excepto para la Corrida 7B que es lo contrario.">tracción<sup
+        style="color: blue;">3 </sup></span>. Para esto véase la <a href="#figura_4_15"
+      title="Figura 4.15:Predicción del comportamiento en elementos SOLID y SOLSH." class="enlaces_figuras">Figura
+      4.15</a>:
+  </p>
+  <ul>
+    <li>Caso compresión (arriba, <a href="#figura_4_15"
+        title="Figura 4.15:Predicción del comportamiento en elementos SOLID y SOLSH." class="enlaces_figuras">Figura
+        4.15</a>): La galga está en compresión, y los elementos representados pertenecen al
+      lado interior. La estructura alámbrica previa a la deformación es más grande que la zona que presenta deformación
+      (la representación alámbrica de la galga puede verse en la <a href="#figura_2_5"
+        title="Figura 2.5:Medición de desplazamiento en dos puntos." class="enlaces_figuras">Figura 2.5</a>).</li>
+    <li>Caso tracción (abajo, <a href="#figura_4_15"
+        title="Figura 4.15:Predicción del comportamiento en elementos SOLID y SOLSH." class="enlaces_figuras">Figura
+        4.15</a>): La galga está en compresión, y los elementos representados pertenecen al
+      lado exterior. La estructura alámbrica previa a la deformación es más pequeña en comparación a la zona que
+      presenta deformación.</li>
+  </ul>
+  <p>En la <a href="#figura_4_15" title="Figura 4.15:Predicción del comportamiento en elementos SOLID y SOLSH."
+    class="enlaces_figuras">Figura 4.15</a>, las bandas de colores representan el desplazamiento (en mm) respecto
+  del Eje Circunferencial
+  Y (ejes coordenados cilíndricos de la <a href="#figura_2_4"
+    title="Figura 2.4:Soporte fijo y momentos aplicados en el modelo." class="enlaces_figuras">Figura 2.4</a>). Los
+  valores positivos son en rojo y los negativos en azul.</p>
+
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_15.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_15.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_15.png"
+    alt="Figura 4.15: Predicción del comportamiento en elementos SOLID y SOLSH.">
   <p class="descripcion_figura">Figura 4.15:Predicción del comportamiento en elementos SOLID y SOLSH.</p>
+  <p class="subtitulos-figuras">La predicción del comportamiento mediante estos elementos es representativa de la
+    realidad: compresión en la cara interior (arriba) y tracción en la cara exterior (abajo). El elemento tipo SHELL
+    solo reproduce el comportamiento de la cara interior. Los gráficos corresponden a la deformación en el Eje Y
+    (circunferencial) en unidades de mm.</p>
+
 </article>
 <article>
-  <h3 id="capitulo_4_7">4.7. Carreras máximas y Tensiones máximas según el estándar ASTM D 2290.</h3>
-  <p id="tabla_4_15" class="descripcion_tabla">Tabla 4.15: Resistencia de los tubos según el estándar ASTM D 2290.
+  <h3 id="capitulo_4_7">4.7. Carreras máximas y Tensiones máximas según el estándar <a class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a>.</h3>
+  <p>Se ensayó una muestra por corrida de tubo, según el procedimiento detallado en el <a class="enlaces_capitulo"
+      href="capitulo_3_4_3" title="Capítulo 3.4.3: Resistencia aparente de un aro de los tubos."
+      rel="noopener noreferrer">Capítulo 3.4.3</a>. Los resultados se
+    encuentran resumidos en la <a href="#tabla_4_15"
+      title="Tabla 4.15: Resistencia de los tubos según el estándar ASTM D 2290." class="enlaces_tablas">Tabla 4.15</a>.
   </p>
-  <table>
-    <thead>
-      <tr>
-        <th>Encabezado</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Contenido 1</td>
-      </tr>
-      <tr>
-        <td>Contenido 2</td>
-      </tr>
-      <tr>
-        <td>Contenido 3</td>
-      </tr>
-    </tbody>
+  <p>En la <a href="#figura_4_16" title="Figura 4.16:Curvas de carga vs. Desplazamiento para cada corrida."
+      class="enlaces_figuras">Figura 4.16</a> se observan las Curvas de carga vs. Desplazamiento para cada corrida. Se
+    denota que las corridas
+    que no poseen capas circunferenciales (a 89º) se deforman mucho más. A medida que aumenta el número de capas
+    circunferenciales, aumenta la rigidez y además aumenta la máxima carga de rotura. En la <a href="#figura_4_17"
+      title="Figura 4.17:Gráfico de Barras de Carrera Máxima para cada corrida." class="enlaces_figuras">Figura 4.17</a>
+    se observa que
+    las Corridas 7A, 7B, 7C y 8, que no poseen capas circunferenciales, se deforman mucho más a la rotura que las demás.
+  </p>
+  <p>En cuanto a las Corridas 7A, 7B y 7C tienen un promedio de 12,57 mm de Carrera máxima con un desvío estándar de
+    3,17 mm. Mientras que tienen un promedio de 526,12 MPa con un desvío estándar de 63,45 MPa. Estos son los desvíos
+    estándar que es esperable tener de tubo a tubo.</p>
+
+  <p id="tabla_4_15" class="descripcion_tabla">Tabla 4.15: Resistencia de los tubos según el estándar <a
+      class='enlaces_referencias'
+      href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
+      title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
+      rel='noopener noreferrer'>ASTM D 2290</a>.
+  </p>
+  <table class="tabla_general">
+    <tr class="borde-top-tabla borde-bottom-tabla">
+      <th style="font-weight: bold;">Corrida</th>
+      <th style="font-weight: bold;">Parte</th>
+      <th style="font-weight: bold;">Ancho* [mm]</th>
+      <th style="font-weight: bold;">Espesor* [mm]</th>
+      <th style="font-weight: bold;">Área [mm2]</th>
+      <th style="font-weight: bold;">Tiempo máx. [s]</th>
+      <th style="font-weight: bold;">Carga máx. [kN]</th>
+      <th style="font-weight: bold;">Carrera máx. [mm]</th>
+      <th style="font-weight: bold;">Tensión máx. [Mpa]</th>
+      <th style="font-weight: bold;">Cantidad de capas a 89º</th>
+    </tr>
+  
+    <tr>
+      <td>1</td>
+      <td>6</td>
+      <td>15,77</td>
+      <td>1,59</td>
+      <td>25,07</td>
+      <td>19,05</td>
+      <td>40,46</td>
+      <td>5,58</td>
+      <td>1.613,70</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>6</td>
+      <td>15,58</td>
+      <td>1,29</td>
+      <td>20,10</td>
+      <td>23,65</td>
+      <td>48,83</td>
+      <td>5,01</td>
+      <td>2.429,32</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7A</td>
+      <td>6</td>
+      <td>14,57</td>
+      <td>1,71</td>
+      <td>24,92</td>
+      <td>64,90</td>
+      <td>14,90</td>
+      <td>13,72</td>
+      <td>598,04</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>7B</td>
+      <td>7</td>
+      <td>12,33</td>
+      <td>1,76</td>
+      <td>21,70</td>
+      <td>42,50</td>
+      <td>10,90</td>
+      <td>8,98</td>
+      <td>502,29</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>7C</td>
+      <td>6</td>
+      <td>15,07</td>
+      <td>1,52</td>
+      <td>22,91</td>
+      <td>70,90</td>
+      <td>10,95</td>
+      <td>15,00</td>
+      <td>478,03</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>6</td>
+      <td>15,99</td>
+      <td>1,42</td>
+      <td>22,71</td>
+      <td>71,65</td>
+      <td>11,75</td>
+      <td>15,15</td>
+      <td>517,49</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>6</td>
+      <td>12,98</td>
+      <td>2,62</td>
+      <td>34,01</td>
+      <td>28,00</td>
+      <td>74,55</td>
+      <td>5,92</td>
+      <td>2.192,16</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>6</td>
+      <td>15,66</td>
+      <td>2,53</td>
+      <td>39,62</td>
+      <td>31,30</td>
+      <td>94,68</td>
+      <td>6,61</td>
+      <td>2.389,59</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>6</td>
+      <td>23,12</td>
+      <td>2,74</td>
+      <td>63,35</td>
+      <td>23,11</td>
+      <td>101,00</td>
+      <td>5,02</td>
+      <td>1.594,34</td>
+      <td>6</td>
+    </tr>
+    <tr class="borde-bottom-tabla">
+      <td>14</td>
+      <td>6</td>
+      <td>15,32</td>
+      <td>2,66</td>
+      <td>40,75</td>
+      <td>29,60</td>
+      <td>104,70</td>
+      <td>6,38</td>
+      <td>2.569,17</td>
+      <td>6</td>
+    </tr>
   </table>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_16.png" data-src-medium="./assets/images/media_calidad/figura_4_16.png" data-src-high="./assets/images/alta_calidad/figura_4_16.png" alt="Figura 4.16: Curvas de carga vs., Desplazamiento para cada corrida.">
+  <p class="subtitulos-tablas-chiquitito" style="font-size: 0.8rem;">
+    * Medidos en la entalla.
+  </p>
+  <p class="subtitulos-tablas-chiquitito" style="font-size: 0.8rem;">** Todas las probetas fallaron en la entalla excepto el 7B, pero cabe decir que la probeta 7B tenía la unión de las
+    caras de +45º y -45º.</p>
+  <p class="subtitulos-tablas-chiquitito" style="font-size: 0.8rem;">*** Todas las probetas tendieron a cerrarse al fallar, excepto las probetas 7A, 7C y 8.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_16.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_16.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_16.png"
+    alt="Figura 4.16: Curvas de carga vs., Desplazamiento para cada corrida.">
   <p class="descripcion_figura">Figura 4.16:Curvas de carga vs. Desplazamiento para cada corrida</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_17.png" data-src-medium="./assets/images/media_calidad/figura_4_17.png" data-src-high="./assets/images/alta_calidad/figura_4_17.png" alt="Figura 4.17: Gráfico de Barras de Carrera Máxima para cada corrida.">
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_17.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_17.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_17.png"
+    alt="Figura 4.17: Gráfico de Barras de Carrera Máxima para cada corrida.">
   <p class="descripcion_figura">Figura 4.17:Gráfico de Barras de Carrera Máxima para cada corrida.</p>
-  <img class="lazy" src="./assets/images/baja_calidad/figura_4_18.png" data-src-medium="./assets/images/media_calidad/figura_4_18.png" data-src-high="./assets/images/alta_calidad/figura_4_18.png" alt="Figura 4.18: Gráfico de Barras de Tensión Máxima para cada corrida.">
-  <p class="descripcion_figura">Figura 4.18:Gráfico de Barras de Tensión Máxima para cada corrida.</p>
+  <p>La <a href="#figura_4_18" title="Figura 4.18: Gráfico de Barras de Tensión Máxima para cada corrida."
+      class="enlaces_figuras">Figura 4.18</a> denota todo lo contrario: las corridas anteriores presentan una menor
+    resistencia (tensión de
+    rotura). Las corridas que tienen capas circunferenciales no ofrecen una gran diferencia de resistencia máxima
+    alcanzada, pero sí se nota que las corridas con mayor tensión de fibra aplicada, al tener un mayor porcentaje de
+    fibra, poseen más resistencia que las corridas que tienen el mismo patrón sin tensión de fibra aplicada.</p>
+  <img class="lazy" src="./assets/images/baja_calidad/figura_4_18.png"
+    data-src-medium="./assets/images/media_calidad/figura_4_18.png"
+    data-src-high="./assets/images/alta_calidad/figura_4_18.png"
+    alt="Figura 4.18: Gráfico de Barras de Tensión Máxima para cada corrida.">
+  <p class="descripcion_figura">Figura 4.18: Gráfico de Barras de Tensión Máxima para cada corrida.</p>
 </article>
+<br>
+<br>
+<hr>
+<div class="notas_al_pie">
+  <p class="title_notas_al_pie">Notas al pie:</p>
+  <p><span class="id_notas_al_pie">[1]</span>: El porcentaje en volumen de resina se calcula una vez obtenidos los
+    porcentajes de fibra y de poros.</p>
+  <p><span class="id_notas_al_pie">[2]</span>: El archivo se puede descargar en <a
+      style="color:blue; text-decoration: underline;"
+      href="https://github.com/Gustavo-F-E/deformaciones-residuales/raw/main/deformaciones_residuales_TCL.mlx">https://github.com/Gustavo-F-E/deformaciones-residuales/raw/main/deformaciones_residuales_TCL.mlx</a>.
+  </p>
+  <p><span class="id_notas_al_pie">[3]</span>: Todo esto se cumple excepto para la Corrida 7B que es lo contrario.</p>
+  <hr>
+</div>
+<hr>
+<br>
+<br>

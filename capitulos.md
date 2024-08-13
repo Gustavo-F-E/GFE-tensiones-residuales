@@ -907,18 +907,18 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <a href="#figura_2_1" title="Figura 2.1:Efectos de los Momentos residuales." class="enlaces_figuras">Figura 2.1</a>
 <a href="#figura_2_2" title="Figura 2.2:Radiovector r y convención de momentos positivos." class="enlaces_figuras">Figura 2.2</a>
 <a href="#figura_2_3" title="Figura 2.3:Coordenada z’ de la capa k-esima." class="enlaces_figuras">Figura 2.3</a>
-<a href="#figura_2_4" title="Figura 2.4:Soporte fijo y momentos aplicados en el modelo." class="enlaces_figuras">Figura  2.4</a>
-<a href="#figura_2_5" title="Figura 2.5:Medición de desplazamiento en dos puntos." class="enlaces_figuras">Figura  2.5</a>
+<a href="#figura_2_4" title="Figura 2.4:Soporte fijo y momentos aplicados en el modelo." class="enlaces_figuras">Figura 2.4</a>
+<a href="#figura_2_5" title="Figura 2.5:Medición de desplazamiento en dos puntos." class="enlaces_figuras">Figura 2.5</a>
 <a href="#figura_3_1" title="Figura 3.1:Máquina de EF utilizada en el CAC." class="enlaces_figuras">Figura 3.1</a>
 <a href="#figura_3_2" title="Figura 3.2:Detalle de los Frenos de Cinta del Devanador de la Máquina de EF."  class="enlaces_figuras">Figura 3.2</a>
 <a href="#figura_3_3" title="Figura 3.3:Procedimiento de medición de la Tensión." class="enlaces_figuras">Figura 3.3</a>
 <a href="#figura_3_4" title="Figura 3.4:Lectura de la Tensión de la fibra." class="enlaces_figuras">Figura 3.4</a>
 <a href="#figura_3_5" title="Figura 3.5:Distintas partes de la Batea de la Máquina de EF."  class="enlaces_figuras">Figura 3.5</a>
-<a href="#figura_3_6" title="Figura 3.6:Sistema de control de temperatura en la batea." class="enlaces_figuras">Figura  3.6</a>
+<a href="#figura_3_6" title="Figura 3.6:Sistema de control de temperatura en la batea." class="enlaces_figuras">Figura 3.6</a>
 <a href="#figura_3_7" title="Figura 3.7:Sierra Cortadora Sensitiva." class="enlaces_figuras">Figura 3.7</a>
 <a href="#figura_3_8" title="Figura 3.8:Tubos obtenidos en el presente trabajo mediante EF."  class="enlaces_figuras">Figura 3.8</a>
 <a href="#figura_3_9" title="Figura 3.9:Etiquetado de las partes de cada tubo." class="enlaces_figuras">Figura 3.9</a>
-<a href="#figura_3_10" title="Figura 3.10:Todos los tubos convenientemente etiquetados." class="enlaces_figuras">Figura  3.10</a>
+<a href="#figura_3_10" title="Figura 3.10:Todos los tubos convenientemente etiquetados." class="enlaces_figuras">Figura 3.10</a>
 <a href="#figura_3_11" title="Figura 3.11:Muestras de los tubos para el análisis mediante micrografías."  class="enlaces_figuras">Figura 3.11</a>
 <a href="#figura_3_12" title="Figura 3.12:Proceso de inclusión de las muestras." class="enlaces_figuras">Figura 3.12</a>
 <a href="#figura_3_13" title="Figura 3.13:Proceso de desbaste de las muestras." class="enlaces_figuras">Figura 3.13</a>
@@ -927,24 +927,24 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <a href="#figura_3_16" title="Figura 3.16:Mecanizado de las entallas en el CAC." class="enlaces_figuras">Figura 3.16</a>
 <a href="#figura_3_17" title="Figura 3.17:Ejemplo de Post-Procesado de las micrografías con ImageJ."  class="enlaces_figuras">Figura 3.17</a>
 <a href="#figura_3_18" title="Figura 3.18:Conexionado físico en el equipo registrador de datos."  class="enlaces_figuras">Figura 3.18</a>
-<a href="#figura_3_19" title="Figura 3.19:Conexionado físico en la galga extensométrica." class="enlaces_figuras">Figura  3.19</a>
+<a href="#figura_3_19" title="Figura 3.19:Conexionado físico en la galga extensométrica." class="enlaces_figuras">Figura 3.19</a>
 <a href="#figura_3_20" title="Figura 3.20:Corte de la pieza mediante un dremel." class="enlaces_figuras">Figura 3.20</a>
 <a href="#figura_3_21" title="Figura 3.21:Medición de las DR." class="enlaces_figuras">Figura 3.21</a>
 <a href="#figura_3_22" title="Figura 3.22:Piezas fabricadas para realizar el ensayo de disco partido."  class="enlaces_figuras">Figura 3.22</a>
 <a href="#figura_3_23" title="Figura 3.23:Ensayo de disco partido con la Shimadzu AG-100kNG."  class="enlaces_figuras">Figura 3.23</a>
-<a href="#figura_3_24" title="Figura 3.24:Ensayo de disco partido con la Instron 8802." class="enlaces_figuras">Figura  3.24</a>
-<a href="#figura_4_1" title="Figura 4.1:Grietas en las regiones con capas de ±5º." class="enlaces_figuras">Figura  4.1</a>
+<a href="#figura_3_24" title="Figura 3.24:Ensayo de disco partido con la Instron 8802." class="enlaces_figuras">Figura 3.24</a>
+<a href="#figura_4_1" title="Figura 4.1:Grietas en las regiones con capas de ±5º." class="enlaces_figuras">Figura 4.1</a>
 <a href="#figura_4_2" title="Figura 4.2:Diferencia de morfología de los poros en las diferentes capas."  class="enlaces_figuras">Figura 4.2</a>
 <a href="#figura_4_3" title="Figura 4.3:Defectos en la Corrida 11." class="enlaces_figuras">Figura 4.3</a>
-<a href="#figura_4_4" title="Figura 4.4:Tendencia a abrirse o cerrarse de los tubos." class="enlaces_figuras">Figura  4.4</a>
+<a href="#figura_4_4" title="Figura 4.4:Tendencia a abrirse o cerrarse de los tubos." class="enlaces_figuras">Figura 4.4</a>
 <a href="#figura_4_5" title="Figura 4.5:Perfiles de las TR de σz según mecánica del continuo."  class="enlaces_figuras">Figura 4.5</a>
 <a href="#figura_4_6" title="Figura 4.6:Perfiles de las TR de σy según mecánica del continuo."  class="enlaces_figuras">Figura 4.6</a>
 <a href="#figura_4_7" title="Figura 4.7:Mallado utilizado en la Corrida 1." class="enlaces_figuras">Figura 4.7</a>
 <a href="#figura_4_8" title="Figura 4.8:Chequeo de los ángulos de cada capa." class="enlaces_figuras">Figura 4.8</a>
 <a href="#figura_4_9" title="Figura 4.9:MR obtenidos en ANSYS Workbench®." class="enlaces_figuras">Figura 4.9</a>
-<a href="#figura_4_10" title="Figura 4.10:TR de Von Mises obtenidas en ANSYS Workbench®." class="enlaces_figuras">Figura  4.10</a>
+<a href="#figura_4_10" title="Figura 4.10:TR de Von Mises obtenidas en ANSYS Workbench®." class="enlaces_figuras">Figura 4.10</a>
 <a href="#figura_4_11" title="Figura 4.11:TR Circunferenciales obtenidas en ANSYS Workbench®."  class="enlaces_figuras">Figura 4.11</a>
-<a href="#figura_4_12" title="Figura 4.12:TR Radiales obtenidas en ANSYS Workbench®." class="enlaces_figuras">Figura  4.12</a>
+<a href="#figura_4_12" title="Figura 4.12:TR Radiales obtenidas en ANSYS Workbench®." class="enlaces_figuras">Figura 4.12</a>
 <a href="#figura_4_13" title="Figura 4.13:Perfiles de las TR de σz según modelo de elementos finitos."  class="enlaces_figuras">Figura 4.13</a>
 <a href="#figura_4_14" title="Figura 4.14:Perfiles de las TR de σy según modelo de elementos finitos."  class="enlaces_figuras">Figura 4.14</a>
 <a href="#figura_4_15" title="Figura 4.15:Predicción del comportamiento en elementos SOLID y SOLSH."  class="enlaces_figuras">Figura 4.15</a>
@@ -954,21 +954,21 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <a href="#figura_5_1" title="Figura 5.1:Gráfico de Pareto del DOE de fracción en volumen de Fibra."  class="enlaces_figuras">Figura 5.1</a>
 <a href="#figura_5_2" title="Figura 5.2:Gráficos de Pareto del DOE de fracción en volumen de Poros."  class="enlaces_figuras">Figura 5.2</a>
 <a href="#figura_5_3" title="Figura 5.3:Gráficos de Interacción de factores del DOE de fracción en volumen de Poros."  class="enlaces_figuras">Figura 5.3</a>
-<a href="#figura_5_4" title="Figura 5.4:Gráficos de Pareto del DOE de Tensión máxima." class="enlaces_figuras">Figura  5.4</a>
+<a href="#figura_5_4" title="Figura 5.4:Gráficos de Pareto del DOE de Tensión máxima." class="enlaces_figuras">Figura 5.4</a>
 <a href="#figura_5_5" title="Figura 5.5:Gráficos de Pareto del DOE de Deformación máxima."  class="enlaces_figuras">Figura 5.5</a>
 <a href="#figura_5_6" title="Figura 5.6:Gráficos de Pareto del DOE de DR." class="enlaces_figuras">Figura 5.6</a>
-<a href="#figura_5_7" title="Figura 5.7:DR obtenidas mediante 3 diferentes métodos." class="enlaces_figuras">Figura  5.7</a>
+<a href="#figura_5_7" title="Figura 5.7:DR obtenidas mediante 3 diferentes métodos." class="enlaces_figuras">Figura 5.7</a>
 <a href="#figura_5_8" title="Figura 5.8:Comparación de Deformaciones y TR." class="enlaces_figuras">Figura 5.8</a>
 <a href="#figura_5_9" title="Figura 5.9:Comparación de MR Normalizados." class="enlaces_figuras">Figura 5.9</a>
 <a href="#figura_5_10" title="Figura 5.10:Comparación de TR Circunferenciales Normalizadas."  class="enlaces_figuras">Figura 5.10</a>
-<a href="#figura_7_1" title="Figura 7.1:Cámara de control de temperatura multipropósito." class="enlaces_figuras">Figura  7.1</a>
+<a href="#figura_7_1" title="Figura 7.1:Cámara de control de temperatura multipropósito." class="enlaces_figuras">Figura 7.1</a>
 <a href="#figura_7_2" title="Figura 7.2:Detalle del motor y acoplamiento al eje." class="enlaces_figuras">Figura 7.2</a>
 <a href="#figura_A_2_1" title="Figura A.2.1:Presencia de burbujas durante el vertido de la resina."  class="enlaces_figuras">Figura A.2.1</a>
 <a href="#figura_A_3_1" title="Figura A.3.1:Pines de tornillos Allen." class="enlaces_figuras">Figura A.3.1</a>
 <a href="#figura_A_3_2" title="Figura A.3.2:Pines de plástico." class="enlaces_figuras">Figura A.3.2</a>
 <a href="#figura_A_3_3" title="Figura A.3.3:Pines de alambre." class="enlaces_figuras">Figura A.3.3</a>
 <a href="#figura_A_3_4" title="Figura A.3.4:Pines de clavos." class="enlaces_figuras">Figura A.3.4</a>
-<a href="#figura_A_4_1" title="Figura A.4.1:Ciclo teórico de curado del autoclave." class="enlaces_figuras">Figura  A.4.1</a>
+<a href="#figura_A_4_1" title="Figura A.4.1:Ciclo teórico de curado del autoclave." class="enlaces_figuras">Figura A.4.1</a>
 <a href="#figura_A_4_2" title="Figura A.4.2:Ciclo de curado del autoclave para cada Corrida." class="enlaces_figuras">Figura A.4.2</a>
 ```
 
@@ -1103,7 +1103,7 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <span class="llamadas" title="A partir de las temperaturas del tratamiento de calentamiento, se han identificado tres tipos diferentes de FC:
 • La FC de alto módulo es la más rígida y requiere la mayor temperatura en el tratamiento.
 • La FC de alta resistencia es la más fuerte y se carboniza a la temperatura que proporciona la mayor resistencia a tracción.
-• El último tipo de FC (la estándar) es la más barata; la rigidez es menor que en las anteriores, pero la resistencia es buena. Este tipo de FC tiene la temperatura más baja en el tratamiento.">texto<sup>1 </sup></span>
+• El último tipo de FC (la estándar) es la más barata; la rigidez es menor que en las anteriores, pero la resistencia es buena. Este tipo de FC tiene la temperatura más baja en el tratamiento.">texto<sup style="color: blue;">1 </sup></span>
 ```
 
 ```html
@@ -1153,7 +1153,7 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
     </span>​
   </span>​
 </span>​
-</span>​
+</span>
 ```
 
 # Tablas múltiples

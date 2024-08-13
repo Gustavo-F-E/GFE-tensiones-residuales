@@ -32,9 +32,8 @@
 .tabla_general {
   width: 100%;
   border-collapse: collapse;
-  margin: 1rem 0rem 0rem;
+  margin: 1rem 0rem;
   padding: 0;
-  margin: 0;
 }
 .tabla_general thead tr {
   /*background-color: #f2f2f2;*/
@@ -55,11 +54,11 @@
 }
 
 .borde-top-tabla{
-  border-top: 0.1rem solid #000;
+  border-top: 0.1rem solid #000 !important;
 }
 
 .borde-bottom-tabla{
-  border-bottom: 0.1rem solid #000;
+  border-bottom: 0.1rem solid #000 !important;
 }
 
 .descripcion_tabla{
@@ -69,11 +68,12 @@
   padding-top: 1.5rem !important;
 }
 
-.tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26{
+.tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26, #table_3_1, #table_3_2, #table_3_3, #table_3_4, #table_3_5, #table_3_6{
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1rem 0rem;
   tr{
     td{
       vertical-align: middle;
@@ -92,6 +92,92 @@
   }
 }
 
+#table_3_1, #table_3_3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+  width: 90%;
+  tr{
+    td{
+      vertical-align: middle;
+      text-align: center;
+      width: 20rem;
+      }
+    }
+  }
+
+
+#table_3_2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  overflow: scroll;
+  overflow-x: scroll; /* Opcional: oculta el scroll horizontal si no es necesario */
+  overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+  margin: 1rem 0rem;
+  width: 90%;
+  font-size: 0.6rem;
+  tr{
+    td{
+      vertical-align: middle;
+      text-align: center;
+      width: 20rem;
+    }
+  }
+}
+
+#table_3_4, #table_3_5, #table_3_6{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  overflow: scroll;
+  overflow-x: scroll; /* Opcional: oculta el scroll horizontal si no es necesario */
+  overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+  margin: 1rem 0rem;
+  width: 90%;
+  font-size: 0.6rem;
+  text-align: center;
+  tr{
+    td{
+      vertical-align: middle;
+      text-align: center;
+      width: 20rem;
+    }
+  }
+}
+
+#table_3_2 tr td:last-child{
+  width: 200rem !important;
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  overflow: scroll;
+  overflow-x:auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+  overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+  height: 1rem !important;
+}
+
+#medicion_tencion{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  li{
+    width: 80%;
+  }
+}
+
 @media screen and (min-width: 576px) and (max-width: 991px) {
   .tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26 {
     tr {
@@ -103,6 +189,12 @@
         }
       }
     }
+  }
+  #table_3_2, #table_3_4, #table_3_5{
+    font-size: 0.7rem;
+  }
+  #table_3_6{
+    font-size: 1rem;
   }
 }
 
@@ -117,5 +209,8 @@
         }
       }
     }
+  }
+  #table_3_2, #table_3_4, #table_3_5, #table_3_6{
+    font-size: 1rem;
   }
 }

@@ -13,8 +13,8 @@
 }
 
 .dark-theme-btn:hover{
-  background-color: rgba(0, 0, 255, 0.9);
-  color: #aaa;
+  background-color: var(--second-color);
+  color: var(--main-color);
 }
 
 .dark-mode{
