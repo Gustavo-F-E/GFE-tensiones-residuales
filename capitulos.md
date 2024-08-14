@@ -531,11 +531,9 @@ console.log(`<a class="enlaces_capitulo" href="${id_enlace[i]}" title="${descrip
   rel="noopener noreferrer">Capítulo 5.4</a>
 <a class="enlaces_capitulo" href="capitulo_5_5" title="Capítulo 5.5: Deformaciones Residuales (DR)."
   rel="noopener noreferrer">Capítulo 5.5</a>
-<a class="enlaces_capitulo" href="capitulo_5_6" title="Capítulo 5.6: Tensiones Residuales."
-  rel="noopener noreferrer">Capítulo 5.6</a>
+<a class="enlaces_capitulo" href="capitulo_5_6" title="Capítulo 5.6: Tensiones Residuales." rel="noopener noreferrer">Capítulo 5.6</a>
 <a class="enlaces_capitulo" href="capitulo_6" title="Capítulo 6: Conclusión." rel="noopener noreferrer">Capítulo 6</a>
-<a class="enlaces_capitulo" href="capitulo_7" title="Capítulo 7: Trabajos a Futuro." rel="noopener noreferrer">Capítulo
-  7</a>
+<a class="enlaces_capitulo" href="capitulo_7" title="Capítulo 7: Trabajos a Futuro." rel="noopener noreferrer">Capítulo 7</a>
 ```
 
 <h1 id="anexos">Anexos:</h1>
@@ -546,8 +544,7 @@ console.log(`<a class="enlaces_capitulo" href="${id_enlace[i]}" title="${descrip
 <a class="enlaces_capitulo" href="anexo_2" title="Anexo 2: Preparación de la resina." rel="noopener noreferrer">Anexo
   2</a>
 <a class="enlaces_capitulo" href="anexo_3" title="Anexo 3: Tipos de pines." rel="noopener noreferrer">Anexo 3</a>
-<a class="enlaces_capitulo" href="anexo_4" title="Anexo 4: Ciclo de curado empleado." rel="noopener noreferrer">Anexo
-  4</a>
+<a class="enlaces_capitulo" href="anexo_4" title="Anexo 4: Ciclo de curado empleado." rel="noopener noreferrer">Anexo 4</a>
 <a class="enlaces_capitulo" href="anexo_5" title="Anexo 5: Resumen del Análisis mediante Micrografías."
   rel="noopener noreferrer">Anexo 5</a>
 <a class="enlaces_capitulo" href="anexo_A_5_1" title="Anexo A.5.1: Micrografías pertenecientes a la Corrida 1."

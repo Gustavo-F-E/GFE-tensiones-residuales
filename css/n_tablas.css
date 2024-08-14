@@ -215,7 +215,7 @@
   overflow-x: scroll !important; 
 }
 
-.tablas_cap_5{
+.tablas_cap_5, #table_7_1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,6 +239,9 @@
   }
 }
 
+#table_7_1{
+  font-weight: bold;
+}
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
   .tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26 {
@@ -262,7 +265,7 @@
   #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
     font-size: 0.7rem !important;
   }
-  .tablas_cap_5{
+  .tablas_cap_5, #table_7_1{
     font-size: 0.6rem !important;
   }
 }
@@ -289,7 +292,7 @@
   #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
     font-size: 0.8rem !important;
   }
-  .tablas_cap_5{
+  .tablas_cap_5, #table_7_1{
     font-size: 0.8rem !important;
   }
 }
@@ -298,7 +301,7 @@
   #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
     font-size: 1rem !important;
   }
-  .tablas_cap_5{
+  .tablas_cap_5, #table_7_1{
     font-size: 1rem !important;
   }
 }
