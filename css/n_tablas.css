@@ -206,8 +206,13 @@
   }
 }
 
-#table_4_15, #table_4_3, #table_4_4, #table_4_6{
-  font-size: 0.5rem;
+#table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
+  font-size: 0.5rem !important;
+}
+
+#table_4_15{
+  overflow:hidden !important;
+  overflow-x: scroll !important; 
 }
 
 .tablas_cap_5{
@@ -254,8 +259,8 @@
     font-size: 1rem;
   }
 
-  #table_4_15, #table_4_3, #table_4_4, #table_4_6{
-    font-size: 0.7rem;
+  #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
+    font-size: 0.7rem !important;
   }
   .tablas_cap_5{
     font-size: 0.6rem !important;
@@ -281,17 +286,17 @@
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-  #table_4_15, #table_4_3, #table_4_4, #table_4_6{
-    font-size: 0.8rem;
-    .tablas_cap_5{
-      font-size: 0.8rem !important;
-    }
+  #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
+    font-size: 0.8rem !important;
+  }
+  .tablas_cap_5{
+    font-size: 0.8rem !important;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  #table_4_15, #table_4_3, #table_4_4, #table_4_6{
-    font-size: 1rem;
+  #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
+    font-size: 1rem !important;
   }
   .tablas_cap_5{
     font-size: 1rem !important;

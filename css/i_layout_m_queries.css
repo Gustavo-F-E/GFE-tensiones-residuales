@@ -12,6 +12,15 @@ header {
   }
 }
 
+article{
+  width: 100%;
+  max-width: 576px;
+  overflow-x: auto; /* Scroll horizontal si se desborda */
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+}
+
 #header-autor {
   font-size: 1rem;
 }
@@ -213,6 +222,11 @@ main section {
     }
   }
 
+  article{
+    width: 100%;
+    max-width: 991px;
+  }
+
   #header-autor {
     font-size: 1.2rem;
   }
@@ -381,6 +395,9 @@ main section {
     h1 {
       font-size: 2rem;
     }
+  }
+  article{
+    width: 100%;
   }
 
   header section {
