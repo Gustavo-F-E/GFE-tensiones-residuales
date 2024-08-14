@@ -55,4 +55,16 @@
         }
     }
   }
+
+  .resaltado{
+    color: #000;
+  }
 }
+/*
+.borde-top-tabla{
+  border-top: 0.1rem solid #aaa;
+}
+
+.borde-bottom-tabla{
+  border-bottom: 0.1rem solid #aaa;
+}*/

@@ -34,6 +34,16 @@
   border-collapse: collapse;
   margin: 1rem 0rem;
   padding: 0;
+  tr{
+    td{
+      vertical-align: middle;
+      text-align: center;
+    }
+    th{
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
 }
 .tabla_general thead tr {
   /*background-color: #f2f2f2;*/
@@ -54,11 +64,16 @@
 }
 
 .borde-top-tabla{
-  border-top: 0.1rem solid #000 !important;
+  border-top: 0.1rem solid #000;
 }
 
 .borde-bottom-tabla{
-  border-bottom: 0.1rem solid #000 !important;
+  border-bottom: 0.1rem solid #000;
+}
+
+.resaltado{
+  background-color: #ccc;
+  color: #000;
 }
 
 .descripcion_tabla{
@@ -68,7 +83,20 @@
   padding-top: 1.5rem !important;
 }
 
-.tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26, #table_3_1, #table_3_2, #table_3_3, #table_3_4, #table_3_5, #table_3_6{
+.tabla_ecuaciones, 
+#moment_residual, 
+#sigma_Z, 
+#sigma_Y, 
+#Phi11, 
+#Phi22, 
+#Phi12, 
+#Phi26, 
+#table_3_1, 
+#table_3_2, 
+#table_3_3, 
+#table_3_4, 
+#table_3_5, 
+#table_3_6{
   width: 100%;
   display: flex;
   align-items: center;
@@ -178,6 +206,35 @@
   }
 }
 
+#table_4_15, #table_4_3, #table_4_4, #table_4_6{
+  font-size: 0.5rem;
+}
+
+.tablas_cap_5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0rem;
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  overflow: scroll;
+  overflow-x: scroll; /* Opcional: oculta el scroll horizontal si no es necesario */
+  overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+  margin: 1rem 0rem;
+  width: 90%;
+  font-size: 0.5rem !important;
+  text-align: center;
+  tr{
+    td{
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+}
+
+
 @media screen and (min-width: 576px) and (max-width: 991px) {
   .tabla_ecuaciones, #moment_residual, #sigma_Z, #sigma_Y, #Phi11, #Phi22, #Phi12, #Phi26 {
     tr {
@@ -196,6 +253,13 @@
   #table_3_6{
     font-size: 1rem;
   }
+
+  #table_4_15, #table_4_3, #table_4_4, #table_4_6{
+    font-size: 0.7rem;
+  }
+  .tablas_cap_5{
+    font-size: 0.6rem !important;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -212,5 +276,24 @@
   }
   #table_3_2, #table_3_4, #table_3_5, #table_3_6{
     font-size: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  #table_4_15, #table_4_3, #table_4_4, #table_4_6{
+    font-size: 0.8rem;
+    .tablas_cap_5{
+      font-size: 0.8rem !important;
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  #table_4_15, #table_4_3, #table_4_4, #table_4_6{
+    font-size: 1rem;
+  }
+  .tablas_cap_5{
+    font-size: 1rem !important;
   }
 }

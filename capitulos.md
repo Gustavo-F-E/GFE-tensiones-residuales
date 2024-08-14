@@ -445,12 +445,9 @@ console.log(`<a class="enlaces_capitulo" href="${id_enlace[i]}" title="${descrip
   rel="noopener noreferrer">Capítulo 2.3</a>
 <a class="enlaces_capitulo" href="capitulo_2_3_1" title="Capítulo 2.3.1: Cálculo de las Constantes ingenieriles."
   rel="noopener noreferrer">Capítulo 2.3.1</a>
-<a class="enlaces_capitulo" href="capitulo_2_3_2"
-  title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a>
-<a class="enlaces_capitulo" href="capitulo_2_3_3" title="Capítulo 2.3.3: Modelo de predicción de DR."
-  rel="noopener noreferrer">Capítulo 2.3.3</a>
-<a class="enlaces_capitulo" href="capitulo_2_3_4" title="Capítulo 2.3.4: Modelo de elementos finitos propuesto."
-  rel="noopener noreferrer">Capítulo 2.3.4</a>
+<a class="enlaces_capitulo" href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a>
+<a class="enlaces_capitulo" href="capitulo_2_3_3" title="Capítulo 2.3.3: Modelo de predicción de DR." rel="noopener noreferrer">Capítulo 2.3.3</a>
+<a class="enlaces_capitulo" href="capitulo_2_3_4" title="Capítulo 2.3.4: Modelo de elementos finitos propuesto." rel="noopener noreferrer">Capítulo 2.3.4</a>
 ```
 
 <h1 id="cap-3">Capítulo 3:</h1>
@@ -493,9 +490,7 @@ console.log(`<a class="enlaces_capitulo" href="${id_enlace[i]}" title="${descrip
 <a class="enlaces_capitulo" href="capitulo_3_4_1"
   title="Capítulo 3.4.1: Fracción en Volumen de las Fibras, Resina y Poros." rel="noopener noreferrer">Capítulo
   3.4.1</a>
-<a class="enlaces_capitulo" href="capitulo_3_4_2"
-  title="Capítulo 3.4.2: Evaluación de las DR mediante el Método del Corte." rel="noopener noreferrer">Capítulo
-  3.4.2</a>
+<a class="enlaces_capitulo" href="capitulo_3_4_2" title="Capítulo 3.4.2: Evaluación de las DR mediante el Método del Corte." rel="noopener noreferrer">Capítulo 3.4.2</a>
 <a class="enlaces_capitulo" href="capitulo_3_4_3" title="Capítulo 3.4.3: Resistencia aparente de un aro de los tubos."
   rel="noopener noreferrer">Capítulo 3.4.3</a>
 ```
@@ -509,12 +504,10 @@ console.log(`<a class="enlaces_capitulo" href="${id_enlace[i]}" title="${descrip
   rel="noopener noreferrer">Capítulo 4.1</a>
 <a class="enlaces_capitulo" href="capitulo_4_2" title="Capítulo 4.2: Constantes ingenieriles de cada tubo."
   rel="noopener noreferrer">Capítulo 4.2</a>
-<a class="enlaces_capitulo" href="capitulo_4_3" title="Capítulo 4.3: Deformaciones residuales."
-  rel="noopener noreferrer">Capítulo 4.3</a>
+<a class="enlaces_capitulo" href="capitulo_4_3" title="Capítulo 4.3: Deformaciones residuales." rel="noopener noreferrer">Capítulo 4.3</a>
 <a class="enlaces_capitulo" href="capitulo_4_4"
   title="Capítulo 4.4: TR calculadas a partir de ecuaciones de elasticidad." rel="noopener noreferrer">Capítulo 4.4</a>
-<a class="enlaces_capitulo" href="capitulo_4_5" title="Capítulo 4.5: DR predichas mediante la TCL."
-  rel="noopener noreferrer">Capítulo 4.5</a>
+<a class="enlaces_capitulo" href="capitulo_4_5" title="Capítulo 4.5: DR predichas mediante la TCL." rel="noopener noreferrer">Capítulo 4.5</a>
 <a class="enlaces_capitulo" href="capitulo_4_6"
   title="Capítulo 4.6: TR predichas según el modelo de elementos finitos planteado." rel="noopener noreferrer">Capítulo
   4.6</a>
@@ -978,80 +971,50 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <a href="#tabla_2_1" title="Tabla 2.1: Propiedades de la Fibra Toray T700 S." class="enlaces_tablas">Tabla 2.1</a>
 <a href="#tabla_2_2" title="Tabla 2.2: Propiedades de la matriz epóxica." class="enlaces_tablas">Tabla 2.2</a>
 <a href="#tabla_3_1" title="Tabla 3.1: Factores más importantes del proceso de EF." class="enlaces_tablas">Tabla 3.1</a>
-<a href="#tabla_3_2" title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores."
-  class="enlaces_tablas">Tabla 3.2</a>
+<a href="#tabla_3_2" title="Tabla 3.2: Diseño factorial fraccionado a dos niveles de 5 factores." class="enlaces_tablas">Tabla 3.2</a>
 <a href="#tabla_3_3" title="Tabla 3.3: Longitud y cantidad de partes por tubo." class="enlaces_tablas">Tabla 3.3</a>
 <a href="#tabla_3_4" title="Tabla 3.4: Diámetro interior de los tubos." class="enlaces_tablas">Tabla 3.4</a>
 <a href="#tabla_3_5" title="Tabla 3.5: Espesor de los tubos." class="enlaces_tablas">Tabla 3.5</a>
-<a href="#tabla_3_6" title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla
-  3.6</a>
-<a href="#tabla_4_1" title="Tabla 4.1: Fracción en volumen de Fibra, Resina y Poros de la Muestra 1."
-  class="enlaces_tablas">Tabla 4.1</a>
-<a href="#tabla_4_2" title="Tabla 4.2: Fracción en volumen de Fibra, Resina y Poros de las muestras."
-  class="enlaces_tablas">Tabla 4.2</a>
-<a href="#tabla_4_3" title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas."
-  class="enlaces_tablas">Tabla 4.3</a>
+<a href="#tabla_3_6" title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla 3.6</a>
+<a href="#tabla_4_1" title="Tabla 4.1: Fracción en volumen de Fibra, Resina y Poros de la Muestra 1." class="enlaces_tablas">Tabla 4.1</a>
+<a href="#tabla_4_2" title="Tabla 4.2: Fracción en volumen de Fibra, Resina y Poros de las muestras." class="enlaces_tablas">Tabla 4.2</a>
+<a href="#tabla_4_3" title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas." class="enlaces_tablas">Tabla 4.3</a>
 <a href="#tabla_4_4" title="Tabla 4.4: Deformaciones Residuales (DR)." class="enlaces_tablas">Tabla 4.4</a>
 <a href="#tabla_4_5" title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>
 <a href="#tabla_4_6" title="Tabla 4.6: Constantes Φ para el cálculo de las TR." class="enlaces_tablas">Tabla 4.6</a>
 <a href="#tabla_4_7" title="Tabla 4.7: Constantes Dij para el cálculo de las TR." class="enlaces_tablas">Tabla 4.7</a>
 <a href="#tabla_4_8" title="Tabla 4.8: Módulos Flectores Eyb." class="enlaces_tablas">Tabla 4.8</a>
-<a href="#tabla_4_9" title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad."
-  class="enlaces_tablas">Tabla 4.9</a>
+<a href="#tabla_4_9" title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>
 <a href="#tabla_4_10" title="Tabla 4.10: TR calculadas por elasticidad." class="enlaces_tablas">Tabla 4.10</a>
 <a href="#tabla_4_11" title="Tabla 4.11: DR calculadas con TCL." class="enlaces_tablas">Tabla 4.11</a>
-<a href="#tabla_4_12" title="Tabla 4.12: Datos de diferentes modelados mediante elementos finitos."
-  class="enlaces_tablas">Tabla 4.12</a>
-<a href="#tabla_4_13" title="Tabla 4.13: Configuración de los ángulos en ANSYS para las diferentes capas."
-  class="enlaces_tablas">Tabla 4.13</a>
-<a href="#tabla_4_14" title="Tabla 4.14: Resumen de todas las simulaciones de cada corrida."
-  class="enlaces_tablas">Tabla 4.14</a>
-<a href="#tabla_4_15" title="Tabla 4.15: Resistencia de los tubos según el estándar ASTM D 2290."
-  class="enlaces_tablas">Tabla 4.15</a>
-<a href="#tabla_5_1" title="Tabla 5.1: Información relevante del DOE para la fracción en volumen de Fibra."
-  class="enlaces_tablas">Tabla 5.1</a>
-<a href="#tabla_5_2" title="Tabla 5.2: Resumen del mejor ANOVA de fracción en volumen de Fibra.3"
-  class="enlaces_tablas">Tabla 5.2</a>
-<a href="#tabla_5_3" title="Tabla 5.3: Información relevante del DOE para fracción en volumen de Poros."
-  class="enlaces_tablas">Tabla 5.3</a>
-<a href="#tabla_5_4" title="Tabla 5.4: Resumen del mejor ANOVA de fracción en volumen de Poros."
-  class="enlaces_tablas">Tabla 5.4</a>
-<a href="#tabla_5_5" title="Tabla 5.5: Información relevante del DOE para Tensión máxima." class="enlaces_tablas">Tabla
-  5.5</a>
-<a href="#tabla_5_6" title="Tabla 5.6: Información relevante del DOE para Carrera máxima." class="enlaces_tablas">Tabla
-  5.6</a>
+<a href="#tabla_4_12" title="Tabla 4.12: Datos de diferentes modelados mediante elementos finitos." class="enlaces_tablas">Tabla 4.12</a>
+<a href="#tabla_4_13" title="Tabla 4.13: Configuración de los ángulos en ANSYS para las diferentes capas." class="enlaces_tablas">Tabla 4.13</a>
+<a href="#tabla_4_14" title="Tabla 4.14: Resumen de todas las simulaciones de cada corrida." class="enlaces_tablas">Tabla 4.14</a>
+<a href="#tabla_4_15" title="Tabla 4.15: Resistencia de los tubos según el estándar ASTM D 2290." class="enlaces_tablas">Tabla 4.15</a>
+<a href="#tabla_5_1" title="Tabla 5.1: Información relevante del DOE para la fracción en volumen de Fibra." class="enlaces_tablas">Tabla 5.1</a>
+<a href="#tabla_5_2" title="Tabla 5.2: Resumen del mejor ANOVA de fracción en volumen de Fibra.3" class="enlaces_tablas">Tabla 5.2</a>
+<a href="#tabla_5_3" title="Tabla 5.3: Información relevante del DOE para fracción en volumen de Poros." class="enlaces_tablas">Tabla 5.3</a>
+<a href="#tabla_5_4" title="Tabla 5.4: Resumen del mejor ANOVA de fracción en volumen de Poros." class="enlaces_tablas">Tabla 5.4</a>
+<a href="#tabla_5_5" title="Tabla 5.5: Información relevante del DOE para Tensión máxima." class="enlaces_tablas">Tabla 5.5</a>
+<a href="#tabla_5_6" title="Tabla 5.6: Información relevante del DOE para Carrera máxima." class="enlaces_tablas">Tabla 5.6</a>
 <a href="#tabla_5_7" title="Tabla 5.7: Información relevante del DOE para las DR." class="enlaces_tablas">Tabla 5.7</a>
 <a href="#tabla_5_8" title="Tabla 5.8: DR obtenidas mediante 3 diferentes métodos." class="enlaces_tablas">Tabla 5.8</a>
-<a href="#tabla_5_9" title="Tabla 5.9: Resumen de todas las simulaciones hechas para cada corrida."
-  class="enlaces_tablas">Tabla 5.9</a>
-<a href="#tabla_6_1" title="Tabla 6.1: Grado de influencias de los diversos factores del DOE."
-  class="enlaces_tablas">Tabla 6.1</a>
-<a href="#tabla_7_1" title="Tabla 7.1: Diseño factorial fraccionado a dos niveles de 6 factores."
-  class="enlaces_tablas">Tabla 7.1</a>
+<a href="#tabla_5_9" title="Tabla 5.9: Resumen de todas las simulaciones hechas para cada corrida." class="enlaces_tablas">Tabla 5.9</a>
+<a href="#tabla_6_1" title="Tabla 6.1: Grado de influencias de los diversos factores del DOE." class="enlaces_tablas">Tabla 6.1</a>
+<a href="#tabla_7_1" title="Tabla 7.1: Diseño factorial fraccionado a dos niveles de 6 factores." class="enlaces_tablas">Tabla 7.1</a>
 <a href="#tabla_A1_1" title="Tabla A1.1: Ficha Técnica de la Resina." class="enlaces_tablas">Tabla A1.1</a>
-<a href="#tabla_A1_2" title="Tabla A1.1: Ficha Técnica de la Resina (Continuación)." class="enlaces_tablas">Tabla
-  A1.1</a>
+<a href="#tabla_A1_2" title="Tabla A1.1: Ficha Técnica de la Resina (Continuación)." class="enlaces_tablas">Tabla A1.1</a>
 <a href="#tabla_A_4_1" title="Tabla A.4.1: Ciclo del autoclave utilizado." class="enlaces_tablas">Tabla A.4.1</a>
-<a href="#tabla_A_5_1" title="Tabla A.5.1: Porcentajes de Fibra, Resina y Poros de la Muestra 1."
-  class="enlaces_tablas">Tabla A.5.1</a>
-<a href="#tabla_A_5_2" title="Tabla A.5.2: Porcentajes de Fibra, Resina y Poros de la Muestra 2."
-  class="enlaces_tablas">Tabla A.5.2</a>
-<a href="#tabla_A_5_3" title="Tabla A.5.3: Porcentajes de Fibra, Resina y Poros de la Muestra 7A."
-  class="enlaces_tablas">Tabla A.5.3</a>
-<a href="#tabla_A_5_4" title="Tabla A.5.4: Porcentajes de Fibra, Resina y Poros de la Muestra 7B."
-  class="enlaces_tablas">Tabla A.5.4</a>
-<a href="#tabla_A_5_5" title="Tabla A.5.5: Porcentajes de Fibra, Resina y Poros de la Muestra 7C."
-  class="enlaces_tablas">Tabla A.5.5</a>
-<a href="#tabla_A_5_6" title="Tabla A.5.6: Porcentajes de Fibra, Resina y Poros de la Muestra 8."
-  class="enlaces_tablas">Tabla A.5.6</a>
-<a href="#tabla_A_5_7" title="Tabla A.5.7: Porcentajes de Fibra, Resina y Poros de la Muestra 11."
-  class="enlaces_tablas">Tabla A.5.7</a>
-<a href="#tabla_A_5_8" title="Tabla A.5.8: Porcentajes de Fibra, Resina y Poros de la Muestra 12."
-  class="enlaces_tablas">Tabla A.5.8</a>
-<a href="#tabla_A_5_9" title="Tabla A.5.9: Porcentajes de Fibra, Resina y Poros de la Muestra 13."
-  class="enlaces_tablas">Tabla A.5.9</a>
-<a href="#tabla_A_5_10" title="Tabla A.5.10: Porcentajes de Fibra, Resina y Poros de la Muestra 14."
-  class="enlaces_tablas">Tabla A.5.10</a>
+<a href="#tabla_A_5_1" title="Tabla A.5.1: Porcentajes de Fibra, Resina y Poros de la Muestra 1." class="enlaces_tablas">Tabla A.5.1</a>
+<a href="#tabla_A_5_2" title="Tabla A.5.2: Porcentajes de Fibra, Resina y Poros de la Muestra 2." class="enlaces_tablas">Tabla A.5.2</a>
+<a href="#tabla_A_5_3" title="Tabla A.5.3: Porcentajes de Fibra, Resina y Poros de la Muestra 7A." class="enlaces_tablas">Tabla A.5.3</a>
+<a href="#tabla_A_5_4" title="Tabla A.5.4: Porcentajes de Fibra, Resina y Poros de la Muestra 7B." class="enlaces_tablas">Tabla A.5.4</a>
+<a href="#tabla_A_5_5" title="Tabla A.5.5: Porcentajes de Fibra, Resina y Poros de la Muestra 7C." class="enlaces_tablas">Tabla A.5.5</a>
+<a href="#tabla_A_5_6" title="Tabla A.5.6: Porcentajes de Fibra, Resina y Poros de la Muestra 8." class="enlaces_tablas">Tabla A.5.6</a>
+<a href="#tabla_A_5_7" title="Tabla A.5.7: Porcentajes de Fibra, Resina y Poros de la Muestra 11." class="enlaces_tablas">Tabla A.5.7</a>
+<a href="#tabla_A_5_8" title="Tabla A.5.8: Porcentajes de Fibra, Resina y Poros de la Muestra 12." class="enlaces_tablas">Tabla A.5.8</a>
+<a href="#tabla_A_5_9" title="Tabla A.5.9: Porcentajes de Fibra, Resina y Poros de la Muestra 13." class="enlaces_tablas">Tabla A.5.9</a>
+<a href="#tabla_A_5_10" title="Tabla A.5.10: Porcentajes de Fibra, Resina y Poros de la Muestra 14." class="enlaces_tablas">Tabla A.5.10</a>
 ```
 
 <h1 id="abreviaturas">Abreviaturas</h1>

@@ -172,17 +172,17 @@
   </p>
   <p id="tabla_4_3" class="descripcion_tabla">Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas.
   </p>
-  <table class="tabla_general">
+  <table id="table_4_3" class="tabla_general">
     <tr class="borde-top-tabla borde-bottom-tabla">
       <th style="font-weight: bold;"></th>
-      <th style="font-weight: bold;">E1 [GPa]</th>
-      <th style="font-weight: bold;">E2 [GPa]</th>
-      <th style="font-weight: bold;">G12 [GPa]</th>
-      <th style="font-weight: bold;">G13 [GPa]</th>
-      <th style="font-weight: bold;">G23 [GPa]</th>
-      <th style="font-weight: bold;">ν12</th>
-      <th style="font-weight: bold;">ν13</th>
-      <th style="font-weight: bold;">ν23</th>
+      <th style="font-weight: bold;">E<sub>1</sub> [GPa]</th>
+      <th style="font-weight: bold;">E<sub>2</sub> [GPa]</th>
+      <th style="font-weight: bold;">G<sub>12</sub> [GPa]</th>
+      <th style="font-weight: bold;">G<sub>13</sub> [GPa]</th>
+      <th style="font-weight: bold;">G<sub>23</sub> [GPa]</th>
+      <th style="font-weight: bold;">ν<sub>12</sub></th>
+      <th style="font-weight: bold;">ν<sub>13</sub></th>
+      <th style="font-weight: bold;">ν<sub>23</sub></th>
     </tr>
     <tr>
       <td style="font-weight: bold;">Corrida 1</td>
@@ -325,7 +325,7 @@
     19,45 με, siendo este último desvío el esperable cuando se fabrica un mismo tubo bajo las mismas condiciones.</p>
   <p id="tabla_4_4" class="descripcion_tabla">Tabla 4.4: Deformaciones Residuales (<a data-dark class="abreviatura"
       title="Deformaciones Residuales." href="DR">DR</a>).</p>
-      <table class="tabla_general">
+      <table id="table_4_4" class="tabla_general">
         <tr class="borde-top-tabla borde-bottom-tabla">
           <th style="font-weight: bold;">Corrida Nº</th>
           <th style="font-weight: bold;">Parte Nº</th>
@@ -460,36 +460,19 @@
 <article>
   <h3 id="capitulo_4_4">4.4 <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> calculadas a
     partir de ecuaciones de elasticidad.</h3>
-  <p>Como se detalló en el <a class="enlaces_capitulo" href="capitulo_2_3_2"
-      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
-      2.3.2</a>, previamente al cálculo de las <a data-dark class="abreviatura" title="Tensiones residuales."
-      href="TR">TR</a> se deben conocer diversas constantes, tales como las Qij, Φ_ij,
-    Dij, los módulos flectores E_y^b y los momentos flectores para finalmente calcular las <a data-dark
-      class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
-  <p>A partir de la <a href="#tabla_4_3" title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas."
-      class="enlaces_tablas">Tabla 4.3</a>, y teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_14' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.14</a> del <a class="enlaces_capitulo"
-      href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo."
-      rel="noopener noreferrer">Capítulo 2.3.2</a>, se pueden evaluar las
-    constantes Q11, Q22, Q12 y Q66. Los valores de estas constantes se resumen a continuación en la <a href="#tabla_4_5"
-      title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>.</p>
-  <p>De manera similar al caso de las constantes Q, se pueden evaluar las constantes Φ partir de los valores de la <a href="#tabla_4_5"
-    title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>. Teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_13' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.13</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
-      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
-      2.3.2</a> y las <a class='enlaces_ecuaciones' href='#ecuaciones_17' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.17</a> del <a class="enlaces_capitulo" href="capitulo_2_3_3"
-      title="Capítulo 2.3.3: Modelo de predicción de DR." rel="noopener noreferrer">Capítulo 2.3.3</a>, se pueden
-    evaluar las constantes Φ_11, Φ_12, Φ_22 y Φ_26 para los ángulos utilizados en las capas de los tubos de esta tesis,
-    que son los ángulos de 5º, 45º y 89º. Los valores de estas constantes se resumen a continuación en la <a
-      href="#tabla_4_6" title="Tabla 4.6: Constantes Φ para el cálculo de las TR." class="enlaces_tablas">Tabla 4.6</a>.
+  <p>Como se detalló en el <a class="enlaces_capitulo" href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a>, previamente al cálculo de las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> se deben conocer diversas constantes, tales como las Q<sub>ij</sub>, Φ<sub>ij</sub>, D<sub>ij</sub>, los módulos flectores <span id="ebx_6"></span> y los momentos flectores para finalmente calcular las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
+  <p>A partir de la <a href="#tabla_4_3" title="Tabla 4.3: Constantes ingenieriles mediante la Regla de las Mezclas." class="enlaces_tablas">Tabla 4.3</a>, y teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_14' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.14</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a>, se pueden evaluar las constantes Q<sub>11</sub>, Q<sub>22</sub>, Q<sub>12</sub> y Q<sub>66</sub>. Los valores de estas constantes se resumen a continuación en la <a href="#tabla_4_5" title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>.</p>
+  <p>De manera similar al caso de las constantes Q, se pueden evaluar las constantes Φ partir de los valores de la <a href="#tabla_4_5" title="Tabla 4.5: Constantes Q para el cálculo de las TR." class="enlaces_tablas">Tabla 4.5</a>. Teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_13' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.13</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a> y las <a class='enlaces_ecuaciones' href='#ecuaciones_17' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.17</a> del <a class="enlaces_capitulo" href="capitulo_2_3_3" title="Capítulo 2.3.3: Modelo de predicción de DR." rel="noopener noreferrer">Capítulo 2.3.3</a>, se pueden evaluar las constantes Φ<sub>11</sub>, Φ<sub>12</sub>, Φ<sub>22</sub> y Φ<sub>26</sub> para los ángulos utilizados en las capas de los tubos de esta tesis, que son los ángulos de 5º, 45º y 89º. Los valores de estas constantes se resumen a continuación en la <a href="#tabla_4_6" title="Tabla 4.6: Constantes Φ para el cálculo de las TR." class="enlaces_tablas">Tabla 4.6</a>.
   </p>
   <p id="tabla_4_5" class="descripcion_tabla">Tabla 4.5: Constantes Q para el cálculo de las <a data-dark
       class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
       <table class="tabla_general">
         <tr class="borde-top-tabla borde-bottom-tabla">
           <th style="font-weight: bold;"></th>
-          <th style="font-weight: bold;">Q11 [MPa]</th>
-          <th style="font-weight: bold;">Q22 [MPa]</th>
-          <th style="font-weight: bold;">Q12 [MPa]</th>
-          <th style="font-weight: bold;">Q66 [MPa]</th>
+          <th style="font-weight: bold;">Q<sub>11</sub> [MPa]</th>
+          <th style="font-weight: bold;">Q<sub>22</sub> [MPa]</th>
+          <th style="font-weight: bold;">Q<sub>12</sub> [MPa]</th>
+          <th style="font-weight: bold;">Q<sub>66</sub> [MPa]</th>
         </tr>
       
         <tr>
@@ -563,17 +546,17 @@
           <td>4.399,00</td>
         </tr>
       </table>
-  <p>A partir de las constantes Φij en la <a href="#tabla_4_6"
+  <p>A partir de las constantes Φ<sub>ij</sub> en la <a href="#tabla_4_6"
       title="Tabla 4.6: Constantes Φ para el cálculo de las TR." class="enlaces_tablas">Tabla 4.6</a> y de los
     resultados de calidad resumidos en la <a href="#tabla_3_6"
       title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla
       3.6</a>, se pueden
     evaluar, teniendo en cuenta las <a class='enlaces_ecuaciones' href='#ecuaciones_10' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.10</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
       title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
-      2.3.2</a>, las constantes D11, D22 y D12. Los valores de
+      2.3.2</a>, las constantes D<sub>11</sub>, D<sub>22</sub> y D<sub>12</sub>. Los valores de
     estas constantes se resumen en la <a href="#tabla_4_7" title="Tabla 4.7: Constantes Dij para el cálculo de las TR."
       class="enlaces_tablas">Tabla 4.7</a>.</p>
-  <p>Mediante los valores de las constantes Dij de la <a href="#tabla_4_7"
+  <p>Mediante los valores de las constantes D<sub>ij</sub> de la <a href="#tabla_4_7"
       title="Tabla 4.7: Constantes Dij para el cálculo de las TR." class="enlaces_tablas">Tabla 4.7</a>, se pueden
     evaluar entonces los módulos flectores con la
     <a class='enlaces_ecuaciones' href='#ecuaciones_9' target="_blank" rel='noopener noreferrer'>Ecuación 2.9</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
@@ -584,18 +567,18 @@
   </p>
   <p id="tabla_4_6" class="descripcion_tabla">Tabla 4.6: Constantes Φ para el cálculo de las <a data-dark
       class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
-      <table class="tabla_general">
+      <table id="table_4_6" class="tabla_general">
         <tr class="borde-top-tabla borde-bottom-tabla">
           <th style="font-weight: bold;"> </th>
           <th style="font-weight: bold;">Ángulo de Capa</th>
-          <th style="font-weight: bold;">Φ11 [MPa]</th>
-          <th style="font-weight: bold;">Φ22 [MPa]</th>
-          <th style="font-weight: bold;">Φ12 [MPa]</th>
-          <th style="font-weight: bold;">|Φ26| [MPa]</th>
+          <th style="font-weight: bold;">Φ<sub>11</sub> [MPa]</th>
+          <th style="font-weight: bold;">Φ<sub>22</sub> [MPa]</th>
+          <th style="font-weight: bold;">Φ<sub>12</sub> [MPa]</th>
+          <th style="font-weight: bold;">|Φ<sub>26</sub>| [MPa]</th>
         </tr>
       
         <tr>
-          <td style="font-weight: bold;" rowspan="3">Corrida 1<br>[89/45/5/45/89]</td>
+          <td style="font-weight: bold;" rowspan="3">Corrida 1<br>[±89/±45/±5/±45/±89]<sub>T</sub></td>
           <td style="font-weight: bold;">±5º</td>
           <td>152.331,73</td>
           <td>10.096,56</td>
@@ -617,7 +600,7 @@
           <td>2.495,50</td>
         </tr>
         <tr class="borde-top-tabla">
-          <td style="font-weight: bold;" rowspan="3">Corrida 2<br>[89/45/5/45/89]</td>
+          <td style="font-weight: bold;" rowspan="3">Corrida 2<br>[±89/±45/±5/±45/±89]<sub>T</sub></td>
           <td style="font-weight: bold;">±5º</td>
           <td>136.944,51</td>
           <td>9.876,25</td>
@@ -639,7 +622,7 @@
           <td>2.231,67</td>
         </tr>
         <tr class="borde-top-tabla borde-bottom-tabla">
-          <td style="font-weight: bold;">Corrida 7A<br>[455]</td>
+          <td style="font-weight: bold;">Corrida 7A<br>[±45<sub>5</sub>]</td>
           <td style="font-weight: bold;">±45º</td>
           <td>40.461,49</td>
           <td>40.461,49</td>
@@ -647,7 +630,7 @@
           <td>31.503,06</td>
         </tr>
         <tr class="borde-bottom-tabla">
-          <td style="font-weight: bold;">Corrida 7B<br>[455]</td>
+          <td style="font-weight: bold;">Corrida 7B<br>[±45<sub>5</sub>]</td>
           <td style="font-weight: bold;">±45º</td>
           <td>39.265,31</td>
           <td>39.265,31</td>
@@ -655,7 +638,7 @@
           <td>30.516,22</td>
         </tr>
         <tr class="borde-bottom-tabla">
-          <td style="font-weight: bold;">Corrida 7C<br>[455]</td>
+          <td style="font-weight: bold;">Corrida 7C<br>[±45<sub>5</sub>]</td>
           <td style="font-weight: bold;">±45º</td>
           <td>52.063,59</td>
           <td>52.063,59</td>
@@ -663,7 +646,7 @@
           <td>39.286,76</td>
         </tr>
         <tr class="borde-bottom-tabla">
-          <td style="font-weight: bold;">Corrida 8<br>[455]</td>
+          <td style="font-weight: bold;">Corrida 8<br>[±45<sub>5</sub>]</td>
           <td style="font-weight: bold;">±45º</td>
           <td>45.202,57</td>
           <td>45.202,57</td>
@@ -671,7 +654,7 @@
           <td>35.226,21</td>
         </tr>
         <tr class="borde-top-tabla">
-          <td style="font-weight: bold;" rowspan="3">Corrida 11<br>[892/452/5/]S</td>
+          <td style="font-weight: bold;" rowspan="3">Corrida 11<br>[±89<sub>2</sub>/±45<sub>2</sub>/±5/]<sub>S</sub></td>
           <td style="font-weight: bold;">±5º</td>
           <td>134.231,10</td>
           <td>10.687,16</td>
@@ -693,7 +676,7 @@
           <td>2.170,32</td>
         </tr>
         <tr class="borde-top-tabla">
-          <td style="font-weight: bold;" rowspan="3">Corrida 12<br>[892/452/5/]S</td>
+          <td style="font-weight: bold;" rowspan="3">Corrida 12<br>[±89<sub>2</sub>/±45<sub>2</sub>/±5/]<sub>S</sub></td>
           <td style="font-weight: bold;">±5º</td>
           <td>159.812,55</td>
           <td>11.014,08</td>
@@ -715,7 +698,7 @@
           <td>2.609,04</td>
         </tr>
         <tr class="borde-top-tabla">
-          <td style="font-weight: bold;" rowspan="2">Corrida 13<br>[892/52/89/]S</td>
+          <td style="font-weight: bold;" rowspan="2">Corrida 13<br>[±89<sub>2</sub>/±5<sub>2</sub>/±89/]<sub>S</sub></td>
           <td style="font-weight: bold;">±5º</td>
           <td>139.020,98</td>
           <td>9.285,50</td>
@@ -730,7 +713,7 @@
           <td>2.278,17</td>
         </tr>
         <tr class="borde-top-tabla">
-          <td style="font-weight: bold;" rowspan="2">Corrida 14<br>[892/52/89/]S</td>
+          <td style="font-weight: bold;" rowspan="2">Corrida 14<br>[±89<sub>2</sub>/±5<sub>2</sub>/±89/]<sub>S</sub></td>
           <td style="font-weight: bold;">±5º</td>
           <td>162.234,64</td>
           <td>12.094,50</td>
@@ -746,14 +729,14 @@
         </tr>
       </table>
 
-  <p id="tabla_4_7" class="descripcion_tabla">Tabla 4.7: Constantes Dij para el cálculo de las <a data-dark
+  <p id="tabla_4_7" class="descripcion_tabla">Tabla 4.7: Constantes D<sub>ij</sub> para el cálculo de las <a data-dark
       class="abreviatura" title="Tensiones residuales." href="TR">TR</a>.</p>
       <table class="tabla_general">
         <tr class="borde-top-tabla borde-bottom-tabla">
           <th style="font-weight: bold;"> </th>
-          <th style="font-weight: bold;">D11 [MPa mm3]</th>
-          <th style="font-weight: bold;">D22 [MPa mm3]</th>
-          <th style="font-weight: bold;">D12 [MPa mm3]</th>
+          <th style="font-weight: bold;">D<sub>11</sub> [MPa mm<sup>3</sup>]</th>
+          <th style="font-weight: bold;">D<sub>22</sub> [MPa mm<sup>3</sup>]</th>
+          <th style="font-weight: bold;">D<sub>12</sub> [MPa mm<sup>3</sup>]</th>
         </tr>
       
         <tr>
@@ -818,7 +801,7 @@
         </tr>
       </table>
 
-  <p id="tabla_4_8" class="descripcion_tabla">Tabla 4.8: Módulos Flectores Eyb.</p>
+  <p id="tabla_4_8" class="descripcion_tabla">Tabla 4.8: Módulos Flectores <span id="ebx_7"></span>.</p>
   <table class="tabla_general">
     <tr class="borde-top-tabla borde-bottom-tabla">
       <th style="font-weight: bold;"></th>
@@ -867,40 +850,10 @@
     </tr>
   
   </table>
-  <p>A partir de los datos de las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a>
-    resumidos en la <a href="#tabla_4_4" title="Tabla 4.4: Deformaciones Residuales (DR)." class="enlaces_tablas">Tabla
-      4.4</a>, el valor de los módulos flectores en la <a href="#tabla_4_8" title="Tabla 4.8: Módulos Flectores Eyb."
-      class="enlaces_tablas">Tabla 4.8</a> y los parámetros de calidad resumidos
-    en la <a href="#tabla_3_6" title="Tabla 3.6: Resumen de parámetros de calidad de los tubos."
-      class="enlaces_tablas">Tabla
-      3.6</a>, se pueden evaluar los <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> con
-    la <a class='enlaces_ecuaciones' href='#ecuaciones_5' target="_blank" rel='noopener noreferrer'>Ecuación 2.5</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
-      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
-      2.3.2</a>. Los resultados se encuentran resumidos en la <a href="#tabla_4_9"
-      title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>.
+  <p>A partir de los datos de las <a data-dark class="abreviatura" title="Deformaciones Residuales." href="DR">DR</a> resumidos en la <a href="#tabla_4_4" title="Tabla 4.4: Deformaciones Residuales (DR)." class="enlaces_tablas">Tabla 4.4</a>, el valor de los módulos flectores en la <a href="#tabla_4_8" title="Tabla 4.8: Módulos Flectores Eyb." class="enlaces_tablas">Tabla 4.8</a> y los parámetros de calidad resumidos en la <a href="#tabla_3_6" title="Tabla 3.6: Resumen de parámetros de calidad de los tubos." class="enlaces_tablas">Tabla 3.6</a>, se pueden evaluar los <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> con la <a class='enlaces_ecuaciones' href='#ecuaciones_5' target="_blank" rel='noopener noreferrer'>Ecuación 2.5</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a>. Los resultados se encuentran resumidos en la <a href="#tabla_4_9" title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>.
   </p>
   <p>Las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> se obtienen de evaluar las
-    <a class='enlaces_ecuaciones' href='#ecuaciones_7' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.7</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2"
-      title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo
-      2.3.2</a> para cada una de las corridas con los valores de <a data-dark class="abreviatura"
-      title="Momentos Residuales." href="MR">MR</a> de la <a href="#tabla_4_9"
-      title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>. Se
-    necesita evaluar también la <a class='enlaces_ecuaciones' href='#ecuaciones_8' target="_blank" rel='noopener noreferrer'>Ecuación 2.8</a> para
-    obtener la constante N para cada corrida. La <a href="#tabla_4_10"
-      title="Tabla 4.10: TR calculadas por elasticidad." class="enlaces_tablas">Tabla 4.10</a> resume la información
-    para los valores máximos de σy y σz.
-    Estos valores en el caso de σy se encuentran cuando el radio-vector r se encuentra en los extremos, es decir, r=a y
-    r=b. En cambio, para σz, el valor máximo se encuentra en el centro. Se evaluaron las <a class='enlaces_ecuaciones' href='#ecuaciones_7' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.7</a>, variando r
-    entre a y b en 11 puntos (véase la <a href="#figura_2_2"
-      title="Figura 2.2:Radiovector r y convención de momentos positivos." class="enlaces_figuras">Figura 2.2</a>), para
-    obtener la distribución típica de las <a data-dark class="abreviatura" title="Tensiones residuales."
-      href="TR">TR</a>. El resultado se muestra en la <a href="#figura_4_5"
-      title="Figura 4.5:Perfiles de las TR de σz según mecánica del continuo." class="enlaces_figuras">Figura 4.5</a>
-    para
-    σz y en la <a href="#figura_4_6" title="Figura 4.6:Perfiles de las TR de σy según mecánica del continuo."
-      class="enlaces_figuras">Figura 4.6</a> para σy. Se puede observar que las tensiones en la dirección Z son casi
-    nulas y que presentan
-    un valor bastante bajo.</p>
+    <a class='enlaces_ecuaciones' href='#ecuaciones_7' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.7</a> del <a class="enlaces_capitulo" href="capitulo_2_3_2" title="Capítulo 2.3.2: Cálculo de las TR según la mecánica del continuo." rel="noopener noreferrer">Capítulo 2.3.2</a> para cada una de las corridas con los valores de <a data-dark class="abreviatura" title="Momentos Residuales." href="MR">MR</a> de la <a href="#tabla_4_9" title="Tabla 4.9: Momentos Residuales (MR) calculados por elasticidad." class="enlaces_tablas">Tabla 4.9</a>. Se necesita evaluar también la <a class='enlaces_ecuaciones' href='#ecuaciones_8' target="_blank" rel='noopener noreferrer'>Ecuación 2.8</a> para obtener la constante N para cada corrida. La <a href="#tabla_4_10" title="Tabla 4.10: TR calculadas por elasticidad." class="enlaces_tablas">Tabla 4.10</a> resume la información para los valores máximos de σ<sub>y</sub> y σ<sub>z</sub>. Estos valores en el caso de σ<sub>y</sub> se encuentran cuando el radio-vector r se encuentra en los extremos, es decir, r=a y r=b. En cambio, para σ<sub>z</sub>, el valor máximo se encuentra en el centro. Se evaluaron las <a class='enlaces_ecuaciones' href='#ecuaciones_7' target="_blank" rel='noopener noreferrer'>Ecuaciones 2.7</a>, variando r entre a y b en 11 puntos (véase la <a href="#figura_2_2" title="Figura 2.2:Radiovector r y convención de momentos positivos." class="enlaces_figuras">Figura 2.2</a>), para obtener la distribución típica de las <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a>. El resultado se muestra en la <a href="#figura_4_5" title="Figura 4.5:Perfiles de las TR de σz según mecánica del continuo." class="enlaces_figuras">Figura 4.5</a> para σ<sub>z</sub> y en la <a href="#figura_4_6" title="Figura 4.6:Perfiles de las TR de σy según mecánica del continuo." class="enlaces_figuras">Figura 4.6</a> para σ<sub>y</sub>. Se puede observar que las tensiones en la dirección Z son casi nulas y que presentan un valor bastante bajo.</p>
 
   <p id="tabla_4_9" class="descripcion_tabla">Tabla 4.9: Momentos Residuales (<a data-dark class="abreviatura"
       title="Momentos Residuales." href="MR">MR</a>) calculados por elasticidad.</p>
@@ -1001,10 +954,10 @@
       <table class="tabla_general">
         <tr class="borde-top-tabla borde-bottom-tabla">
           <th style="font-weight: bold;">CorridaNº</th>
-          <th style="font-weight: bold;">N [mm4]</th>
-          <th style="font-weight: bold;">σy(a)<br>[MPa]</th>
-          <th style="font-weight: bold;">σy(b)[MPa]</th>
-          <th style="font-weight: bold;">σz(Centro)<br>[MPa]</th>
+          <th style="font-weight: bold;">N [mm<sup>4</sup>]</th>
+          <th style="font-weight: bold;">σ<sub>y</sub>(a)<br>[MPa]</th>
+          <th style="font-weight: bold;">σ<sub>y</sub>(b)[MPa]</th>
+          <th style="font-weight: bold;">σ<sub>z</sub>(Centro)<br>[MPa]</th>
         </tr>
       
         <tr>
@@ -1083,13 +1036,13 @@
     data-src-high="./assets/images/alta_calidad/figura_4_5.png"
     alt="Figura 4.5: Perfiles de las TR de σz según mecánica del continuo.">
   <p class="descripcion_figura">Figura 4.5:Perfiles de las <a data-dark class="abreviatura"
-      title="Tensiones residuales." href="TR">TR</a> de σz según mecánica del continuo.</p>
+      title="Tensiones residuales." href="TR">TR</a> de σ<sub>z</sub> según mecánica del continuo.</p>
   <img class="lazy" src="./assets/images/baja_calidad/figura_4_6.png"
     data-src-medium="./assets/images/media_calidad/figura_4_6.png"
     data-src-high="./assets/images/alta_calidad/figura_4_6.png"
     alt="Figura 4.6: Perfiles de las TR de σy según mecánica del continuo.">
   <p class="descripcion_figura">Figura 4.6:Perfiles de las <a data-dark class="abreviatura"
-      title="Tensiones residuales." href="TR">TR</a> de σy según mecánica del continuo.</p>
+      title="Tensiones residuales." href="TR">TR</a> de σ<sub>y</sub> según mecánica del continuo.</p>
 </article>
 <article>
   <h3 id="capitulo_4_5">4.5. DR predichas mediante la <a data-dark class="abreviatura"
@@ -1254,7 +1207,7 @@
         <td>249,12</td>
         <td>27,45</td>
       </tr>
-      <tr class="borde-bottom-tabla" style="background-color: #ccc;">
+      <tr class="borde-bottom-tabla resaltado">
         <td>Shell</td>
         <td>Cuadrático</td>
         <td>0,5</td>
@@ -1389,9 +1342,9 @@
     y <a data-dark class="abreviatura" title="Tensiones residuales." href="TR">TR</a> más altas que las corridas
     equivalentes con baja Tensión de Fibra. Finalmente, se presentan la <a href="#figura_4_13"
       title="Figura 4.13:Perfiles de las TR de σz según modelo de elementos finitos." class="enlaces_figuras">Figura
-      4.13</a> para σz y <a href="#figura_4_14"
+      4.13</a> para σ<sub>z</sub> y <a href="#figura_4_14"
       title="Figura 4.14:Perfiles de las TR de σy según modelo de elementos finitos." class="enlaces_figuras">Figura
-      4.14</a> para σy según
+      4.14</a> para σ<sub>y</sub> según
     el modelo de elementos finitos. Se denota la diferencia de comportamiento, al estar modelado mediante capas
     ortotrópicas con diferentes ángulos, entre las diferentes corridas, y éstas a su vez frente a las figuras análogas
     para mecánica del continuo (<a href="#figura_4_5"
@@ -1430,14 +1383,14 @@
     data-src-high="./assets/images/alta_calidad/figura_4_13.png"
     alt="Figura 4.13: Perfiles de las TR de σz según modelo de elementos finitos.">
   <p class="descripcion_figura">Figura 4.13: Perfiles de las <a data-dark class="abreviatura"
-      title="Tensiones residuales." href="TR">TR</a> de σz según modelo de elementos finitos.</p>
+      title="Tensiones residuales." href="TR">TR</a> de σ<sub>z</sub> según modelo de elementos finitos.</p>
 
   <img class="lazy" src="./assets/images/baja_calidad/figura_4_14.png"
     data-src-medium="./assets/images/media_calidad/figura_4_14.png"
     data-src-high="./assets/images/alta_calidad/figura_4_14.png"
     alt="Figura 4.14: Perfiles de las TR de σy según modelo de elementos finitos.">
   <p class="descripcion_figura">Figura 4.14:Perfiles de las <a data-dark class="abreviatura"
-      title="Tensiones residuales." href="TR">TR</a> de σy según modelo de elementos finitos.</p>
+      title="Tensiones residuales." href="TR">TR</a> de σ<sub>y</sub> según modelo de elementos finitos.</p>
   <p>Un último comentario respecto del modelo de elementos finitos utilizado es que predice perfectamente el
     comportamiento de deformación antes y después de la aplicación de los momentos. Además, con elementos SOLID y SOLSH,
     se predice perfectamente el comportamiento de la galga de la cara interior, en compresión, y de la cara exterior, en
@@ -1482,11 +1435,7 @@
       href='https://drive.google.com/file/d/1HadwX3C1WTrqvJqF108_f3agYsMcIoMj/view?usp=sharing' target="_blank"
       title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
       rel='noopener noreferrer'>ASTM D 2290</a>.</h3>
-  <p>Se ensayó una muestra por corrida de tubo, según el procedimiento detallado en el <a class="enlaces_capitulo"
-      href="capitulo_3_4_3" title="Capítulo 3.4.3: Resistencia aparente de un aro de los tubos."
-      rel="noopener noreferrer">Capítulo 3.4.3</a>. Los resultados se
-    encuentran resumidos en la <a href="#tabla_4_15"
-      title="Tabla 4.15: Resistencia de los tubos según el estándar ASTM D 2290." class="enlaces_tablas">Tabla 4.15</a>.
+  <p>Se ensayó una muestra por corrida de tubo, según el procedimiento detallado en el <a class="enlaces_capitulo" href="capitulo_3_4_3" title="Capítulo 3.4.3: Resistencia aparente de un aro de los tubos." rel="noopener noreferrer">Capítulo 3.4.3</a>. Los resultados se encuentran resumidos en la <a href="#tabla_4_15" title="Tabla 4.15: Resistencia de los tubos según el estándar ASTM D 2290." class="enlaces_tablas">Tabla 4.15</a>.
   </p>
   <p>En la <a href="#figura_4_16" title="Figura 4.16:Curvas de carga vs. Desplazamiento para cada corrida."
       class="enlaces_figuras">Figura 4.16</a> se observan las Curvas de carga vs. Desplazamiento para cada corrida. Se
@@ -1507,13 +1456,13 @@
       title='-ASTM D 2290 -04, "Standard Test Method for Apparent Hoop Tensile Strength of Plastic or Reinforced Plastic Pipe".'
       rel='noopener noreferrer'>ASTM D 2290</a>.
   </p>
-  <table class="tabla_general">
+  <table id="table_4_15" class="tabla_general">
     <tr class="borde-top-tabla borde-bottom-tabla">
       <th style="font-weight: bold;">Corrida</th>
       <th style="font-weight: bold;">Parte</th>
       <th style="font-weight: bold;">Ancho* [mm]</th>
       <th style="font-weight: bold;">Espesor* [mm]</th>
-      <th style="font-weight: bold;">Área [mm2]</th>
+      <th style="font-weight: bold;">Área [mm<sup>2</sup>]</th>
       <th style="font-weight: bold;">Tiempo máx. [s]</th>
       <th style="font-weight: bold;">Carga máx. [kN]</th>
       <th style="font-weight: bold;">Carrera máx. [mm]</th>
@@ -1642,6 +1591,7 @@
       <td>6</td>
     </tr>
   </table>
+
   <p class="subtitulos-tablas-chiquitito" style="font-size: 0.8rem;">
     * Medidos en la entalla.
   </p>

@@ -239,4 +239,16 @@ export const formulas = [
   },
   { id: "ebx_4", formula: "\\mathrm{E}_{b}^{x}", displayMode: false },
   { id: "ebx_5", formula: "\\mathrm{E}_{b}^{x}", displayMode: false },
+  { id: "ebx_6", formula: "\\mathrm{E}_{b}^{x}", displayMode: false },
+  { id: "ebx_7", formula: "\\mathrm{E}_{b}^{x}", displayMode: false },
+  {
+    id: "DR_cap5",
+    formula: "DR = (-259.6 - 154.9A + 11.6C - 141.6D) \ x10^{-6}",
+    displayMode: "true",
+  },
+  { id: "RAJ2_1", formula: "R_{aj}^2", displayMode: false },
+  { id: "RAJ2_2", formula: "R_{aj}^2", displayMode: false },
+  { id: "RAJ2_3", formula: "R_{aj}^2", displayMode: false },
+  { id: "RAJ2_4", formula: "R_{aj}^2", displayMode: false },
+  { id: "RAJ2_5", formula: "R_{aj}^2", displayMode: false },
 ];
