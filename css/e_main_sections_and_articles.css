@@ -26,6 +26,13 @@ main section {
   padding: 1rem 0rem;
 }
 
+.hr{
+  display: block !important;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 0 2rem;
+  width: 100%;
+}
+
 .section article {
   text-align: left;
   display: flex;
