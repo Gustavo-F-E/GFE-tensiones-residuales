@@ -143,15 +143,15 @@
   align-items: center;
   justify-content: center;
   margin: 1rem 0rem;
-  scrollbar-width:thin;
+  /*scrollbar-width:thin;
   scroll-behavior: smooth;
   scrollbar-color: rgb(203, 203, 248) transparent;
   overflow: scroll;
-  overflow-x: scroll; /* Opcional: oculta el scroll horizontal si no es necesario */
-  overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
+  overflow-x: scroll;*/ /* Opcional: oculta el scroll horizontal si no es necesario */
+  /*overflow-y: auto;*/ /* Opcional: oculta el scroll horizontal si no es necesario */
   margin: 1rem 0rem;
   width: 90%;
-  font-size: 0.6rem;
+  font-size: 0.5rem !important;
   tr{
     td{
       vertical-align: middle;
@@ -215,7 +215,7 @@
   overflow-x: scroll !important; 
 }
 
-.tablas_cap_5, #table_7_1{
+.tablas_cap_5, #table_6_1, #table_7_1{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -231,16 +231,32 @@
   width: 90%;
   font-size: 0.5rem !important;
   text-align: center;
+  padding: 0;
   tr{
+    padding: 0;
     td{
+      padding: 0;
       vertical-align: middle;
       text-align: center;
     }
   }
 }
 
+progress{
+  width: 2rem;
+}
+
 #table_7_1{
   font-weight: bold;
+}
+
+#ref_3_6, .scroll-bar{
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  overflow: scroll;
+  overflow-x: scroll !important; /* Opcional: oculta el scroll horizontal si no es necesario */
+  overflow-y: auto; /* Opcional: oculta el scroll horizontal si no es necesario */
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
@@ -256,18 +272,23 @@
     }
   }
   #table_3_2, #table_3_4, #table_3_5{
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
   #table_3_6{
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
     font-size: 0.7rem !important;
   }
-  .tablas_cap_5, #table_7_1{
+  .tablas_cap_5, #table_6_1, #table_7_1{
     font-size: 0.6rem !important;
   }
+
+  progress{
+    width:auto;
+  }
+  
 }
 
 @media screen and (min-width: 992px) {
@@ -283,7 +304,10 @@
     }
   }
   #table_3_2, #table_3_4, #table_3_5, #table_3_6{
-    font-size: 1rem;
+    font-size: 1rem !important;
+  }
+  progress{
+    width:auto;
   }
 
 }
@@ -292,7 +316,7 @@
   #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
     font-size: 0.8rem !important;
   }
-  .tablas_cap_5, #table_7_1{
+  .tablas_cap_5, #table_6_1, #table_7_1{
     font-size: 0.8rem !important;
   }
 }
@@ -301,7 +325,66 @@
   #table_4_15, #table_4_3, #table_4_4, #table_4_6, #table_4_9, #table_4_12{
     font-size: 1rem !important;
   }
-  .tablas_cap_5, #table_7_1{
+  .tablas_cap_5, #table_6_1, #table_7_1{
     font-size: 1rem !important;
+  }
+}
+
+.tg  {
+  border-collapse:collapse;
+  border-spacing:0;
+  width: auto !important;
+  table-layout: fixed;
+}
+.tg col {width: auto !important;}
+.tg td{
+  border-color:black; 
+  border-style:solid;
+  border-width:1px;
+  font-size:1rem;
+  overflow:hidden;
+  padding:0.7rem 0.2rem;
+  word-break:normal;}
+.tg th{
+  border-color:black;
+  border-style:solid;
+  border-width:1px;
+  font-size:1rem;
+  font-weight:normal;
+  overflow:hidden;
+  padding:0.7rem 0.2rem;
+  word-break:normal;}
+.tg .tg-g7sd{
+  border-color:inherit;
+  font-weight:bold;
+  text-align:left;
+  vertical-align:middle}
+.tg .tg-0lax{
+  text-align:left;
+  vertical-align:top}
+.bold-centrado{
+  font-weight: bold;
+  text-align: center !important;
+}
+.tg-wrap {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scrollbar-width:thin;
+  scroll-behavior: smooth;
+  scrollbar-color: rgb(203, 203, 248) transparent;
+  width: 100%;
+}
+
+.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-uzvj{border-color:inherit;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+
+@media screen and (min-width: 992px){
+  .tg  {
+  width: 90% !important;
+  max-width: 700px;
   }
 }

@@ -953,7 +953,7 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 <a href="#figura_5_10" title="Figura 5.10:Comparación de TR Circunferenciales Normalizadas."  class="enlaces_figuras">Figura 5.10</a>
 <a href="#figura_7_1" title="Figura 7.1:Cámara de control de temperatura multipropósito." class="enlaces_figuras">Figura 7.1</a>
 <a href="#figura_7_2" title="Figura 7.2:Detalle del motor y acoplamiento al eje." class="enlaces_figuras">Figura 7.2</a>
-<a href="#figura_A_2_1" title="Figura A.2.1:Presencia de burbujas durante el vertido de la resina."  class="enlaces_figuras">Figura A.2.1</a>
+<a href="#figura_A_2_1" title="Figura A.2.1:Presencia de burbujas durante el vertido de la resina." class="enlaces_figuras">Figura A.2.1</a>
 <a href="#figura_A_3_1" title="Figura A.3.1:Pines de tornillos Allen." class="enlaces_figuras">Figura A.3.1</a>
 <a href="#figura_A_3_2" title="Figura A.3.2:Pines de plástico." class="enlaces_figuras">Figura A.3.2</a>
 <a href="#figura_A_3_3" title="Figura A.3.3:Pines de alambre." class="enlaces_figuras">Figura A.3.3</a>
@@ -1067,8 +1067,22 @@ for (let i = 0; i < ref_descripcion_larga_enlaces.length; i++) {
 ```
 
 ```html
-<a class='enlaces_referencias' href='http://www.kohlenia.com.ar/' title='http://www.kohlenia.com.ar/'
-  rel='noopener noreferrer'>KOHLENIA®</a>
+<br>
+<br>
+<hr>
+<div class="notas_al_pie">
+  <p class="title_notas_al_pie">Notas al pie:</p>
+  <p><span class="id_notas_al_pie">[1]</span>: El porcentaje en volumen de resina se calcula una vez obtenidos los
+    porcentajes de fibra y de poros.</p>
+  <p><span class="id_notas_al_pie">[2]</span>: El archivo se puede descargar en <a
+      style="color:blue; text-decoration: underline;"
+      href="https://github.com/Gustavo-F-E/deformaciones-residuales/raw/main/deformaciones_residuales_TCL.mlx">https://github.com/Gustavo-F-E/deformaciones-residuales/raw/main/deformaciones_residuales_TCL.mlx</a>.
+  </p>
+  <p><span class="id_notas_al_pie">[3]</span>: Todo esto se cumple excepto para la Corrida 7B que es lo contrario.</p>
+</div>
+<hr>
+<br>
+<br>
 ```
 
 # Span KATEX
