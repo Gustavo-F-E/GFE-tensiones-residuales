@@ -59,6 +59,9 @@
   .resaltado{
     color: #000;
   }
+  .tg td{
+    border-color:#aaa; 
+  }
 }
 /*
 .borde-top-tabla{
