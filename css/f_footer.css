@@ -5,12 +5,29 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   padding: 1rem 0rem;
   a{
     font-weight: bold;
     color: #fff;
-    font-size: 1rem;
+    font-size: 0.7rem;
     text-decoration: underline;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  footer{
+    font-size: 0.7rem;
+    a{
+      font-size: 0.8rem;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer{
+    font-size: 0.8rem;
+    a{
+      font-size: 1rem;
+    }
   }
 }
